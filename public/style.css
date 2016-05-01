@@ -769,3 +769,29 @@ img {
   line-height: 1.2em;
   margin-bottom: 5%;
 }
+.service-title {
+  color: #074e88;
+}
+.contact-info {
+  font-size: 1.3em;
+}
+.contact-page-info-box {
+  width: 90%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 8% auto;
+}
+.contact-page-labels {
+  width: 14%;
+  margin: 0 auto 0 7%;
+}
+.contact-page-info {
+  width: 60%;
+  margin: 0;
+}
