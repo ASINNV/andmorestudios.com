@@ -1,0 +1,395 @@
+
+html {
+  box-sizing: border-box;
+  min-width: 300px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	font-family: "Helvetica Neue";
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+	max-width: 100%;
+}
+
+/*index.html page*/
+/*index.html page*/
+
+/*landing-intro section*/
+.landing-intro {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+.landing-logo-box {
+	width: 60%;
+	text-align: center;
+}
+.landing-name {
+	color: #F4A259;
+	font-size: 3em;
+	text-align: center;
+}
+.line {
+	margin: 2% 0;
+	width: 0%;
+	height: 3px;
+	background: #40C6FF;
+}
+.button-bar {
+	/*padding: 10px 0;*/
+	width: 100%;
+	height: 13.6%;
+	text-align: center;
+}
+.enter-button {
+	display: none;
+	color: #2B8DB7;
+	font-family: "Helvetica Neue";
+	text-decoration: none;
+	font-style: none;
+	font-size: 1.7em;
+	padding: 1% 2%;
+	line-height: 2.5em;
+	font-weight: 600;
+	border-radius: 4px;
+	background: #40C6FF;
+	border-bottom: 5px solid #37AFE2;
+	transition: color .1s ease-in-out;
+	box-shadow: 0px 2px 2px 1px rgba(0,0,0,.5);
+}
+/*	.enter-button:hover {
+	color: #00608A;
+}*/
+.enter-button:active {
+	color: #37AFE2;
+	background: #80D9FF;
+	border-bottom: 4px solid #37AFE2;
+	
+}
+
+
+/*home.html page*/
+/*home.html page*/
+
+/*intro section*/
+.intro {
+	width: 100%;
+	height: 100vh;
+}
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #333;
+	padding: 0 1%;
+}
+.logo-box {
+	width: 15%;
+	padding: 2% 0 2% 1.5%;
+}
+.name {
+	color: #F4A259;
+	font-size: 1.7em;
+}
+.studios {
+	color: #16A8C7;
+}
+.menu-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15%;
+	font-size: 3em;
+	color: white;
+
+	cursor: pointer;
+}
+
+.menu {
+	display: none;
+	background: #555;
+	font-size: 2em;
+	text-align: center;
+}
+.menu-item {
+	border-bottom: 1px solid grey;
+	padding: 4% 0;
+}
+.menu-link {
+	color: #FFF;
+	text-decoration: none;
+}
+.menu-item:first-child, .menu-item:last-child {
+	background: #666;
+}
+.welcome-page {
+	color: #333;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+.welcome-logo-box {
+	margin-top: 5%;
+	width: 35%;
+}
+.brand-head {
+	color: #444;
+	font-size: 3em;
+	margin-bottom: 1%;
+}
+.grey-studios {
+	color: #777;
+}
+.brand-sub {
+	color: #03A9F4;
+	padding: 0% 3% 4% 3%;
+	font-size: 1.7em;
+	/*font-weight: 200;*/
+	width: 90%;
+}
+/*.project-text {
+	color: #555;
+	margin-top: 10%;
+	font-size: 2.2em;
+	font-weight: 600;
+	line-height: 1.1em;
+}
+.project-line-one {
+	color: #FF6767;
+}*/
+.bottom-button {
+	margin: 3% 0;
+}
+.next-button {
+	width: 100%;
+	color: #FFF;
+	font-family: "Helvetica Neue";
+	text-decoration: none;
+	font-size: 1.7em;
+	line-height: 1.7em;
+	font-weight: 600;
+	padding: 3% 5%;
+	background: #2196F3;
+	border-top: 2px solid #FFF;
+	border-bottom: 2px solid #FFF;
+	box-shadow: 0px 0px 0px 3px #2196F3;
+}
+
+.just-looking {
+	width: 90%;
+	margin-top: 10%;
+	font-size: 1.2em;
+}
+/*.menu-item:hover {
+	background: #666;
+}*/
+
+/*end of intro section*/
+
+/*start of team section*/
+.team-section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	background: #333;
+	color: white;
+	padding-top: 5%;
+}
+
+.team-content {
+	height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.team-section-header {
+	font-size: 2em;
+	font-weight: 600;
+	color: #2196F3;
+	/*-webkit-text-stroke: 1px #222;*/
+}
+.the-team {
+	color: #F4A259;
+
+}
+.divider-line {
+	margin: 3% 0% 6% 0%;
+	width: 30%;
+	height: 3px;
+	background: #fff;
+}
+.member-image {
+	border-radius: 50%;
+	width: auto;
+	height: 20vh;
+	border: 4px solid white;
+}
+.nameplate {
+	display: block;
+}
+.show-next {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 1.8em;
+	line-height: 1.8em;
+	background: #666;
+	border: 4px solid white;
+	border-radius: 4px;
+	box-shadow: 0px 0px 0px 4px #666;
+	margin-top: 6%;
+	padding: 0 10%;
+}
+
+
+/*end of team section*/
+
+/*start of services section*/
+.services-section {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #FFF;
+	color: #555;
+}
+.services-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 5%;
+}
+.service-head {
+	margin-bottom: 3%;
+	text-align: center;
+	font-size: 2em;
+	font-weight: 600;
+	color: #2196F3;
+}
+.you {
+	color: #F4A259;
+}
+.divider-line-grey {
+	margin: 1% 0% 3% 0%;
+	width: 30%;
+	height: 3px;
+	background: #666;
+}
+.service {
+	display: flex;
+	margin: 3% 0;
+	width: 100%;
+}
+.thumb-holder {
+	display: flex;
+	flex-shrink: 0;
+	justify-content: center;
+	align-items: center;
+	width: 20%;
+	margin-right: 4%;
+}
+.service-desc {
+}
+.desc-head {
+	margin-bottom: 3%;
+	font-size: 1.3em;
+	color: #2196F3;
+}
+.desc-body {
+	font-size: 1.1em;
+	color: #666;
+}
+
+
+
+/*end of services section*/
+
+/*start of contact section*/
+.contact-section {
+	height: 100vh;
+	background: #2196F3;
+	color: white;
+}
+
+
+/*end of contact section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

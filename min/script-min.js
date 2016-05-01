@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".line").animate({width:"36%"},1400,function(){$(".enter-button").fadeIn(500)}),$(".menu-button").click(function(){$(".menu").toggle()}),$("a").click(function(){return"block"===$(".menu").css("display")&&$(".menu").toggle(),$("html, body").animate({scrollTop:$($(this).attr("href")).offset().top},1200),!1})});
