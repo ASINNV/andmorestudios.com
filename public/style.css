@@ -139,6 +139,7 @@ img {
 /*index.html page*/
 /*landing-intro section*/
 .landing-intro {
+  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -157,7 +158,6 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
 }
 .landing-logo-box {
   width: 60%;
@@ -210,7 +210,6 @@ img {
 /*intro section*/
 .intro {
   width: 100%;
-  height: 100vh;
 }
 .nav-bar {
   display: -webkit-box;
@@ -334,9 +333,7 @@ img {
   font-weight: 600;
   padding: 3% 5%;
   background: #2196f3;
-  border-top: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  box-shadow: 0px 0px 0px 3px #2196f3;
+  border-bottom: 2px solid #555;
 }
 .just-looking {
   width: 90%;
@@ -349,7 +346,6 @@ img {
 /*end of intro section*/
 /*start of team section*/
 .team-section {
-  height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -368,12 +364,11 @@ img {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  background: #333;
   color: #fff;
-  padding-top: 5%;
 }
 .team-content {
-  height: 90vh;
+  background: #333;
+  width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -391,30 +386,68 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 10% 0;
+  position: relative;
 }
 .team-section-header {
   font-size: 2em;
   font-weight: 600;
   color: #2196f3;
-/*-webkit-text-stroke: 1px #222;*/
+  margin-bottom: 5%;
 }
 .the-team {
   color: #f4a259;
 }
 .divider-line {
-  margin: 3% 0% 6% 0%;
   width: 30%;
   height: 3px;
   background: #fff;
+}
+.members-contain {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10%;
+}
+.zean {
+  position: relative;
+  z-index: 2;
+}
+.nick {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-140%) scale(0.7);
+          transform: translateX(-140%) scale(0.7);
+  z-index: 0;
+}
+.adrian {
+  position: relative;
+  left: 0%;
+  -webkit-transform: translateX(-10%) scale(0.7);
+          transform: translateX(-10%) scale(0.7);
+  z-index: 1;
 }
 .member-image {
   border-radius: 50%;
   width: auto;
   height: 20vh;
   border: 4px solid #fff;
+  margin-top: 10%;
 }
 .nameplate {
   display: block;
+  padding-top: 4%;
+  font-size: 1.5em;
+}
+.mini-desc {
+  color: #c0c0c0;
+  width: 80%;
+  margin: 2% auto;
+  font-size: 1.4em;
+  line-height: 1.1em;
+  text-align: left;
+  font-family: "Charter";
 }
 .show-next {
   text-decoration: none;
@@ -426,13 +459,13 @@ img {
   border: 4px solid #fff;
   border-radius: 4px;
   box-shadow: 0px 0px 0px 4px #666;
-  margin-top: 6%;
+  margin-top: 10%;
   padding: 0 10%;
 }
 /*end of team section*/
 /*start of services section*/
 .services-section {
-  margin: 15% auto;
+  margin: 5% 0 15% 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -480,7 +513,7 @@ img {
   color: #f4a259;
 }
 .divider-line-grey {
-  margin: 0 auto;
+  margin-bottom: 10%;
   width: 30%;
   height: 3px;
   background: #666;
@@ -521,6 +554,19 @@ img {
   font-size: 1.1em;
   color: #666;
 }
+.services-button {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  font-size: 1.8em;
+  line-height: 1.8em;
+  background: #666;
+  border: 4px solid #fff;
+  border-radius: 4px;
+  box-shadow: 0px 0px 0px 4px #666;
+  margin-top: 10%;
+  padding: 0 10%;
+}
 /*end of services section*/
 /*start of contact section*/
 .contact-section {
@@ -536,6 +582,12 @@ img {
   font-weight: 600;
   color: #fff;
 }
+.last-divider-line-grey {
+  margin: 0 auto 10% auto;
+  width: 30%;
+  height: 3px;
+  background: #074e88;
+}
 .info-box {
   width: 90%;
   margin: 0 auto;
@@ -543,17 +595,22 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 0 auto;
 }
 .label-group {
-  width: 25%;
-}
-.info-group {
-  width: 70%;
+  width: 14%;
   margin: 0 auto;
 }
+.info-group {
+  width: 60%;
+  margin: 0 0 0 auto;
+}
 .info-head {
-  color: #555;
+  color: #074e88;
   padding: 10px 0;
 }
 .info {
@@ -571,7 +628,7 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: 600;
-  background-color: #333;
+  background-color: #074e88;
 }
 .foot-list {
   padding: 5% 0 0 10%;
@@ -592,4 +649,123 @@ img {
   padding: 5% 5%;
   color: #888;
   font-family: "Open Sans";
+}
+.team-welcome {
+  text-align: center;
+  width: 90%;
+  margin: 10% auto;
+  padding: 4% 0;
+}
+.team-welcome-head {
+  font-size: 2em;
+  font-family: "Open Sans";
+  font-weight: 900;
+  color: #333;
+  padding: 5px;
+}
+.team-welcome-sub {
+  font-size: 1.4em;
+  color: #444;
+  padding: 2% 0;
+}
+.gray-lines-and-banner {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.gray-line-one {
+  background: #333;
+  height: 2px;
+  width: 20%;
+  margin-left: 2%;
+}
+.team-banner {
+  background-color: #333;
+  color: #fff;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  height: 30px;
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+}
+.team-banner::before {
+  left: -30px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 15px solid #333;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+}
+.team-banner::after {
+  right: -30px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #333;
+}
+.gray-line-two {
+  background: #333;
+  height: 2px;
+  width: 20%;
+  margin-right: 2%;
+}
+.team-bios {
+  width: 90%;
+  margin: 0 auto;
+}
+.bio-image-holder {
+  text-align: center;
+}
+.bio-image {
+  border-radius: 50%;
+  width: auto;
+  height: 20vh;
+  border: 4px solid #333;
+  margin-top: 10%;
+}
+.bio-name {
+  display: block;
+  padding: 8% 0 2% 0;
+  font-size: 1.7em;
+  color: #333;
+}
+.bio-text {
+  padding: 2% 0;
+  font-size: 1.2em;
+  line-height: 1.2em;
+}
+.bio-divider {
+  background: #333;
+  height: 2px;
+  width: 100%;
+  margin: 10% auto 0 auto;
+}
+.service-plug {
+  text-align: center;
+  margin: 10% 2.5%;
+}
+.check-it {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.2em;
+  margin-bottom: 5%;
 }
