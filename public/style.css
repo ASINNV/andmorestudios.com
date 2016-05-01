@@ -432,7 +432,7 @@ img {
 /*end of team section*/
 /*start of services section*/
 .services-section {
-  height: 100vh;
+  margin: 15% auto;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -480,7 +480,7 @@ img {
   color: #f4a259;
 }
 .divider-line-grey {
-  margin: 1% 0% 3% 0%;
+  margin: 0 auto;
   width: 30%;
   height: 3px;
   background: #666;
@@ -524,8 +524,72 @@ img {
 /*end of services section*/
 /*start of contact section*/
 .contact-section {
-  height: 100vh;
   background: #2196f3;
   color: #fff;
+  font-size: 1.4em;
+  padding-bottom: 10%;
+}
+.contact-head {
+  padding: 5% 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+  color: #fff;
+}
+.info-box {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+.label-group {
+  width: 25%;
+}
+.info-group {
+  width: 70%;
+  margin: 0 auto;
+}
+.info-head {
+  color: #555;
+  padding: 10px 0;
+}
+.info {
+  padding: 10px 0;
 }
 /*end of contact section*/
+.foot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  background-color: #333;
+}
+.foot-list {
+  padding: 5% 0 0 10%;
+}
+.foot-head {
+  font-size: 1.3em;
+  padding-bottom: 2%;
+  color: #2196f3;
+}
+.foot-item {
+  font-size: 1.1em;
+  padding-bottom: 1%;
+  color: #888;
+}
+.copy {
+  width: 100%;
+  text-align: right;
+  padding: 5% 5%;
+  color: #888;
+  font-family: "Open Sans";
+}
