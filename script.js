@@ -8,7 +8,7 @@ $(document).ready(function() {
 		$( ".enter-button" ).fadeIn( 500 );
 	});
 	$( ".menu-button" ).click(function() {
-		$( ".menu" ).toggle();
+		$( ".menu" ).slideToggle( 500 );
 	});
 	
 	$('a').click(function() {

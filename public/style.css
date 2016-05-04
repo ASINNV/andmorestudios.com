@@ -649,10 +649,6 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
 }
 .label-group {
@@ -916,10 +912,6 @@ img {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin: 0 auto;
 }
 .contact-info-head {
@@ -938,6 +930,9 @@ img {
   .name {
     font-size: 1.3em;
   }
+  .menu-item {
+    font-size: 0.8em;
+  }
   .menu-button {
     font-size: 2.5em;
   }
@@ -948,8 +943,8 @@ img {
     font-size: 1.3em;
   }
   .next-button {
-    font-size: 1.6em;
-    line-height: 1.6em;
+    font-size: 1.2em;
+    line-height: 1.2em;
   }
   .thumb-holder {
     width: 15%;
