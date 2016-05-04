@@ -897,7 +897,10 @@ img {
   color: #074e88;
 }
 .contact-info-box {
-  width: 90%;
+  background: #2196f3;
+  color: #fff;
+  font-size: 1.1em;
+  padding: 5%;
   margin: 0 auto;
   display: -webkit-box;
   display: -webkit-flex;
@@ -913,6 +916,8 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 0 auto;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
 }
 .contact-info-head {
   color: #074e88;
