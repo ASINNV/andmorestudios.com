@@ -328,7 +328,6 @@ img {
 .brand-head {
   color: #444;
   font-size: 3em;
-  margin-bottom: 1%;
 }
 .grey-studios {
   color: #777;
@@ -473,10 +472,10 @@ img {
   color: #318fbc;
 }
 .mini-desc {
-  color: #333;
+  color: #404040;
   width: 80%;
   margin: 2% auto;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.1em;
   text-align: left;
   font-family: "Charter";
@@ -602,7 +601,7 @@ img {
 /*start of contact section*/
 .contact-section {
   position: relative;
-  background: #2196f3;
+  background: -webkit-linear-gradient(#2196f3, #07406e);
   color: #fff;
   font-size: 1.4em;
   padding-bottom: 10%;
@@ -660,7 +659,7 @@ img {
   margin: 0 0 0 auto;
 }
 .info-head {
-  color: #074e88;
+  color: #67b4f4;
   padding: 10px 0 5px 0;
 }
 .info {
@@ -697,10 +696,10 @@ img {
       -ms-flex-direction: column;
           flex-direction: column;
   font-weight: 600;
-  background-color: #074e88;
+  background-color: #172938;
 }
 .foot-list {
-  padding: 5% 0 0 10%;
+  padding: 5% 0 0 5%;
 }
 .foot-head {
   font-size: 1.3em;
@@ -716,6 +715,7 @@ img {
   width: 100%;
   text-align: right;
   padding: 5% 5%;
+  font-size: 0.8em;
   color: #888;
   font-family: "Open Sans";
 }
@@ -964,9 +964,6 @@ img {
     height: 100px;
     width: 100px;
   }
-  .mini-desc {
-    font-size: 1.2em;
-  }
   .show-next {
     font-size: 1.3em;
     line-height: 1.3em;
@@ -990,9 +987,6 @@ img {
   .last-divider-line-grey {
     margin: 0 auto 5% auto;
   }
-  .foot-list {
-    padding: 5% 0 0 5%;
-  }
   .foot-head {
     font-size: 1em;
   }
@@ -1001,6 +995,46 @@ img {
   }
   .copy {
     padding: 2% 5%;
-    font-size: 0.8em;
+  }
+}
+@media (min-width: 414px) and (max-width: 465px) {
+  .member-image {
+    width: 125px;
+    height: 125px;
+  }
+  .bottom-button {
+    margin: 15px;
+  }
+  .next-button {
+    padding: 10px;
+  }
+}
+@media (min-width: 466px) {
+  .bottom-button {
+    margin: 15px;
+  }
+  .next-button {
+    padding: 10px;
+  }
+}
+@media (min-width: 650px) {
+  .welcome-logo-box {
+    width: 222px;
+  }
+  .team-content {
+    padding: 2% 0;
+  }
+  .services-section {
+    margin: 5% 0 9% 0;
+  }
+  .section-header {
+    margin: 9% 0 2% 0;
+  }
+  .contact-head {
+    padding: 5% 0 2% 0;
+  }
+  .copy {
+    font-size: 1em;
+    padding: 3% 3%;
   }
 }

@@ -213,7 +213,6 @@ img {
 .brand-head {
 	color: #444;
 	font-size: 3em;
-	margin-bottom: 1%;
 }
 .grey-studios {
 	color: #777;
@@ -335,10 +334,10 @@ img {
 	color: #318FBC;
 }
 .mini-desc {
-	color: #333;
+	color: #404040;
 	width: 80%;
 	margin: 2% auto;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	line-height: 1.1em
 	text-align: left;
 	font-family: "Charter";
@@ -433,7 +432,7 @@ img {
 /*start of contact section*/
 .contact-section {
 	position: relative;
-	background: #2196F3;
+	background: -webkit-linear-gradient(#2196F3, #07406E);
 	color: white;
 	font-size: 1.4em;
 	padding-bottom 10%
@@ -483,7 +482,7 @@ img {
 	margin: 0 0 0 auto;
 }
 .info-head {
-	color: blue;
+	color: #67B4F4;
 	padding: 10px 0 5px 0;
 }
 .info {
@@ -513,10 +512,10 @@ img {
 	display flex
 	flex-direction column
 	font-weight 600
-	background-color blue
+	background-color #172938
 
 .foot-list
-	padding 5% 0 0 10%	
+	padding 5% 0 0 5%	
 
 .foot-head
 	font-size 1.3em
@@ -532,6 +531,7 @@ img {
 	width 100%
 	text-align right
 	padding 5% 5%
+	font-size: .8em;
 	color #888
 	font-family "Open Sans"
 
@@ -773,11 +773,11 @@ img {
 
 
 
-// PHONES SMALLER THAN iPHONE 6 PLUS
-// PHONES SMALLER THAN iPHONE 6 PLUS
-// PHONES SMALLER THAN iPHONE 6 PLUS
-// PHONES SMALLER THAN iPHONE 6 PLUS
-// PHONES SMALLER THAN iPHONE 6 PLUS
+// UNDER 413px
+// UNDER 413px
+// UNDER 413px
+// UNDER 413px
+// UNDER 413px
 
 @media (max-width: 413px) {
 	
@@ -819,9 +819,6 @@ img {
 		height: 100px;
 		width: 100px;
 	}
-	.mini-desc {
-		font-size: 1.2em;
-	}
 	.show-next {
 		font-size: 1.3em;
 		line-height: 1.3em;
@@ -850,9 +847,6 @@ img {
 	.last-divider-line-grey {
 		margin: 0 auto 5% auto;
 	}
-	.foot-list {
-		padding: 5% 0 0 5%;
-	}
 	.foot-head {
 		font-size: 1em;
 	}
@@ -861,17 +855,67 @@ img {
 	}
 	.copy {
 		padding: 2% 5%;
-		font-size: .8em;
+
 	}
 }	
 
-// TABLETS UNDER 600px THAN iPHONE 6 PLUS
-// TABLETS UNDER 600px THAN iPHONE 6 PLUS
-// TABLETS UNDER 600px THAN iPHONE 6 PLUS
-// TABLETS UNDER 600px THAN iPHONE 6 PLUS
-// TABLETS UNDER 600px THAN iPHONE 6 PLUS
 
+// ANYTHING ABOVE 414 AND UNDER 465
+// ANYTHING ABOVE 414 AND UNDER 465
+// ANYTHING ABOVE 414 AND UNDER 465
+// ANYTHING ABOVE 414 AND UNDER 465
+// ANYTHING ABOVE 414 AND UNDER 465
 
+@media (min-width: 414px) and (max-width: 465px) {
+	.member-image {
+		width: 125px;
+		height: 125px;
+	}
+	.bottom-button {
+		margin: 15px;
+	}
+	.next-button {
+		padding: 10px;
+	}
+}
+
+// TABLETS 466px TO 650px
+// TABLETS 466px TO 650px
+// TABLETS 466px TO 650px
+// TABLETS 466px TO 650px
+// TABLETS 466px TO 650px
+
+@media (min-width: 466px) {
+	.bottom-button {
+		margin: 15px;
+	}
+	.next-button {
+		padding: 10px;
+	}
+	
+}
+
+@media (min-width: 650px) {
+	.welcome-logo-box {
+		width: 222px;
+	}
+	.team-content {
+		padding: 2% 0;
+	}
+	.services-section {
+		margin: 5% 0 9% 0;
+	}
+	.section-header {
+		margin: 9% 0 2% 0;
+	}
+	.contact-head {
+		padding 5% 0 2% 0
+	}
+	.copy {
+		font-size: 1em;
+		padding: 3% 3%;
+	}
+}
 
 
 
