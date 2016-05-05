@@ -5,7 +5,7 @@ $.fn.scrollBottom = function() {
 
 $(document).ready(function() {
 	$( ".line" ).animate({width: "36%"}, 1400, function() {
-		$( ".enter-button" ).fadeIn( 500 );
+		$( ".enter-button" ).fadeIn( 1500 );
 	});
 	$( ".menu-button" ).click(function() {
 		$( ".menu" ).slideToggle( 500 );
