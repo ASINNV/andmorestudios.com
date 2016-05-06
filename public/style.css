@@ -294,6 +294,9 @@ img {
   color: #333;
   cursor: pointer;
 }
+.home-studios {
+  color: #16a8c7;
+}
 .menu {
   display: none;
   background: #555;
