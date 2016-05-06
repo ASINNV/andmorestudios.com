@@ -27,7 +27,7 @@ $(document).ready(function() {
 	setTimeout(function() {
 		$( ".studios" ).animate({opacity: "1"}, 300);
 	}, 6300);
-	$( ".line" ).animate({width: "46%"}, 6600, function() {
+	$( ".line" ).animate({width: "26%"}, 6600, function() {
 		setTimeout(function() {
 				
 			$( ".enter-button" ).fadeIn( 300 );	
