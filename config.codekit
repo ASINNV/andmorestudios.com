@@ -11,6 +11,94 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/AndMoreIcons-03.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19026,
+		"inputAbbreviatedPath": "\/AndMoreIcons-03.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons-03.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons-04.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57085,
+		"inputAbbreviatedPath": "\/AndMoreIcons-04.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons-04.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons-06.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18966,
+		"inputAbbreviatedPath": "\/AndMoreIcons-06.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons-06.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons_design.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24095,
+		"inputAbbreviatedPath": "\/AndMoreIcons_design.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons_design.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons_socialmedia.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14255,
+		"inputAbbreviatedPath": "\/AndMoreIcons_socialmedia.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons_socialmedia.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons_systeminstall copy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47305,
+		"inputAbbreviatedPath": "\/AndMoreIcons_systeminstall copy.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons_systeminstall copy.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons_systeminstall.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57157,
+		"inputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons_Webdesign.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10913,
+		"inputAbbreviatedPath": "\/AndMoreIcons_Webdesign.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons_Webdesign.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/andmorelogo(web).png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -18,6 +106,17 @@
 		"initialSize": 12825,
 		"inputAbbreviatedPath": "\/andmorelogo(web).png",
 		"outputAbbreviatedPath": "\/andmorelogo(web).png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/awesomeBackgroundDesign.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 190,
+		"inputAbbreviatedPath": "\/awesomeBackgroundDesign.png",
+		"outputAbbreviatedPath": "\/awesomeBackgroundDesign.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

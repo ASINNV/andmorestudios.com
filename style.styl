@@ -58,9 +58,21 @@ img {
 
 /*index.html page*/
 /*index.html page*/
-
+// .move-up {
+// 	transition: all 2s ease;
+// 	margin: 0 0 350px 0;
+// }
+// .small {
+// 	transition: all 2s ease;
+// 	transform: scale(.7);
+// }
 
 /*landing-intro section*/
+.heaven {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
 .landing-intro {
 	height: 80vh;
 	width: 100%;
@@ -74,6 +86,7 @@ img {
 .landing-logo-box {
 	width: 60%;
 	text-align: center;
+	padding-bottom: 10px;
 }
 .landing-name {
 	color: #F4A259;
@@ -87,28 +100,30 @@ img {
 	text-align: center;
 }
 .line {
-	margin: 2% 0;
+	margin: 7.5px 0 15px 0;
 	width: 0%;
 	height: 3px;
-	background: #40C6FF;
+	background: #7DDCEC;
 }
 .button-bar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 35px;
 	text-align: center;
+	height: 35px;
 }
+
 .enter-button {
 	display: none;
+	cursor: pointer;
 	color: #2B8DB7;
 	font-family: "Helvetica Neue";
 	text-decoration: none;
 	height: 35px;
 	line-height: 1.9em;
 	font-size: 1.2em;
-	margin-top: 5%;
+	margin-top: 5px;
 	padding: 0 6%;
 	font-weight: 600;
 	border-radius: 4px;
@@ -131,7 +146,7 @@ img {
 
 }
 .nav-center {
-	height: 60px;
+	height: 41px;
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -140,7 +155,7 @@ img {
 	
 }
 .nav-bar {
-	max-height: 60px;
+	height: 41px;
 	width: 100%
 	display: flex;
 	justify-content: space-between;
@@ -161,7 +176,7 @@ img {
 	background: #fff;
 	padding: 0 1%;
 	border-bottom: 1px solid transparent;
-	height: 60px;
+	height: 41px;
 	
 }
 .logo-box {
@@ -225,7 +240,18 @@ img {
 	color: #555;
 	font-size: 1.2em;
 	font-weight: 600;
+	transition: color 1s ease;
+
 }
+.desktop-menu-item:hover {
+	color: #2196f3;
+	transition: color .01s ease;
+}
+.unselected-menu-item {
+	transition: color ease;
+	color: silver;
+}
+
 .welcome-page {
 	color: #333;
 	display: flex;
@@ -237,9 +263,13 @@ img {
 	margin-top: 5%;
 	width: 35%;
 }
+.welcome-logo {
+	width: 105px;
+	height: 72.5;
+}
 .brand-head {
 	color: #444;
-	font-size: 3em;
+	font-size: 2.7em;
 }
 .grey-studios {
 	color: #777;
@@ -281,9 +311,9 @@ img {
 	// box-shadow: 0px 0px 0px 3px #2196F3;
 }
 
-.next-button:last-child {
-	border-bottom: 0;
-}
+// .next-button:last-child {
+// 	border-bottom: 0;
+// }
 .just-looking {
 	width: 90%;
 	margin-top: 10%;
@@ -297,6 +327,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	border-top: 2px solid #555;
 }
 /*end of intro section*/
 
@@ -320,26 +351,26 @@ img {
 	padding: 10% 0;
 	position: relative;
 }
-.team-content::before {
-	content: '';
-	position: absolute;
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-color: transparent;
-	border-bottom: 0;
-	top: 0;
-	left: 50%;
-	border-top-color: #2196F3;
-	border-width: 16px;
-	transform: translateX(-50%);
-}
+// .team-content::before {
+// 	content: '';
+// 	position: absolute;
+// 	width: 0;
+// 	height: 0;
+// 	border-style: solid;
+// 	border-color: transparent;
+// 	border-bottom: 0;
+// 	top: 0;
+// 	left: 50%;
+// 	border-top-color: #2196F3;
+// 	border-width: 16px;
+// 	transform: translateX(-50%);
+// }
 
 .section-header {
 	font-size: 2em;
 	font-weight: 600;
 	color: #2196F3;
-	margin: 10% 0 5% 0;
+	margin: 10% 0 0 0;
 	text-align: center;
 }
 .the-team {
@@ -347,9 +378,10 @@ img {
 
 }
 .divider-line {
-	width: 30%;
+	width: 100px;
 	height: 3px;
-	background: #fff;
+	background: #333;
+	margin: 10px 0 15px 0;
 }
 .members-contain {
 	display: flex;
@@ -431,7 +463,7 @@ img {
 	border-bottom: 0;
 	top: 0;
 	left: 50%;
-	border-top-color: #91DEA1;
+	border-top-color: #6ED3C7;
 	border-width: 16px;
 	transform: translateX(-50%);
 	z-index: 10;
@@ -444,20 +476,16 @@ img {
 .you {
 	color: #F4A259;
 }
-.divider-line-grey {
-	margin-bottom: 10%;
-	width: 30%;
-	height: 3px;
-	background: #666;
-	
-}
 .service {
 	display: flex;
 	margin: 3% 0;
 	width: 100%;
 	justify-content: center;
 }
-	
+.servicio-links {
+	text-decoration: none;
+	color: #2196f3;
+}	
 .thumb-holder {
 	display: flex;
 	flex-shrink: 0;
@@ -499,6 +527,9 @@ img {
 
 /*start of contact section*/
 .contact-section {
+	display: flex;
+	flex-direction column
+	align-items center
 	position: relative;
 	background: -webkit-linear-gradient(#2196F3, #07406E);
 	color: white;
@@ -535,26 +566,17 @@ img {
 	cursor: pointer;
 }
 .contact-head {
-	padding: 10% 0 5% 0;
+	padding: 10% 0 0 0;
     text-align: center;
     font-size: 2em;
     font-weight: 600;
     color: #fff;
 }
-.last-divider-line-grey {
-	margin: 0 auto 10% auto;
-	width: 30%;
-	height: 3px;
-	background: blue;
-	
-}
+
 .info-box {
-	width: 90%;
-	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin: 0 auto;
 }
 .label-group {
 	width: 14%;
@@ -598,18 +620,31 @@ img {
 	background-color #172938
 
 .foot-list
+	display: flex;
+	width: 160px;
+	flex-direction: column;
 	padding 5% 0 0 5%	
 
 .foot-head
 	font-size 1.3em
-	padding-bottom 2%
+	padding-bottom 10px
 	color #2196F3
 	
 .foot-item 
 	font-size 1.1em
-	padding-bottom 1%
+	padding-bottom 5px
 	color #888
-	
+	text-decoration: none;
+	transition: color 1s ease;
+
+.foot-item:hover {
+	color: #2196f3;
+	transition: color .01s ease;
+}
+.unselected-foot-item {
+	transition: color ease;
+	color: #555;
+}
 .copy
 	width 100%
 	text-align right
@@ -625,13 +660,13 @@ img {
 
 .team-welcome {
 	text-align: center;
-	width: 90%;
-	margin: 10% auto;
+	width: 80%;
+	margin: 5px auto 10px auto;
 	padding: 4% 0;
 	
 }
 .team-welcome-head {
-	font-size: 2em;
+	font-size: 1.8em;
 	font-family "Open Sans"
 	font-weight 900
 	color #333
@@ -639,7 +674,7 @@ img {
 	
 }
 .team-welcome-sub {
-	font-size 1.4em
+	font-size 1.2em
 	color: #444;
 	padding: 2% 0;
 }
@@ -661,7 +696,7 @@ img {
 	font-size 1.2em
 	line-height: 1.6em;
 	height: 30px;
-	width: 50%;
+	width: 130px;
 	text-align: center;
 	margin 0 auto
 	position: relative;
@@ -747,7 +782,7 @@ img {
 	width: 156px;
 	height: 156px;
 	border: 4px solid #333;
-	margin: 10% auto;
+	margin: 30px auto;
 	transition: all 1s ease-out;
 }
 .bio-image:hover {
@@ -757,12 +792,12 @@ img {
 }
 .bio-name {
 	display: block;
-	padding: 8% 3% 2% 3%;
+	padding: 0 0 3% 5%;
 	font-size: 1.7em;
-	color: #333
+	color: #074e88;
 }
 .bio-text {
-	padding: 2% 3%;
+	padding: 2% 5%;
 	font-size 1.2em
 	line-height: 1.2em;
 }
@@ -774,14 +809,15 @@ img {
 // }
 .service-plug
 	text-align: center;
-	margin: 10% 2.5%;
+	margin: 15px 0 20px 0;
 
 .check-it 
+	width 220px
 	font-size 1.2em
 	font-weight: 500;
 	color: #333;
 	line-height: 1.2em;
-	margin-bottom: 5%;
+	margin: 0 auto 5% auto;
 	
 .alt-bio::before {
 	content: '';
@@ -830,28 +866,29 @@ img {
 
 // services page starts here (and uses some of the team page selectors above)
 
-.service-title
-	color blue
-	
 
 // services page ends here
 
 // contact page starts here
 
 
+.contact-box-container {
+		background: #2196F3;
+		border-top: 2px solid #333;
+		border-bottom: 2px solid #333;
+			padding: 5%;
 
+}
 .contact-info-box {
-	background: #2196F3;
+	
 	color: white;
 	font-size: 1.1em;
-	padding: 5%;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	margin: 0 auto;
-	border-top: 2px solid #333;
-	border-bottom: 2px solid #333;
+	
 }
 .contact-info-head {
 	color: blue;
@@ -876,19 +913,17 @@ img {
 @media (max-width: 413px) {
 	
 	.landing-logo-box {
-		width: 55%;
+		width: 165px;
 	}
 	.landing-name {
 		font-size 2.3em	
 	}
-	.nav-center {
-		height: 41px;
-	}
-	.nav-bar-placeholder {
-		height: 41px;
+	.fading-list {
+		height: 32px;
 	}
 	.name {
 		font-size: 1.3em;
+		padding-left: 2%;
 	}
 	.menu-item {
 		font-size: .8em;
@@ -913,7 +948,7 @@ img {
 	// team section
 
 	.team-content {
-		padding: 5% 0 10% 0;
+		padding: 25px 0 30px 0;
 	}
 	.section-header {
 		font-size: 1.7em;
@@ -925,28 +960,36 @@ img {
 	.show-next {
 		font-size: 1.3em;
 		line-height: 1.3em;
+		margin: 30px 0 20px 0;
+	}
+	.contact-head {
+		padding: 30px 0 0 0;
 	}
 	
 	// services section
 		
 	.services-section {
-		padding: 0 0 20px 0;
+		padding: 25px 0 20px 0;
 	}
 	.services-button {
-		font-size: 1.3em;
-		line-height: 1.3em;
+		font-size: 1.4em;
+		padding-bottom: 3px;
 	}
 	
 	// contact section
 	.contact-section {
 		font-size: 1.2em;
+		padding-top: 10px;
 	}
+	.top-arrow {
+		right: 40px;
+		top 30px
+	}
+
 	.contact-head {
 		font-size: 1.7em;
 	}
-	.last-divider-line-grey {
-		margin: 0 auto 5% auto;
-	}
+	
 	.foot-head {
 		font-size: 1em;
 	}
@@ -966,16 +1009,82 @@ img {
 // ANYTHING ABOVE 414 AND UNDER 465
 // ANYTHING ABOVE 414 AND UNDER 465
 
-@media (min-width: 414px) and (max-width: 465px) {
+@media (max-width: 465px) and (min-width: 414px) {
+	.landing-logo-box {
+		width: 250px;
+	}
+	
+	.fading-list {
+		height: 40px;
+	}
 	.member-image {
 		width: 125px;
 		height: 125px;
+	}
+	.alt-name {
+		font-size: 2.5em;	
+	}
+	.line {
+		transform: scaleX(1.2);
+	}
+	.button-bar {
+		height: 45px;
+		margin-top: 10px;
+	}
+	.enter-button {
+		padding: 0 25px;
+		margin-top: 0;
+		height: 45px;
+		font-size: 1.5em;
+		line-height: 1.8em;
+	}
+	.welcome-logo-box {
+		width: inherit;
+	}
+	.welcome-logo {
+		width: 170px;
+	}
+	.name {
+		padding-left: 2%;	
 	}
 	.bottom-button {
 		margin: 15px;
 	}
 	.next-button {
 		padding: 10px;
+	}
+	.nav-bar-placeholder, .nav-bar, .nav-center {
+		height: 60px;
+	}
+	
+	.services-section {
+		padding: 40px 0 50px 0;
+	}
+	.contact-section {
+		padding-top: 20px;
+		padding-bottom: 120px;
+	}
+	.team-banner {
+		width: 200px;
+	}
+	.bio-image {
+		margin: 50px auto;
+	}
+	.contact-info-box {
+		width: 70%;
+	}
+	.top-arrow {
+		top: 55px;
+		right: 30px;
+	}
+	.show-next {
+		padding: 0 40px;
+		line-height: 1.6em; 
+	}
+	.check-it {
+		width: 300px;
+		font-size: 1.6em;
+		margin 20px auto 10px auto
 	}
 }
 
@@ -986,6 +1095,41 @@ img {
 // TABLETS 466px TO 650px
 
 @media (min-width: 466px) {
+	.nav-bar-placeholder, .nav-bar, .nav-center {
+		height: 60px;
+	}
+	.landing-logo-box {
+		width: 275px;
+	}
+	.fading-list {
+		height: 40px;
+	}
+	.alt-name {
+		font-size: 2.5em;	
+	}
+	.line {
+		transform: scaleX(1.2);
+	}
+
+	.button-bar {
+		height: 50px;
+	}
+
+	.enter-button {
+		padding: 0 25px;
+		height: 40px;
+		font-size: 1.4em;
+		line-height: 1.8em;
+	}
+	.welcome-logo-box {
+		width: inherit;
+	}
+	.welcome-logo {
+		width: 175px;
+	}
+	.brand-sub {
+		width: 80%;
+	}
 	.bottom-button {
 		margin: 15px;
 	}
@@ -995,13 +1139,52 @@ img {
 	.mini-desc {
 		margin: 10px auto;
 	}
-	
+	.team-banner {
+		width: 200px;
+		font-size: 1.4em;
+		height: 36px;
+	}
+	.team-banner::before {
+		left: -36px;
+		border-top: 18px solid transparent;
+		border-right: 18px solid #333;
+		border-left: 18px solid transparent;
+		border-bottom: 18px solid #333;
+		
+	}
+	.team-banner::after {
+		right: -36px;
+		border-top: 18px solid transparent;
+		border-right: 18px solid transparent;
+		border-left: 18px solid #333;
+		border-bottom: 18px solid #333;
+		
+	}
+	.team-content {
+		padding: 25px 0 50px 0;
+	}
+	.bio-image {
+		margin: 50px auto 0 auto;
+	}
+
+	.contact-info-box {
+		width: 240px;
+		margin: 0 auto;
+	}
+	.top-arrow {
+		top: 40px;
+		right: 45px;
+	}
+	.check-it {
+		width: 290px;
+		font-size: 1.6em;
+		margin: 0 auto 2% auto;
+	}
 }
 
 @media (min-width: 650px) {
-	.nav-center {
-		height: 60px;
-		border-bottom: 1px solid silver;
+	.landing-logo-box {
+
 	}
 	.name, .menu-button {
 		display: none;
@@ -1010,12 +1193,20 @@ img {
 		display: flex;
 	}
 	.welcome-logo-box {
-		width: 222px;
+
+	}
+	.welcome-logo {
+		width: 200px;
 	}
 	.plain-menu-box {
 		flex-direction: row;
 		justify-content: center;
 		margin-bottom: 10%;
+	}
+	
+
+	.brand-sub {
+		width: 400px;
 	}
 	.next-button {
 		margin: 10px;
@@ -1034,6 +1225,12 @@ img {
 	.services-button {
 		margin: 5% 0;
 	}
+	.services-section {
+		padding-bottom: 0;
+	}
+	.section-header {
+		margin: 9% 0 0 0;
+	}
 	.team-content {
 		padding: 2% 0;
 	}
@@ -1051,16 +1248,18 @@ img {
 	}
 	.thumb-holder {
 		width: 125px;
-		margin: 0 auto;
+		margin: 0 30px 0 0;
 	}
-	.section-header {
-		margin: 9% 0 2% 0;
-	}
+	
 	.service-desc {
-		width: 415px;
+		width: 365px;
 	}
 	.contact-head {
-		padding 5% 0 2% 0
+		padding 70px 0 0 0
+	}
+	.contact-info-box {
+		width: 300px;
+		
 	}
 	.copy {
 		font-size: 1em;
@@ -1077,6 +1276,7 @@ img {
 		height: 50px;
 		line-height: 2em;
 		font-size: 1.6em;
+		width: 250px;
 	}
 	.team-banner::before {
 		border-top: 25px solid transparent;
@@ -1096,35 +1296,72 @@ img {
 		width 200px
 		height 200px
 	}
+	.centered-bio-text {
+		width: 500px;
+		margin: 0 auto;
+	}
 	.bio-name {
 		text-align: center;
+		padding-left: 0;
 	}
-	.bio-text {
-		padding: 2% 15%;
-	}
+	// .bio-text {
+	// 	padding: 10px 80px;
+	// }
 	.member-image {
 		width 175px
 		height 175px
 		margin: 0;
 		margin-top: 15%;
 	}
-	.info-box {
-		width: 40%;
-	}
+
 	.top-arrow {
-		right: 50px;
-		top 25px
+		right: 100px;
+		top 60px
 	}
-	.last-divider-line-grey {
-		margin: 0 auto 5% auto;
+	.plain-menu-box {
+		border-top: 0;
+	}
+	.check-it {
+		width: 100%;
+		font-size: 1.6em;
+		margin-bottom: 2%;
 	}
 }
 @media (min-width: 850px) {
-	.mini-desc {
-		
+	.centered-bio-text {
+		width: 600px;
 	}
 }
 @media (min-width: 975px) {
+	.nav-center {
+		border-bottom: 1px solid silver;
+	}
+	.landing-logo-box {
+		width: 350px;
+	}
+	.fading-list {
+		height: 56px;
+	}
+	.alt-name {
+		font-size: 3.5em;	
+	}
+	.line {
+		margin-top: 10px;
+		transform: scaleX(1.7);
+	}
+	.button-bar {
+		height: 70px;
+	}
+
+	.enter-button {
+		padding: 0 30px;
+		height: 50px;
+		font-size: 1.7em;
+		line-height: 1.9em;
+		margin-top: 20px
+	}
+	
+
 	.next-button {
 		width: 240px;
 		height: 200px;
@@ -1136,8 +1373,17 @@ img {
 		left: 50%;
 		transform: translateX(-50%);
 	}
+	.welcome-logo-box {
+		width: inherit;
+	}
+	.welcome-logo {
+		width: 220px;
+	}
+	.brand-head {
+		font-size: 3.2em;
+	}
 	.section-header {
-		margin: 2% 0;
+		margin: 2% 0 0 0;
 	}
 	.services-section {
 		padding: 5% 0 2% 0;
@@ -1160,8 +1406,8 @@ img {
 		flex-direction: column;
 		align-items: center;
 	}
-	.divider-line-grey {
-		margin-bottom: 5%;
+	.service-plug {
+		margin: 30px 0 25px 0;
 	}
 	.team-welcome {
 		margin: 0 auto;
@@ -1172,23 +1418,34 @@ img {
 	.team-banner {
 		width: 200px;
 	}
-	.bio {
-		padding-bottom: 5%;
-		padding-top: 5%;
+	.team-content {
+		padding: 50px 0 10px 0;
 	}
+	.bio {
+		// padding-bottom: 5%;
+		// padding-top: 5%;
+	}
+	
 	.bio-image-holder {
 		
 	}
-	.bio-name {
-		padding: 2% 3%;
+	.centered-bio-text {
+		width: 750px;
 	}
-	.bio-image {
-		margin: 0% auto;
+	.bio-name {
+		padding: 15px 0;
+	}
+	.thumb-holder {
+		margin: 0 auto;
 	}
 	.top-arrow {
 		right: 75px;
 		top 55px
 	}
+	.contact-head {
+		padding: 60px 0 0 0
+	}
+
 }
 
 

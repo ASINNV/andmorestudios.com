@@ -4,36 +4,46 @@ $.fn.scrollBottom = function() {
 
 var leaveCounter = 0;
 $(document).ready(function() {
-	(function() {
-		var altName = $( ".alt-name" );
-		var nameIndex = -1;
-		function showNextName() {
-			++leaveCounter;
-			if (leaveCounter === 7) {
-				altName.eq((nameIndex % altName.length) + 1).fadeIn(300);
-				return 0;
-			}
-			++nameIndex;
-			altName.eq(nameIndex % altName.length)
-				.fadeIn(300)
-				.delay(300)
-				.fadeOut(300, showNextName);
-		}
-		
-		showNextName();
 
-		
-	})();
+	// $( ".enter-button" ).click(function() {
+	// 	window.location = "home.html";	
+	// 	$( ".landing-logo-box").addClass("spinnies");
+	// });
 	setTimeout(function() {
-		$( ".studios" ).animate({opacity: "1"}, 300);
-	}, 6300);
-	$( ".line" ).animate({width: "26%"}, 6600, function() {
+		(function() {
+			var altName = $( ".alt-name" );
+			var nameIndex = -1;
+			function showNextName() {
+				++leaveCounter;
+				if (leaveCounter === 7) {
+					altName.eq((nameIndex % altName.length) + 1).fadeIn(300);
+					return 0;
+				}
+				++nameIndex;
+				altName.eq(nameIndex % altName.length)
+					.fadeIn(300)
+					.delay(300)
+					.fadeOut(300, showNextName);
+			}
+			
+			showNextName();
+
+			
+		})();
+
 		setTimeout(function() {
-				
-			$( ".enter-button" ).fadeIn( 300 );	
-				
-		}, 600);
-	});
+			$( ".studios" ).animate({opacity: "1"}, 300);
+		}, 6300);
+		$( ".line" ).animate({width: "200px"}, 6600, function() {
+			$( ".line" ).css("transition", "all 2s ease");	
+			$( ".line" ).css("background", "#40C6FF");
+			setTimeout(function() {
+					
+				$( ".enter-button" ).fadeIn( 300 );	
+					
+			}, 600);
+		});
+	}, 600);
 	$( ".menu-button" ).click(function() {
 		$( ".menu" ).slideToggle( 500 );
 	});
@@ -63,8 +73,23 @@ $(document).ready(function() {
 	});
 	$(window).scroll(function() {
 		if (($(window).scrollTop() > 1) && ($( ".menu" ).css( 'display' ) === 'block')) {
-			$( ".menu" ).slideUp(100);
+			$( ".menu" ).slideUp(300);
 		}	
 	});
-	
+	$( ".desktop-menu-item").hover(function() {
+		$( ".desktop-menu-item" ).toggleClass("unselected-menu-item");
+	});
+	$( ".foot-item").hover(function() {
+		$( ".foot-item" ).toggleClass("unselected-foot-item");
+	});
 });
+
+
+
+
+
+
+
+
+
+
