@@ -311,6 +311,15 @@ img {
   color: #333;
   cursor: pointer;
 }
+.clickCatcher {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
 .home-studios {
   color: #16a8c7;
 }
@@ -322,11 +331,12 @@ img {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 11;
+  z-index: 101;
 }
 .menu-item {
   border-bottom: 1px solid #808080;
   padding: 4% 0;
+  z-index: 101;
 }
 .menu-link {
   color: #fff;
@@ -343,6 +353,7 @@ img {
 .desktop-menu {
   display: none;
   margin-right: 1.5%;
+  z-index: 101;
 }
 .desktop-menu-item {
   padding: 0 5px;
@@ -352,6 +363,7 @@ img {
   font-weight: 600;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
+  z-index: 101;
 }
 .desktop-menu-item:hover {
   color: #2196f3;

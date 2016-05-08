@@ -179,6 +179,7 @@ img {
 	height: 41px;
 	
 }
+
 .logo-box {
 	width: 15%;
 	padding: 2% 0 2% 1.5%;
@@ -203,6 +204,16 @@ img {
 	color: #333;
 	cursor: pointer;
 }
+.clickCatcher {
+	display: none;
+	position: fixed;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 100vw;
+	z-index: 100;
+	
+}
 .home-studios {
 	color: #16A8C7;
 }
@@ -214,11 +225,12 @@ img {
 	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: 11;
+	z-index: 101;
 }
 .menu-item {
 	border-bottom: 1px solid grey;
 	padding: 4% 0;
+	z-index: 101
 }
 .menu-link {
 	color: #FFF;
@@ -233,6 +245,7 @@ img {
 .desktop-menu {
 	display: none;
 	margin-right: 1.5%;
+	z-index: 101;
 }
 .desktop-menu-item {
 	padding: 0 5px;
@@ -241,6 +254,7 @@ img {
 	font-size: 1.2em;
 	font-weight: 600;
 	transition: color 1s ease;
+	z-index: 101;
 
 }
 .desktop-menu-item:hover {
