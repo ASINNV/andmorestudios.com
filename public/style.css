@@ -394,7 +394,7 @@ img {
   text-align: center;
 }
 .welcome-logo-box {
-  margin-top: 5%;
+  margin-top: 25px;
   width: 35%;
 }
 .welcome-logo {
@@ -410,7 +410,7 @@ img {
 }
 .brand-sub {
   color: #03a9f4;
-  padding: 0% 3% 4% 3%;
+  padding: 0 15px 15px 15px;
   font-size: 1.7em;
 /*font-weight: 200;*/
   width: 90%;
@@ -535,7 +535,7 @@ img {
 .divider-line {
   width: 100px;
   height: 3px;
-  background: #333;
+  background: #5a5a5a;
   margin: 10px 0 15px 0;
 }
 .members-contain {
@@ -543,7 +543,7 @@ img {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10%;
+  margin-bottom: 35px;
 }
 .zean {
   position: relative;
@@ -596,6 +596,14 @@ img {
   box-shadow: 0px 0px 0px 4px #666;
   margin-top: 10%;
   padding: 0 5%;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.show-next:hover {
+  border: 4px solid #2196f3;
+  color: #2196f3;
+  background: #fff;
+  box-shadow: 0px 0px 0px 4px #fff;
 }
 /*end of team section*/
 /*start of services section*/
@@ -734,6 +742,7 @@ img {
           align-items: center;
   position: relative;
   background: -webkit-linear-gradient(#2196f3, #07406e);
+  background: -moz-linear-gradient(#2196f3, #07406e);
   color: #fff;
   font-size: 1.4em;
   padding-bottom: 10%;
@@ -848,7 +857,7 @@ img {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 5% 0 0 5%;
+  padding: 20px 0 0 20px;
 }
 .foot-head {
   font-size: 1.3em;
@@ -876,7 +885,7 @@ img {
 .copy {
   width: 100%;
   text-align: right;
-  padding: 5% 5%;
+  padding: 20px 20px;
   font-size: 0.8em;
   color: #888;
   font-family: "Open Sans";
@@ -1138,6 +1147,7 @@ img {
   .next-button {
     font-size: 1.2em;
     line-height: 1.2em;
+    height: 70px;
   }
   .thumb-holder {
     width: 15%;
@@ -1147,6 +1157,7 @@ img {
   }
   .section-header {
     font-size: 1.7em;
+    margin: 35px 0 0 0;
   }
   .member-image {
     height: 100px;
@@ -1185,7 +1196,10 @@ img {
     font-size: 0.8em;
   }
   .copy {
-    padding: 2% 5%;
+    padding: 10px 10px;
+  }
+  .foot-list {
+    padding: 15px 0 0 15px;
   }
 }
 @media (max-width: 465px) and (min-width: 414px) {
@@ -1237,12 +1251,21 @@ img {
   .nav-center {
     height: 60px;
   }
+  .section-header {
+    margin: 40px 0 0 0;
+  }
   .services-section {
     padding: 40px 0 50px 0;
+  }
+  .team-content {
+    padding: 40px 0;
   }
   .contact-section {
     padding-top: 20px;
     padding-bottom: 120px;
+  }
+  .contact-head {
+    padding: 40px 0 0 0;
   }
   .team-banner {
     width: 200px;
@@ -1260,6 +1283,7 @@ img {
   }
   .show-next {
     padding: 0 40px;
+    margin: 40px 0 0 0;
     line-height: 1.6em;
   }
   .check-it {
@@ -1314,6 +1338,16 @@ img {
   .mini-desc {
     margin: 10px auto;
   }
+  .section-header {
+    margin: 50px 0 0 0;
+  }
+  .show-next {
+    margin-top: 40px;
+    padding: 0 20px;
+  }
+  .contact-head {
+    padding: 45px 0 0 0;
+  }
   .team-banner {
     width: 200px;
     font-size: 1.4em;
@@ -1357,6 +1391,11 @@ img {
     padding-top: 10px;
   }
 }
+@media (min-width: 590px) {
+  .brand-sub {
+    padding: 0 40px 40px 40px;
+  }
+}
 @media (min-width: 650px) {
   .name,
   .menu-button {
@@ -1381,7 +1420,7 @@ img {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 10%;
+    margin-bottom: 60px;
   }
   .brand-sub {
     width: 420px;
@@ -1394,7 +1433,7 @@ img {
     width: 190px;
   }
   .show-next {
-    margin: 5% 0;
+    margin: 30px 0;
   }
   .team-content::before {
     border-top-color: #fff;
@@ -1403,19 +1442,19 @@ img {
     margin: 5% 0;
   }
   .services-section {
-    padding-bottom: 0;
+    padding-bottom: 10px;
   }
   .section-header {
-    margin: 9% 0 0 0;
+    margin: 60px 0 0 0;
   }
   .team-content {
-    padding: 2% 0;
+    padding: 10px 0;
   }
   .show-content {
     margin: 5% 0;
   }
   .members-contain {
-    margin-bottom: 5%;
+    margin-bottom: 35px;
   }
   .mini-desc {
     width: 425px;
@@ -1426,6 +1465,9 @@ img {
   .thumb-holder {
     width: 125px;
     margin: 0 30px 0 0;
+  }
+  .service {
+    margin: 15px 0;
   }
   .service-desc {
     width: 365px;
@@ -1438,7 +1480,6 @@ img {
   }
   .copy {
     font-size: 1em;
-    padding: 3% 3%;
   }
   .team-welcome-head {
     font-size: 3em;
@@ -1554,7 +1595,7 @@ img {
     width: 530px;
   }
   .section-header {
-    margin: 2% 0 0 0;
+    margin: 30px 0 0 0;
     font-size: 2.2em;
   }
   .services-section {
@@ -1564,7 +1605,7 @@ img {
     width: 1000px;
   }
   .service-pair {
-    width: 100%;
+    width: 96%;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1595,6 +1636,7 @@ img {
         -ms-flex-align: center;
                 -ms-grid-row-align: center;
             align-items: center;
+    margin: 25px 0;
   }
   .service-plug {
     margin: 30px 0 25px 0;
@@ -1641,5 +1683,12 @@ img {
   .next-button {
     width: 300px;
     height: 260px;
+  }
+  .show-next {
+    margin: 60px 0;
+    width: 425px;
+  }
+  .services-container {
+    width: 1200px;
   }
 }
