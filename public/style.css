@@ -319,6 +319,7 @@ img {
   height: 100vh;
   width: 100vw;
   z-index: 100;
+  -webkit-tap-highlight-color: transparent;
 }
 .home-studios {
   color: #16a8c7;
@@ -617,8 +618,8 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff;
-  color: #555;
+  background: #172938;
+  color: #fff;
   position: relative;
 }
 .services-section::before {
@@ -700,7 +701,6 @@ img {
 }
 .desc-body {
   font-size: 1.1em;
-  color: #666;
   text-align: left;
 }
 .services-button {
@@ -748,7 +748,7 @@ img {
   border-bottom: 0;
   top: 0;
   left: 50%;
-  border-top-color: #fff;
+  border-top-color: #172938;
   border-width: 16px;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -994,6 +994,12 @@ img {
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
+.service-image {
+  background-size: cover;
+  width: 156px;
+  height: 156px;
+  margin: 30px auto;
+}
 .bio-image:hover {
   background: url("https://uberfacts.files.wordpress.com/2012/12/iris_-_left_eye_of_a_girl.jpg") no-repeat center center;
   background-size: cover;
@@ -1002,8 +1008,9 @@ img {
 }
 .bio-name {
   display: block;
-  padding: 0 0 3% 5%;
+  padding: 0 0 3% 0;
   font-size: 1.7em;
+  text-align: center;
   color: #074e88;
 }
 .bio-text {
@@ -1240,7 +1247,8 @@ img {
   .team-banner {
     width: 200px;
   }
-  .bio-image {
+  .bio-image,
+  .service-image {
     margin: 50px auto;
   }
   .contact-info-box {
@@ -1328,7 +1336,8 @@ img {
   .team-content {
     padding: 25px 0 50px 0;
   }
-  .bio-image {
+  .bio-image,
+  .service-image {
     margin: 50px auto 0 auto;
   }
   .contact-info-box {
@@ -1343,6 +1352,9 @@ img {
     width: 290px;
     font-size: 1.6em;
     margin: 0 auto 2% auto;
+  }
+  .bio-name {
+    padding-top: 10px;
   }
 }
 @media (min-width: 650px) {
@@ -1372,7 +1384,7 @@ img {
     margin-bottom: 10%;
   }
   .brand-sub {
-    width: 400px;
+    width: 420px;
   }
   .next-button {
     margin: 10px;
@@ -1455,7 +1467,8 @@ img {
     border-left: 25px solid #333;
     right: -50px;
   }
-  .bio-image {
+  .bio-image,
+  .service-image {
     width: 200px;
     height: 200px;
   }
@@ -1533,14 +1546,16 @@ img {
   .welcome-logo-box {
     width: inherit;
   }
-  .welcome-logo {
-    width: 220px;
-  }
   .brand-head {
-    font-size: 3.2em;
+    font-size: 3.4em;
+    font-weight: 900;
+  }
+  .brand-sub {
+    width: 530px;
   }
   .section-header {
     margin: 2% 0 0 0;
+    font-size: 2.2em;
   }
   .services-section {
     padding: 5% 0 2% 0;
@@ -1611,5 +1626,20 @@ img {
   }
   .contact-head {
     padding: 60px 0 0 0;
+  }
+}
+@media (min-width: 1200px) {
+  .welcome-logo {
+    width: 300px;
+  }
+  .brand-head {
+    font-size: 4.4em;
+  }
+  .brand-sub {
+    font-size: 2.2em;
+  }
+  .next-button {
+    width: 300px;
+    height: 260px;
   }
 }

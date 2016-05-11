@@ -66,17 +66,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/AndMoreIcons_systeminstall copy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 47305,
-		"inputAbbreviatedPath": "\/AndMoreIcons_systeminstall copy.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons_systeminstall copy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/AndMoreIcons_systeminstall.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -84,6 +73,17 @@
 		"initialSize": 57157,
 		"inputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
 		"outputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/AndMoreIcons_systemInstallCopy.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47305,
+		"inputAbbreviatedPath": "\/AndMoreIcons_systemInstallCopy.png",
+		"outputAbbreviatedPath": "\/AndMoreIcons_systemInstallCopy.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -106,17 +106,6 @@
 		"initialSize": 12825,
 		"inputAbbreviatedPath": "\/andmorelogo(web).png",
 		"outputAbbreviatedPath": "\/andmorelogo(web).png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/awesomeBackgroundDesign.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 190,
-		"inputAbbreviatedPath": "\/awesomeBackgroundDesign.png",
-		"outputAbbreviatedPath": "\/awesomeBackgroundDesign.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
