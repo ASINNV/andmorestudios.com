@@ -3,6 +3,14 @@ $.fn.scrollBottom = function() {
 };
 
 var leaveCounter = 0;
+
+if (!localStorage.getItem('page')) {
+	localStorage.setItem('page', 'index.html');	
+} else if (window.location === "studio3.xyz/index.html") {
+	window.location.replace("home.html");
+}
+
+
 $(document).ready(function() {
 
 	// $( ".enter-button" ).click(function() {
