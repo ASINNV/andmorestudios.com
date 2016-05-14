@@ -41,7 +41,7 @@ $(document).ready(function() {
 					
 				$( ".enter-button" ).fadeIn( 300 );	
 					
-			}, 600);
+			}, 300);
 		});
 	}, 600);
 	$( ".menu-button" ).click(function() {

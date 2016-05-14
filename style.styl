@@ -426,6 +426,33 @@ img {
 	border: 4px solid white;
 	margin-top: 10%;
 }
+.zean-member-image {
+	background: url("/zean.jpg") no-repeat center center;
+	background-size 350px
+	background-position 47% 25% 
+}
+.nick-member-image {
+	background: url("/nickBar.jpg") no-repeat center center;
+	background-size 350px
+	background-position 47% 25% 
+}
+.zean-pic {
+	background: url("/zean.jpg") no-repeat center center;
+	background-size 400px
+	background-position 47% 25%
+
+}
+.nick-pic {
+	background: url("/nickBar.jpg") no-repeat center center;
+	background-size cover
+	
+}
+.nick-pic:hover {
+	transition: all .1s ease;
+	background: url("/nickRobe.jpg")
+	background-size 275px
+	background-position 100% 25%
+}
 .nameplate {
 	display: block;
 	padding-top: 4%;
@@ -771,13 +798,13 @@ img {
 	border-bottom: 2px solid #333;
 }
 .bio {
-	padding: 5% 0;
+	padding: 30px 0;
 	// border-top: 2px solid #333;
 }
 .zean-bio {
 	background-color #7DDCEB
 	border-top: 2px solid #333;
-	padding-top: 4%;
+	padding-top: 20px;
 }
 .alt-bio {
 	background-color: #7DDCEB;
@@ -803,8 +830,6 @@ img {
 	text-align: center;
 }
 .bio-image {
-	background: url("http://lorempixel.com/image_output/people-q-c-400-400-1.jpg") no-repeat center center;
-	background-size cover
 	border-radius: 50%;
 	width: 156px;
 	height: 156px;
@@ -812,17 +837,18 @@ img {
 	margin: 30px auto;
 	transition: all 1s ease-out;
 }
+
+.adrian-pic {
+	background: url("/smileADRIANcrop.jpg") no-repeat center center;
+	background-size: cover;
+}
 .service-image {
 	background-size cover
 	width: 156px;
 	height: 156px;
 	margin: 30px auto;
 }
-.bio-image:hover {
-	background: url("https://uberfacts.files.wordpress.com/2012/12/iris_-_left_eye_of_a_girl.jpg") no-repeat center center;
-	background-size cover
-	transition: all ease;
-}
+
 .bio-name {
 	display: block;
 	padding: 0 0 3% 0;
@@ -1104,6 +1130,12 @@ img {
 	.team-content {
 		padding: 40px 0;	
 	}
+	.bio {
+		padding: 30px 0 50px 0;
+	}
+	.zean-bio {
+		padding-top: 20px;
+	}
 	.contact-section {
 		padding-top: 20px;
 		padding-bottom: 120px;
@@ -1115,7 +1147,7 @@ img {
 		width: 200px;
 	}
 	.bio-image, .service-image {
-		margin: 50px auto;
+		margin: 50px auto 10px auto;
 	}
 	.contact-info-box {
 		width: 70%;
@@ -1220,6 +1252,12 @@ img {
 	}
 	.team-content {
 		padding: 25px 0 50px 0;
+	}
+	.bio {
+		padding: 30px 0 50px 0;
+	}
+	.zean-bio {
+		padding-top: 30px;
 	}
 	.bio-image, .service-image {
 		margin: 50px auto 0 auto;
@@ -1360,6 +1398,12 @@ img {
 		border-left: 25px solid #333;
 		right: -50px;
 	}
+	.bio {
+		padding: 30px 0 50px 0;
+	}
+	.zean-bio {
+		padding-top: 30px;
+	}
 	.bio-image, .service-image {
 		width 200px
 		height 200px
@@ -1493,12 +1537,7 @@ img {
 	}
 	.team-content {
 		padding: 50px 0 10px 0;
-	}
-	.bio {
-		// padding-bottom: 5%;
-		// padding-top: 5%;
-	}
-	
+	}	
 	.bio-image-holder {
 		
 	}
@@ -1518,7 +1557,12 @@ img {
 	.contact-head {
 		padding: 60px 0 0 0
 	}
-
+	.bio {
+		padding: 30px 0 50px 0;
+	}
+	.zean-bio {
+		padding-top: 30px;
+	}
 }
 @media (min-width: 1200px) {
 	.welcome-logo {
@@ -1540,6 +1584,12 @@ img {
 	}
 	.services-container {
 		width: 1200px;
+	}
+	.bio {
+		padding: 30px 0 50px 0;
+	}
+	.zean-bio {
+		padding-top: 30px;
 	}
 }
 

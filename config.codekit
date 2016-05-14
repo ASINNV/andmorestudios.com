@@ -177,6 +177,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/nickBar.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 355855,
+		"inputAbbreviatedPath": "\/nickBar.jpg",
+		"outputAbbreviatedPath": "\/nickBar.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/nickRobe.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 58830,
+		"inputAbbreviatedPath": "\/nickRobe.jpg",
+		"outputAbbreviatedPath": "\/nickRobe.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/public\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -205,6 +227,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/smileADRIANcrop.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 482775,
+		"inputAbbreviatedPath": "\/smileADRIANcrop.jpg",
+		"outputAbbreviatedPath": "\/smileADRIANcrop.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/style.styl": {
 		"createSourceMap": 0,
@@ -239,6 +272,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/zean.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 57946,
+		"inputAbbreviatedPath": "\/zean.jpg",
+		"outputAbbreviatedPath": "\/zean.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		}
 	},
 "hooks": [
