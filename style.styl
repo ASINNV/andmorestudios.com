@@ -6,6 +6,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
+  z-index: 2;
 
 }
 html, body, div, span, applet, object, iframe,
@@ -97,8 +98,26 @@ img {
 .alt-name {
 	display: none;
 	color: #F4A259;
+	background: #fff;
+	background: -webkit-linear-gradient(left, #fff 92%, transparent 8%);
 	font-size: 2em;
 	text-align: center;
+	padding-right: 20px;
+	transform: translateX(4%);
+	opacity: 1;
+}
+.and-more {
+	// transform: translateX(-40%);
+	transform: translateY(-100%);
+	transition: transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+	
+}
+.studios {
+	opacity: 0;
+	color: #16A8C7;
+	font-size: 2em;
+	text-align: center;
+	transition: transform 1.2s cubic-bezier(0.79, 0, 0, 1);
 }
 .line {
 	margin: 7.5px 0 15px 0;
@@ -193,10 +212,6 @@ img {
 	color: #F4A259;
 	font-size: 1.6em;
 	text-align: center;
-}
-.studios {
-	opacity: 0;
-	color: #16A8C7;
 }
 .menu-button {
 	text-align: center;
@@ -668,10 +683,15 @@ img {
 // footer section
 
 .foot
+	// position: fixed;
+	// bottom: 0;
+	// width: 100%;
 	display flex
 	flex-direction column
 	font-weight 600
 	background-color #172938
+	// opacity: 0;
+	// z-index: 1;
 
 .foot-list
 	display: flex;
@@ -707,7 +727,11 @@ img {
 	color #888
 	font-family "Open Sans"
 
-
+.trans-div {
+	width: 100%;
+	height: 0;
+	z-index: 0;
+}
 
 
 // team page content starts here
@@ -1086,7 +1110,7 @@ img {
 		width: 125px;
 		height: 125px;
 	}
-	.alt-name {
+	.alt-name, .studios {
 		font-size: 2.5em;	
 	}
 	.line {
@@ -1184,8 +1208,11 @@ img {
 	.fading-list {
 		height: 40px;
 	}
-	.alt-name {
+	.alt-name, .studios {
 		font-size: 2.5em;	
+	}
+	.and-more {
+		// padding-right: 7px;
 	}
 	.line {
 		transform: scaleX(1.2);
@@ -1454,7 +1481,7 @@ img {
 	.fading-list {
 		height: 56px;
 	}
-	.alt-name {
+	.alt-name, .studios {
 		font-size: 3.5em;	
 	}
 	.line {

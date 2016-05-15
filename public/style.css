@@ -6,6 +6,7 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
+  z-index: 2;
 }
 html,
 body,
@@ -187,8 +188,32 @@ img {
 .alt-name {
   display: none;
   color: #f4a259;
+  background: #fff;
+  background: -webkit-linear-gradient(left, #fff 92%, transparent 8%);
   font-size: 2em;
   text-align: center;
+  padding-right: 20px;
+  -webkit-transform: translateX(4%);
+          transform: translateX(4%);
+  opacity: 1;
+}
+.and-more {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+  transition: -webkit-transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+  transition: transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+  transition: transform 1.2s cubic-bezier(0.79, 0, 0, 1), -webkit-transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+}
+.studios {
+  opacity: 0;
+  color: #16a8c7;
+  font-size: 2em;
+  text-align: center;
+  -webkit-transition: -webkit-transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+  transition: -webkit-transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+  transition: transform 1.2s cubic-bezier(0.79, 0, 0, 1);
+  transition: transform 1.2s cubic-bezier(0.79, 0, 0, 1), -webkit-transform 1.2s cubic-bezier(0.79, 0, 0, 1);
 }
 .line {
   margin: 7.5px 0 15px 0;
@@ -299,10 +324,6 @@ img {
   color: #f4a259;
   font-size: 1.6em;
   text-align: center;
-}
-.studios {
-  opacity: 0;
-  color: #16a8c7;
 }
 .menu-button {
   text-align: center;
@@ -922,6 +943,11 @@ img {
   color: #888;
   font-family: "Open Sans";
 }
+.trans-div {
+  width: 100%;
+  height: 0;
+  z-index: 0;
+}
 .team-welcome {
   text-align: center;
   width: 80%;
@@ -1241,7 +1267,8 @@ img {
     width: 125px;
     height: 125px;
   }
-  .alt-name {
+  .alt-name,
+  .studios {
     font-size: 2.5em;
   }
   .line {
@@ -1338,7 +1365,8 @@ img {
   .fading-list {
     height: 40px;
   }
-  .alt-name {
+  .alt-name,
+  .studios {
     font-size: 2.5em;
   }
   .line {
@@ -1601,7 +1629,8 @@ img {
   .fading-list {
     height: 56px;
   }
-  .alt-name {
+  .alt-name,
+  .studios {
     font-size: 3.5em;
   }
   .line {
