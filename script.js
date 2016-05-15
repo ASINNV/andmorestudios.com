@@ -4,11 +4,6 @@ $.fn.scrollBottom = function() {
 
 var leaveCounter = 0;
 
-// if (!localStorage.getItem('page')) {
-// 	localStorage.setItem('page', 'index.html');	
-// } else if (window.location === "studio3.xyz/index.html") {
-// 	window.location.replace("home.html");
-// }
 function leadIn(left, morePad, right, bg) {
 	$( ".and-more" ).css("background", bg);
 	$( ".and-more" ).css("padding-right", morePad);
@@ -51,9 +46,12 @@ function leadIn(left, morePad, right, bg) {
 			});
 		}, 600);
 }
+// if (!localStorage.getItem('page')) {
+// 	localStorage.setItem('page', 'index.html');	
+// } else if (window.location === "studio3.xyz/index.html") {
+// 	window.location.replace("home.html");
+// }
 
-
-// var heightOfFooter = $( ".foot" ).outerHeight(true);
 
 
 
@@ -136,6 +134,7 @@ $(document).ready(function() {
 	// 	} 
 	// });
 
+	
 });
 
 

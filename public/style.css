@@ -94,7 +94,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  font-family: "Helvetica Neue";
+  font-family: Lato;
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -865,6 +865,15 @@ img {
 }
 .info {
   padding: 5px 0 10px 0;
+}
+.mailer {
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.mailer:hover {
+  color: #adb0f3;
 }
 .top-button-box {
   display: -webkit-box;
