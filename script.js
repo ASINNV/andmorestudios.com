@@ -2,6 +2,33 @@ $.fn.scrollBottom = function() {
   return $(document).height() - this.scrollTop() - this.height(); 
 };
 
+var $animation_elements = $('.animation-element');
+var $window = $(window);
+
+function check_if_in_view() {
+		var window_height = $window.height();
+		var window_top_position = $window.scrollTop();
+		var window_bottom_position = (window_top_position + window_height);
+
+		$.each($animation_elements, function() {
+			var $element = $(this);
+			var element_height = $element.outerHeight();
+			var element_top_position = $element.offset().top;
+			var element_bottom_position = (element_top_position + element_height);
+
+			// check to see if this current container is within viewport
+			if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+				$element.addClass('in-view');
+			} else {
+				$element.removeClass('in-view');
+			}
+		});
+	}
+
+
+
+
+
 var leaveCounter = 0;
 
 function leadIn(left, morePad, right, bg) {
@@ -69,18 +96,23 @@ function leadIn(left, morePad, right, bg) {
 // }
 
 $(document).ready(function() {
- 	
-	if (window.matchMedia( "(min-width: 975px)" ).matches) {
-		leadIn("translateX(49%)", "20px", "translateY(-100%) translateX(-36%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
+	$window.on('scroll', check_if_in_view);
+	$window.on('scroll resize', check_if_in_view);
+	$window.trigger('scroll');
 
+	if (window.matchMedia( "(min-width: 975px)" ).matches) {
+		leadIn("translateX(46.5%)", "20px", "translateY(-100%) translateX(-36%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
+		// setTimeout(function() {
+ 	// 		$('.all-wrapper').animate({opacity: 1}, 500);
+ 	// 	}, 200);	
 	} else if (window.matchMedia( "(max-width: 974px) and (min-width: 466px)" ).matches) {
-		leadIn("translateX(53%)", "12px", "translateY(-100%) translateX(-34%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
+		leadIn("translateX(50%)", "12px", "translateY(-100%) translateX(-34%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
 
 	} else if (window.matchMedia( "(max-width: 465px) and (min-width: 414px)" ).matches) {
-		leadIn("translate(50.5%)", "12px", "translateY(-100%) translateX(-36.5%)", "-webkit-linear-gradient( left, #fff 94%, transparent");
+		leadIn("translate(47%)", "12px", "translateY(-100%) translateX(-36.5%)", "-webkit-linear-gradient( left, #fff 94%, transparent");
 
 	} else {
-		leadIn("translateX(49%)", "12px", "translateY(-100%) translateX(-36%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
+		leadIn("translateX(45%)", "12px", "translateY(-100%) translateX(-36%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
 	}
 
 	$( ".menu-button" ).click(function() {
@@ -127,6 +159,34 @@ $(document).ready(function() {
 	$( ".foot-item").hover(function() {
 		$( ".foot-item" ).toggleClass("unselected-foot-item");
 	});
+	$( ".contact-foot-item").hover(function() {
+		$( ".contact-foot-item" ).toggleClass("contact-unselected-foot-item");
+	});
+
+	// PARTNERS BAND JS
+	// PARTNERS BAND JS
+	$( ".partner" ).click(function() {
+		if ($(this).hasClass("partner")) {
+			$(this).addClass("scaled-partner").removeClass("partner");	
+			$(".partner").addClass("downscaled-partner").removeClass("partner");
+
+
+		} else if ($(this).hasClass("downscaled-partner")) {
+			$(".scaled-partner").addClass("downscaled-partner").removeClass("scaled-partner");
+			$(this).addClass("scaled-partner").removeClass("downscaled-partner");
+
+		} else {
+			$(".downscaled-partner").addClass("partner").removeClass("downscaled-partner");
+			$(".scaled-partner").addClass("partner").removeClass("scaled-partner");
+		}
+	});
+	// PARTNERS BAND JS
+	// PARTNERS BAND JS
+
+	
+
+	
+
 	// $(window).scroll(function () {
 	// 	if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
 	// 		$( ".trans-div" ).animate({height: $( ".foot" ).outerHeight()});
@@ -134,6 +194,13 @@ $(document).ready(function() {
 	// 	} 
 	// });
 
+	
+	// $(window).scrollTop( function() {
+	// 	if (($(window).offSet().top + 80) >= $('.section-header').offSet().top) {
+	// 		$('.section-header').css("position", "fixed");
+	// 		alert("face");
+	// 	}
+	// });
 	
 });
 

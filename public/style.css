@@ -8,6 +8,10 @@ html {
   box-sizing: inherit;
   z-index: 2;
 }
+@font-face {
+  font-family: "Lato";
+  src: url("/font-lato/Lato-Regular.ttf");
+}
 html,
 body,
 div,
@@ -193,8 +197,8 @@ img {
   font-size: 2em;
   text-align: center;
   padding-right: 20px;
-  -webkit-transform: translateX(4%);
-          transform: translateX(4%);
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
   opacity: 1;
 }
 .and-more {
@@ -242,7 +246,6 @@ img {
   display: none;
   cursor: pointer;
   color: #2b8db7;
-  font-family: "Helvetica Neue";
   text-decoration: none;
   height: 35px;
   line-height: 1.9em;
@@ -759,6 +762,7 @@ img {
   text-align: left;
 }
 .services-button {
+  opacity: 0;
   text-decoration: none;
   text-align: center;
   color: #fff;
@@ -950,7 +954,6 @@ img {
   padding: 20px 20px;
   font-size: 0.8em;
   color: #888;
-  font-family: "Open Sans";
 }
 .trans-div {
   width: 100%;
@@ -965,7 +968,6 @@ img {
 }
 .team-welcome-head {
   font-size: 1.8em;
-  font-family: "Open Sans";
   font-weight: 900;
   color: #333;
   padding: 5px;
@@ -992,14 +994,13 @@ img {
 .team-banner {
   background-color: #333;
   color: #fff;
-  font-size: 1.2em;
-  line-height: 1.6em;
+  font-size: 1.1em;
+  line-height: 1.7em;
   height: 30px;
   width: 130px;
   text-align: center;
   margin: 0 auto;
   position: relative;
-  font-family: Charter;
 }
 .team-banner::before {
   left: -30px;
@@ -1092,7 +1093,7 @@ img {
 }
 .service-plug {
   text-align: center;
-  margin: 15px 0 20px 0;
+  margin: 15px 0 15px 0;
 }
 .check-it {
   width: 220px;
@@ -1180,6 +1181,120 @@ img {
 .contact-info {
   padding: 5px 0 10px 0;
   font-size: 1.3em;
+}
+.contact-foot {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  font-weight: 600;
+  background-color: #fff;
+}
+.contact-foot-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+}
+.contact-foot-head {
+  font-size: 1.3em;
+  padding-bottom: 10px;
+  color: #2196f3;
+}
+.contact-foot-item {
+  font-size: 1.1em;
+  padding-bottom: 5px;
+  color: #888;
+  text-decoration: none;
+  -webkit-transition: color 1s ease;
+  transition: color 1s ease;
+}
+.contact-foot-item:hover {
+  color: #2196f3;
+  -webkit-transition: color 0.01s ease;
+  transition: color 0.01s ease;
+}
+.contact-unselected-foot-item {
+  -webkit-transition: color ease;
+  transition: color ease;
+  color: #555;
+}
+.contact-copy {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0 10px 0;
+  font-size: 0.8em;
+  color: #999;
+}
+.partner-band {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-top: 1px solid rgba(50,50,50,0.1);
+  border-bottom: 1px solid rgba(50,50,50,0.1);
+  margin: 0 5px;
+}
+.partner {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+  border: 2px double #add8e6;
+  border-radius: 50%;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.scaled-partner {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+  border: 2px double #add8e6;
+  border-radius: 50%;
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.downscaled-partner {
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+  border: 2px double #add8e6;
+  border-radius: 50%;
+  -webkit-transform: scale(0.7, 0.7);
+          transform: scale(0.7, 0.7);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.animation-element {
+  position: relative;
+  opacity: 0;
+  -webkit-transition: all 1500ms ease;
+  transition: all 1500ms ease;
+}
+.animation-element.partner.in-view,
+.in-view {
+  opacity: 1;
 }
 @media (max-width: 413px) {
   .landing-logo-box {
@@ -1347,6 +1462,12 @@ img {
   .contact-info-box {
     width: 70%;
   }
+  .partner,
+  .scaled-partner,
+  .downscaled-partner {
+    width: 55px;
+    height: 55px;
+  }
   .top-arrow {
     top: 55px;
     right: 30px;
@@ -1467,10 +1588,29 @@ img {
   .bio-name {
     padding-top: 10px;
   }
+  .partner-band {
+    margin: 0 10px;
+  }
+  .partner,
+  .scaled-partner,
+  .downscaled-partner {
+    width: 65px;
+    height: 65px;
+  }
 }
 @media (min-width: 590px) {
   .brand-sub {
     padding: 0 40px 40px 40px;
+  }
+  .partner-band {
+    margin: 0 30px;
+  }
+  .partner,
+  .scaled-partner,
+  .downscaled-partner {
+    width: 75px;
+    height: 75px;
+    margin: 15px 0;
   }
 }
 @media (min-width: 650px) {
@@ -1552,6 +1692,16 @@ img {
   .contact-head {
     padding: 70px 0 0 0;
   }
+  .partner-band {
+    margin: 0 20px;
+  }
+  .partner,
+  .scaled-partner,
+  .downscaled-partner {
+    width: 90px;
+    height: 90px;
+    margin: 15px 0;
+  }
   .contact-info-box {
     width: 300px;
   }
@@ -1626,6 +1776,17 @@ img {
 @media (min-width: 850px) {
   .centered-bio-text {
     width: 600px;
+  }
+  .partner-band {
+    margin: 0 20px;
+    padding: 0 70px;
+  }
+  .partner,
+  .scaled-partner,
+  .downscaled-partner {
+    width: 90px;
+    height: 90px;
+    margin: 15px 0;
   }
 }
 @media (min-width: 975px) {
@@ -1759,6 +1920,17 @@ img {
   .zean-bio {
     padding-top: 30px;
   }
+  .partner-band {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .partner,
+  .scaled-partner,
+  .downscaled-partner {
+    width: 90px;
+    height: 90px;
+    margin: 15px 0;
+  }
 }
 @media (min-width: 1200px) {
   .welcome-logo {
@@ -1786,5 +1958,20 @@ img {
   }
   .zean-bio {
     padding-top: 30px;
+  }
+  .partner-band {
+    width: 1100px;
+    margin: 0 auto;
+  }
+  .partner,
+  .scaled-partner,
+  .downscaled-partner {
+    width: 90px;
+    height: 90px;
+    margin: 15px 0;
+  }
+  .contact-foot {
+    width: 1100px;
+    margin: 0 auto;
   }
 }
