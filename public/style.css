@@ -8,10 +8,6 @@ html {
   box-sizing: inherit;
   z-index: 2;
 }
-@font-face {
-  font-family: "Lato";
-  src: url("/font-lato/Lato-Regular.ttf");
-}
 html,
 body,
 div,
@@ -98,7 +94,7 @@ video {
   border: 0;
   font-size: 100%;
   font: inherit;
-  font-family: Lato;
+  font-family: 'Lato';
   vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -474,7 +470,14 @@ img {
   font-weight: 600;
   padding: 3% 5%;
   background: #2196f3;
-  border-bottom: 2px solid #555;
+  border-bottom: 1px solid #555;
+  border-top: 1px solid #555;
+}
+.next-button:last-child {
+  border-top: 0;
+}
+.next-button:first-child {
+  border-bottom: 0;
 }
 .just-looking {
   width: 90%;
@@ -499,7 +502,6 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 2px solid #555;
 }
 /*end of intro section*/
 /*start of team section*/
@@ -1289,7 +1291,7 @@ img {
   background: #2196f3;
 }
 .friends {
-  width: 75px;
+  width: 50px;
   font-size: 0.8em;
   -webkit-transform: translateY(6px);
           transform: translateY(6px);
@@ -1297,7 +1299,7 @@ img {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  background: -webkit-linear-gradient(left, transparent, #fff, #fff, #fff, transparent);
+  background: #fff;
 }
 @media (max-width: 413px) {
   .landing-logo-box {
@@ -1707,7 +1709,7 @@ img {
   }
   .friends {
     font-size: 1em;
-    width: 100px;
+    width: 70px;
     -webkit-transform: translateY(8px);
             transform: translateY(8px);
   }
