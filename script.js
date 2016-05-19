@@ -19,9 +19,10 @@ function check_if_in_view() {
 			// check to see if this current container is within viewport
 			if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
 				$element.addClass('in-view');
-			} else {
-				$element.removeClass('in-view');
-			}
+			} 
+			// else {
+			// 	$element.removeClass('in-view');
+			// }
 		});
 	}
 
@@ -165,7 +166,7 @@ $(document).ready(function() {
 
 	// PARTNERS BAND JS
 	// PARTNERS BAND JS
-	$( ".partner" ).click(function() {
+	$( ".partner" ).hover(function() {
 		if ($(this).hasClass("partner")) {
 			$(this).addClass("scaled-partner").removeClass("partner");	
 			$(".partner").addClass("downscaled-partner").removeClass("partner");
