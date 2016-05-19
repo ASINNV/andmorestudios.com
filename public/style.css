@@ -433,6 +433,7 @@ img {
   color: #777;
 }
 .brand-sub {
+  text-decoration: none;
   color: #03a9f4;
   padding: 0 15px 15px 15px;
   font-size: 1.7em;
