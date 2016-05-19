@@ -11,17 +11,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/AndMoreIcons-03.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19026,
-		"inputAbbreviatedPath": "\/AndMoreIcons-03.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons-03.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/AndMoreIcons-04.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -33,39 +22,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/AndMoreIcons-06.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18966,
-		"inputAbbreviatedPath": "\/AndMoreIcons-06.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons-06.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/AndMoreIcons_design.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24095,
-		"inputAbbreviatedPath": "\/AndMoreIcons_design.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons_design.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/AndMoreIcons_socialmedia.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14255,
-		"inputAbbreviatedPath": "\/AndMoreIcons_socialmedia.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons_socialmedia.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/AndMoreIcons_systeminstall.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -73,28 +29,6 @@
 		"initialSize": 57157,
 		"inputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
 		"outputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/AndMoreIcons_systemInstallCopy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 47305,
-		"inputAbbreviatedPath": "\/AndMoreIcons_systemInstallCopy.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons_systemInstallCopy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/AndMoreIcons_Webdesign.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10913,
-		"inputAbbreviatedPath": "\/AndMoreIcons_Webdesign.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons_Webdesign.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -119,6 +53,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/cracked-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19026,
+		"inputAbbreviatedPath": "\/cracked-mobile.png",
+		"outputAbbreviatedPath": "\/cracked-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/croppy.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -138,6 +83,17 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/graphic-design.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24095,
+		"inputAbbreviatedPath": "\/graphic-design.png",
+		"outputAbbreviatedPath": "\/graphic-design.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/home.html": {
 		"fileType": 8192,
@@ -239,6 +195,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/social-media.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14255,
+		"inputAbbreviatedPath": "\/social-media.png",
+		"outputAbbreviatedPath": "\/social-media.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/style.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -255,6 +222,17 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},
+	"\/systems.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47305,
+		"inputAbbreviatedPath": "\/systems.png",
+		"outputAbbreviatedPath": "\/systems.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/team.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -263,6 +241,28 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/tech-support.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18966,
+		"inputAbbreviatedPath": "\/tech-support.png",
+		"outputAbbreviatedPath": "\/tech-support.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/web-dev.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10913,
+		"inputAbbreviatedPath": "\/web-dev.png",
+		"outputAbbreviatedPath": "\/web-dev.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/zean.html": {
 		"fileType": 8192,
