@@ -113,16 +113,10 @@ $(document).ready(function() {
 		$( ".clickCatcher" ).hide();
 	});
 
-	$('a').click(function() {
-		if ( $( ".menu" ).css( 'display' ) === 'block' ) {
-			$( ".menu" ).toggle();
-		}
-		$('html, body').animate({
-			scrollTop: $( $(this).attr('href') ).offset().top
-		}, 1200);
+	$(".next-button").click(function() {
+		$('html, body').animate({ scrollTop: $( $(this).attr('href') ).offset().top }, 1200);
 		return false;
 	});
-	
 	$(window).scroll(function(){
 		if ($(window).scrollBottom() < 300) {
 			$(".smooth").fadeIn(500);
