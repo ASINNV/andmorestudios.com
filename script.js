@@ -6,28 +6,25 @@ var $animation_elements = $('.animation-element');
 var $window = $(window);
 
 function check_if_in_view() {
-		var window_height = $window.height();
-		var window_top_position = $window.scrollTop();
-		var window_bottom_position = (window_top_position + window_height);
+	var window_height = $window.height();
+	var window_top_position = $window.scrollTop();
+	var window_bottom_position = (window_top_position + window_height);
 
-		$.each($animation_elements, function() {
-			var $element = $(this);
-			var element_height = $element.outerHeight();
-			var element_top_position = $element.offset().top;
-			var element_bottom_position = (element_top_position + element_height);
+	$.each($animation_elements, function() {
+		var $element = $(this);
+		var element_height = $element.outerHeight();
+		var element_top_position = $element.offset().top;
+		var element_bottom_position = (element_top_position + element_height);
 
-			// check to see if this current container is within viewport
-			if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-				$element.addClass('in-view');
-			} 
-			// else {
-			// 	$element.removeClass('in-view');
-			// }
-		});
-	}
-
-
-
+		// check to see if this current container is within viewport
+		if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
+			$element.addClass('in-view');
+		} 
+		// else {
+		// 	$element.removeClass('in-view');
+		// }
+	});
+}
 
 
 var leaveCounter = 0;
@@ -81,21 +78,6 @@ function leadIn(left, morePad, right, bg) {
 // }
 
 
-
-
-
-// function atBottom() {
-
-// 	var bottomOfWindow = $(window).scrollTop() + $(window).height();
-// 	var bottomOfFoot = $( ".foot" ).offset().top + $( ".foot" ).outerHeight();
-
-// 	if (bottomOfWindow === bottomOfFoot) {
-// 		$( ".trans-div" ).animate({height: $( ".foot" ).outerHeight()});
-// 	} else {
-// 		return null
-// 	}
-// }
-
 $(document).ready(function() {
 	$window.on('scroll', check_if_in_view);
 	$window.on('scroll resize', check_if_in_view);
@@ -124,7 +106,7 @@ $(document).ready(function() {
 		$( ".menu").slideUp( 500 );
 		$( ".clickCatcher" ).hide();
 	});
-	
+
 	$('a').click(function() {
 		if ( $( ".menu" ).css( 'display' ) === 'block' ) {
 			$( ".menu" ).toggle();
@@ -164,44 +146,59 @@ $(document).ready(function() {
 		$( ".contact-foot-item" ).toggleClass("contact-unselected-foot-item");
 	});
 
-	// PARTNERS BAND JS
-	// PARTNERS BAND JS
-	$( ".partner" ).hover(function() {
-		if ($(this).hasClass("partner")) {
-			$(this).addClass("scaled-partner").removeClass("partner");	
-			$(".partner").addClass("downscaled-partner").removeClass("partner");
+	// PARTNERS BAND JS (GROW & SHRINK)
+	// PARTNERS BAND JS (GROW & SHRINK)
 
-
-		} else if ($(this).hasClass("downscaled-partner")) {
+	
+	$( ".partner" ).click(function() {
+			
+		if ($(this).hasClass("downscaled-partner")) {
+			
 			$(".scaled-partner").addClass("downscaled-partner").removeClass("scaled-partner");
 			$(this).addClass("scaled-partner").removeClass("downscaled-partner");
 
-		} else {
+		} else if ($(this).hasClass("scaled-partner")) {
+
 			$(".downscaled-partner").addClass("partner").removeClass("downscaled-partner");
-			$(".scaled-partner").addClass("partner").removeClass("scaled-partner");
+			$(this).addClass("partner").removeClass("scaled-partner");
+
+		} else {
+
+			$(this).addClass("scaled-partner").removeClass("partner");	
+			$(".partner").addClass("downscaled-partner");
+			$(this).addClass("partner");
+
 		}
+
 	});
-	// PARTNERS BAND JS
-	// PARTNERS BAND JS
+
+
+	// PARTNERS JS (CLICK AWAY TO NEGATE EFFECT)
+
+	$(".partner").click(function() {
+
+		if ($(this).hasClass("downscaled-partner")) {
+			$(".click-catcher-2").show();
+		} else if (!$(this).hasClass("scaled-partner") && (!$(this).hasClass("downscaled-partner"))) {
+			$(".click-catcher-2").hide();
+		} else {
+			$(".click-catcher-2").show();
+		}
+
+	});
+
+	$(".click-catcher-2").click(function() {
+
+		$(".partner").removeClass("scaled-partner").removeClass("downscaled-partner");
+		$(".click-catcher-2").hide();
+
+	});
+
+	// PARTNERS JS (CLICK AWAY TO NEGATE EFFECT)
 
 	
-
-	
-
-	// $(window).scroll(function () {
-	// 	if ($(window).scrollTop() >= $(document).height() - $(window).height()) {
-	// 		$( ".trans-div" ).animate({height: $( ".foot" ).outerHeight()});
-	// 		$( ".foot" ).animate({opacity: 1});
-	// 	} 
-	// });
-
-	
-	// $(window).scrollTop( function() {
-	// 	if (($(window).offSet().top + 80) >= $('.section-header').offSet().top) {
-	// 		$('.section-header').css("position", "fixed");
-	// 		alert("face");
-	// 	}
-	// });
+	// PARTNERS BAND JS (GROW & SHRINK)
+	// PARTNERS BAND JS (GROW & SHRINK)	
 	
 });
 

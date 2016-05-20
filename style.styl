@@ -6,7 +6,7 @@ html {
 }
 *, *:before, *:after {
   box-sizing: inherit;
-  z-index: 2;
+  // z-index: 2;
 
 }
 html, body, div, span, applet, object, iframe,
@@ -203,27 +203,6 @@ img {
 	height: 41px;
 	
 }
-
-.logo-box {
-	width: 15%;
-	padding: 2% 0 2% 1.5%;
-	text-align: center;
-}
-.nav-logo {
-	max-height: 50px;
-}
-.name {
-	color: #F4A259;
-	font-size: 1.6em;
-	text-align: center;
-}
-.menu-button {
-	text-align: center;
-	width: 15%;
-	font-size: 3em;
-	color: #333;
-	cursor: pointer;
-}
 .clickCatcher {
 	display: none;
 	position: fixed;
@@ -231,10 +210,39 @@ img {
 	top: 0;
 	height: 100vh;
 	width: 100vw;
-	z-index: 100;
+	z-index: 12;
 	-webkit-tap-highlight-color: transparent;
 	
 }
+.logo-box {
+	width: 15%;
+	padding: 2% 0 2% 1.5%;
+	text-align: center;
+	position: relative;
+	z-index: 101;
+}
+.nav-logo {
+	max-height: 50px;
+	position: relative;
+}
+.home-button {
+	position: relative;
+}
+.name {
+	color: #F4A259;
+	font-size: 1.6em;
+	text-align: center;
+}
+.menu-button {
+	position: relative;
+	text-align: center;
+	width: 15%;
+	font-size: 3em;
+	color: #333;
+	cursor: pointer;
+	z-index: 101;
+}
+
 .home-studios {
 	color: #16A8C7;
 }
@@ -246,12 +254,12 @@ img {
 	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: 101;
+	z-index: 20;
 }
 .menu-item {
 	border-bottom: 1px solid grey;
 	padding: 4% 0;
-	z-index: 101
+	z-index: 20;
 }
 .menu-link {
 	color: #FFF;
@@ -1088,18 +1096,25 @@ img {
 	// transition all 1s ease
 	cursor pointer
 	background #2196f3
+	z-index: 11;
 
 .friends {
 	width: 50px;
-	font-size: .8em;
-	transform: translateY(6px);
+	font-size: .5em;
+	transform: translateY(5px);
 	color: #999;
 	margin: 0 auto;
 	text-align center
 	position: relative;
 	background: #fff;
 }
-
+.click-catcher-2 {
+	display: none;
+	position: fixed;
+	z-index: 10;
+	width: 100%;
+	height: 100%;
+}
 // CONTACT PAGE CSS FOR PARTNERS BAND WITH CIRCLULAR PARTNER PICTURES IN IT	
 // CONTACT PAGE CSS FOR PARTNERS BAND WITH CIRCLULAR PARTNER PICTURES IN IT	
 
@@ -1483,9 +1498,15 @@ img {
 		border: 4px double #fff;
 		line-height: 1.1em;
 		height: 116px;
-		width: 190px;
-		
+		width: 190px;	
 	}
+	.next-button:first-child {
+		border-bottom: 4px double #fff;
+	}
+	.next-button:last-child {
+		border-top: 4px double #fff;
+	}
+	
 	.show-next {
 		margin: 30px 0;
 	}
@@ -1537,9 +1558,9 @@ img {
 	}
 	
 	.friends {
-		font-size: 1em;
+		font-size: .7em;
 		width: 70px;
-		transform: translateY(8px);
+		transform: translateY(6px);
 	}
 	.partner-band {
 		margin: 0 20px;
