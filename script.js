@@ -99,8 +99,14 @@ $(document).ready(function() {
 	}
 
 	$( ".menu-button" ).click(function() {
-		$( ".menu" ).slideToggle( 500 );
-		$( ".clickCatcher" ).show();
+		if ($( ".menu" ).css('display') === 'block') {
+			$( ".menu" ).slideUp( 500 );	
+			$( ".clickCatcher" ).hide();
+		} else {
+			$( ".menu" ).slideDown( 500 );
+			$( ".clickCatcher" ).show();	
+		}
+		
 	});
 	$( ".clickCatcher" ).click(function() {
 		$( ".menu").slideUp( 500 );
@@ -153,7 +159,7 @@ $(document).ready(function() {
 	$( ".partner" ).click(function() {
 			
 		if ($(this).hasClass("downscaled-partner")) {
-			
+
 			$(".scaled-partner").addClass("downscaled-partner").removeClass("scaled-partner");
 			$(this).addClass("scaled-partner").removeClass("downscaled-partner");
 

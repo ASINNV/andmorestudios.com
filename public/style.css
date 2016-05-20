@@ -325,7 +325,7 @@ img {
   padding: 2% 0 2% 1.5%;
   text-align: center;
   position: relative;
-  z-index: 101;
+  z-index: 13;
 }
 .nav-logo {
   max-height: 50px;
@@ -346,7 +346,7 @@ img {
   font-size: 3em;
   color: #333;
   cursor: pointer;
-  z-index: 101;
+  z-index: 13;
 }
 .home-studios {
   color: #16a8c7;
@@ -359,12 +359,12 @@ img {
   position: fixed;
   left: 0;
   right: 0;
-  z-index: 20;
+  z-index: 13;
 }
 .menu-item {
   border-bottom: 1px solid #808080;
   padding: 4% 0;
-  z-index: 20;
+  z-index: 13;
 }
 .menu-link {
   color: #fff;
@@ -381,7 +381,7 @@ img {
 .desktop-menu {
   display: none;
   margin-right: 1.5%;
-  z-index: 101;
+  z-index: 13;
 }
 .desktop-menu-item {
   padding: 0 5px;
@@ -391,7 +391,7 @@ img {
   font-weight: 600;
   -webkit-transition: color 1s ease;
   transition: color 1s ease;
-  z-index: 101;
+  z-index: 13;
 }
 .desktop-menu-item:hover {
   color: #2196f3;
