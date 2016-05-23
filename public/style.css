@@ -267,6 +267,7 @@ img {
 .home-line {
   margin: 7.5px 0 10px 0;
   width: 0%;
+  opacity: 0;
   height: 3px;
   background: #f4a259;
 }
