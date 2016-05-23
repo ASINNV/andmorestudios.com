@@ -11,6 +11,83 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/and-more-studios-device-repair.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 19026,
+		"inputAbbreviatedPath": "\/and-more-studios-device-repair.png",
+		"outputAbbreviatedPath": "\/and-more-studios-device-repair.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/and-more-studios-graphic-design.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 24095,
+		"inputAbbreviatedPath": "\/and-more-studios-graphic-design.png",
+		"outputAbbreviatedPath": "\/and-more-studios-graphic-design.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/and-more-studios-main-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 27648,
+		"inputAbbreviatedPath": "\/and-more-studios-main-logo.png",
+		"outputAbbreviatedPath": "\/and-more-studios-main-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/and-more-studios-social-media-management.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 14255,
+		"inputAbbreviatedPath": "\/and-more-studios-social-media-management.png",
+		"outputAbbreviatedPath": "\/and-more-studios-social-media-management.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/and-more-studios-systems.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 47305,
+		"inputAbbreviatedPath": "\/and-more-studios-systems.png",
+		"outputAbbreviatedPath": "\/and-more-studios-systems.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/and-more-studios-technical-support.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18966,
+		"inputAbbreviatedPath": "\/and-more-studios-technical-support.png",
+		"outputAbbreviatedPath": "\/and-more-studios-technical-support.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/and-more-studios-web-development.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10913,
+		"inputAbbreviatedPath": "\/and-more-studios-web-development.png",
+		"outputAbbreviatedPath": "\/and-more-studios-web-development.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/AndMoreIcons-04.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -53,28 +130,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/cracked-mobile.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19026,
-		"inputAbbreviatedPath": "\/cracked-mobile.png",
-		"outputAbbreviatedPath": "\/cracked-mobile.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/croppy.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27648,
-		"inputAbbreviatedPath": "\/croppy.png",
-		"outputAbbreviatedPath": "\/croppy.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/css\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -83,17 +138,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/graphic-design.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24095,
-		"inputAbbreviatedPath": "\/graphic-design.png",
-		"outputAbbreviatedPath": "\/graphic-design.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/home.html": {
 		"fileType": 8192,
@@ -195,17 +239,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/social-media.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14255,
-		"inputAbbreviatedPath": "\/social-media.png",
-		"outputAbbreviatedPath": "\/social-media.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/style.styl": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -222,17 +255,6 @@
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0
 		},
-	"\/systems.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 47305,
-		"inputAbbreviatedPath": "\/systems.png",
-		"outputAbbreviatedPath": "\/systems.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/team.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -241,28 +263,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/tech-support.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18966,
-		"inputAbbreviatedPath": "\/tech-support.png",
-		"outputAbbreviatedPath": "\/tech-support.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/web-dev.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10913,
-		"inputAbbreviatedPath": "\/web-dev.png",
-		"outputAbbreviatedPath": "\/web-dev.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/zean.html": {
 		"fileType": 8192,

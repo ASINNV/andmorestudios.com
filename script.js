@@ -170,11 +170,17 @@ function leadIn(left, morePad, right, bg) {
 
 
 $(document).ready(function() {
+	
 	$window.on('scroll', check_if_in_view);
 	$window.on('scroll resize', check_if_in_view);
-	$window.trigger('scroll');
 	$window.on('scroll', check_if_line_touches);
 	$window.on('scroll resize', check_if_line_touches);
+	$window.on('scroll', page_indicator);
+	$window.on('scroll resize', page_indicator);
+	$window.trigger('scroll');
+	// setTimeout(function() {
+	// 	$( ".home-line" ).animate({width: "100%"}, 600);	
+	// }, 600);
 
 	$('.white-overlay-home').fadeOut(1000);
 
@@ -280,9 +286,7 @@ $(document).ready(function() {
 // page indicator function call
 // page indicator function call
 
-	setTimeout(function() {
-		$( ".home-line" ).animate({width: "100%"}, 600);	
-	}, 600);
+	
 
 	$(document).on('scroll', page_indicator);
 
