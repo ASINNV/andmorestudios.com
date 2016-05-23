@@ -7,6 +7,67 @@ var $window = $(window);
 var origin_top = $(window).scrollTop() + $(".nav-bar").outerHeight() + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
 // var origin_bottom = origin_top + $('.home-line').outerHeight();
 
+
+// page indicator JS
+// page indicator JS
+
+	var nav_height = $(".nav-bar").outerHeight();
+	var height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
+
+function page_indicator() {
+	var height_before_animation_home_line = $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
+		var animation_area = ($(document).outerHeight() - $(window).outerHeight() - height_before_animation - 1);
+		
+		var scroll_position = ($(window).scrollTop() + nav_height - height_before_animation);
+		var numerator = (animation_area - scroll_position);
+		var percentage = (numerator / animation_area);
+		if ($('.stand-in').css('display') === 'block') {
+			
+			$('.indicator-container').fadeIn(500);
+			$('.content-indicator-backdrop').fadeIn(500);
+			$('.content-indicator-1').fadeIn(500);
+			$('.content-indicator-1').css('width', ( 100 - ( 100 * ( (animation_area - ( $('.team-content').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) );
+			$('.content-indicator-2').fadeIn(500);
+			$('.content-indicator-2').css('width', ( 100 - ( 100 * ( (animation_area - ( $('.services-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) );
+			
+			
+			$('.stand-in').css( 'width', (100 - (percentage*100) + '%'));
+			
+		
+		
+			// if ( $('.stand-in').css('width') < ( 100 - ( 100 * ( (animation_area - ( $('.team-content').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 4 + '%' ) ){
+			// 	$('.stand-in').css('background', '#f4a259');
+			// } else if (      ( $('.stand-in').css('width') >= ( 100 - ( 100 * ( (animation_area - ( $('.team-content').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) ) && ( $('.stand-in').css('width') < ( 100 - ( 100 * ( (animation_area - ( $('.services-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 4 + '%' ) )       ) {
+			// 	$('.stand-in').css('background', '#fff');
+		
+		
+			
+			
+			// } else if (     ( $('.stand-in').css('width') >= ( 100 - ( 100 * ( (animation_area - ( $('.services-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) ) && ( $('.stand-in').css('width') < ( 100 - ( 100 * ( (animation_area - ( $('.contact-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 4 + '%' ) )      ) {
+			// 	$('.stand-in').css('background', '#6ed3c7');	
+			// } else {
+				
+			// }
+			
+
+		} else {
+
+			$('.stand-in').css('width', '0');
+			$('.indicator-container').fadeOut(0);
+			$('.content-indicator-backdrop').fadeOut(0);
+			$('.content-indicator-1').fadeOut(0);
+			$('.content-indicator-2').fadeOut(0);
+
+			var home_line_percentage = ((height_before_animation_home_line - $(window).scrollTop())/height_before_animation_home_line);
+			$('.home-line').css('width', (home_line_percentage*100 + '%'));
+
+		}
+}
+
+// page indicator JS
+// page indicator JS
+
+
 function check_if_in_view() {
 	var window_height = $window.height();
 	var window_top_position = $window.scrollTop();
@@ -52,6 +113,8 @@ function check_if_line_touches() {
 	});
 }
 
+
+
 var leaveCounter = 0;
 
 function leadIn(left, morePad, right, bg) {
@@ -85,12 +148,15 @@ function leadIn(left, morePad, right, bg) {
 				$( ".studios" ).css("transform", left);
 				$( ".studios" ).animate({opacity: "1"}, 1200);
 			}, 6000);
-			$( ".line" ).animate({width: "200px"}, 6600, function() {
-				$( ".line" ).css("transition", "all 1.5s linear");	
-				$( ".line" ).css("background", "#E4E4E4");
+			$( ".line" ).animate({width: "100%"}, 6600, function() {
+				// $( ".line" ).css("transition", "all 1.5s linear");	
+				// $( ".line" ).css("background", "#E4E4E4");
 				setTimeout(function() {
-						
-					$( ".enter-button" ).fadeIn( 300 );	
+					$('.line').css("transition", "transform .6s ease-in-out").css("transform", "translateY(15px)");
+					setTimeout(function() {
+					$( ".enter-button" ).fadeIn( 300 );
+					}, 150);
+					
 						
 				}, 600);
 			});
@@ -109,58 +175,54 @@ $(document).ready(function() {
 	$window.trigger('scroll');
 	$window.on('scroll', check_if_line_touches);
 	$window.on('scroll resize', check_if_line_touches);
-	var nav_height = $(".nav-bar").outerHeight();
-	var height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
+
+	$('.white-overlay-home').fadeOut(1000);
 
 
 
 	if (window.matchMedia( "(min-width: 975px)" ).matches) {
 		leadIn("translateX(49.5%)", "20px", "translateY(-100%) translateX(-33%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
-		// var nav_height = $(".nav-bar").outerHeight();
-		// var height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		$window.on('scroll', function() {
-			nav_height = $(".nav-bar").outerHeight();
-			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		});
-		$window.on('scroll resize', function() {
-			nav_height = $(".nav-bar").outerHeight();
-			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		});
+		
 		
 	} else if (window.matchMedia( "(max-width: 974px) and (min-width: 466px)" ).matches) {
 		leadIn("translateX(50%)", "12px", "translateY(-100%) translateX(-33.5%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
-		// var nav_height = $(".nav-bar").outerHeight();
-		// var height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		$window.on('scroll', function() {
-			nav_height = $(".nav-bar").outerHeight();
-			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		});
-		$window.on('scroll resize', function() {
-			nav_height = $(".nav-bar").outerHeight();
-			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		});
+		
 
 	} else if (window.matchMedia( "(max-width: 465px) and (min-width: 414px)" ).matches) {
 		leadIn("translate(50%)", "12px", "translateY(-100%) translateX(-33.5%)", "-webkit-linear-gradient( left, #fff 94%, transparent");
-		// var nav_height = $(".nav-bar").outerHeight();
-		// var height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		$window.on('scroll', function() {
-			nav_height = $(".nav-bar").outerHeight();
-			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		});
-		$window.on('scroll resize', function() {
-			nav_height = $(".nav-bar").outerHeight();
-			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		});
+		
 
+	} else {
+		leadIn("translate(49%)", "12px", "translateY(-100%) translateX(-33%)", "-webkit-linear-gradient( left, #fff 94%, transparent");
+		
 	}
+	$window.on('scroll', function() {
+			nav_height = $(".nav-bar").outerHeight();
+			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
+			page_indicator();
+			
+		});
+	$window.on('resize', function() {
+			nav_height = $(".nav-bar").outerHeight();
+			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
+			page_indicator();
+
+	});
 
 	$(".enter-button").click(function(e) {
 		e.preventDefault();
-		$(".enter-button").css("transition", "transform 250ms cubic-bezier(0, 0.99, 0.39, 1)").css("transform", "scale(.9, .9)");
+		$(".enter-button").css("transition", "transform .25s cubic-bezier(0, 1, 0, 1), opacity .25s linear").css("transform", "scale(.1, .1)").css("opacity", 0);
+		// setTimeout(function() {
+			$('.white-overlay').fadeIn(750);
+			$('.landing-intro').css("transition", "all .75s cubic-bezier(1, 0, 1, 0)").css("transform", "scale(.1, .1)");
+		// }, 100);
+		
+		// setTimeout(function() {
+		// 	$(".enter-button").css("transition", "opacity 250ms ease").css("opacity", "0");	
+		// }, 25);
 		setTimeout( function() {
 				document.location.assign("/home.html");
-		}, 500);
+		}, 850);
 	});
 	$( ".menu-button" ).click(function() {
 		if ($( ".menu" ).css('display') === 'block') {
@@ -215,38 +277,17 @@ $(document).ready(function() {
 
 
 
-// page indicator JS
-// page indicator JS
+// page indicator function call
+// page indicator function call
 
 	setTimeout(function() {
 		$( ".home-line" ).animate({width: "100%"}, 600);	
 	}, 600);
 
-	$(document).on('scroll', function() {
+	$(document).on('scroll', page_indicator);
 
-		var height_before_animation_home_line = $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
-		var animation_area = ($(document).outerHeight() - $(window).outerHeight() - height_before_animation - 1);
-		
-		var scroll_position = ($(window).scrollTop() + nav_height - height_before_animation);
-		var numerator = (animation_area - scroll_position);
-		var percentage = (numerator / animation_area);
-		if ($('.stand-in').css('display') === 'block') {
-			$('.stand-in').css( 'width', (100 - (percentage*100) + '%'));
-
-			// $('.home-line').css('width', '0');
-
-		} else {
-
-			var home_line_percentage = ((height_before_animation_home_line - $(window).scrollTop())/height_before_animation_home_line);
-			$('.home-line').css('width', (home_line_percentage*100 + '%'));
-
-			
-			$('.stand-in').css('width', '0');
-		}
-	});
-
-// page indicator JS
-// page indicator JS
+// page indicator function call
+// page indicator function call
 
 
 
