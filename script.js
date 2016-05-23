@@ -170,7 +170,7 @@ function leadIn(left, morePad, right, bg) {
 
 
 $(document).ready(function() {
-
+	
 	$window.on('scroll', check_if_in_view);
 	$window.on('scroll resize', check_if_in_view);
 	$window.on('scroll', check_if_line_touches);
@@ -179,10 +179,10 @@ $(document).ready(function() {
 	$window.on('scroll resize', page_indicator);
 	$window.trigger('scroll');
 	setTimeout(function() {
-		$( ".home-line" ).animate({opacity: "1"}, 600);	
+		$( ".home-line-inner-case" ).animate({width: "100%"}, 600);
 	}, 300);
 
-	$('.white-overlay-home').fadeOut(1000);
+	$('.white-overlay-home').fadeOut(750);
 
 
 

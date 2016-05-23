@@ -264,10 +264,19 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.home-line-inner-case {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 .home-line {
   margin: 7.5px 0 10px 0;
   width: 0%;
-  opacity: 0;
   height: 3px;
   background: #f4a259;
 }
