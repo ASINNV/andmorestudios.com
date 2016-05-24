@@ -171,19 +171,19 @@ function leadIn(left, morePad, right, bg) {
 
 $(document).ready(function() {
 	
+
 	$window.on('scroll', check_if_in_view);
 	$window.on('scroll resize', check_if_in_view);
 	$window.on('scroll', check_if_line_touches);
 	$window.on('scroll resize', check_if_line_touches);
-	$window.on('scroll', page_indicator);
-	$window.on('scroll resize', page_indicator);
+	$window.on('scroll resize', page_indicator).trigger('scroll');
 	$window.trigger('scroll');
 	setTimeout(function() {
 		$( ".home-line-inner-case" ).animate({width: "100%"}, 600);
 	}, 300);
 
 	$('.white-overlay-home').fadeOut(750);
-
+	
 
 
 	if (window.matchMedia( "(min-width: 975px)" ).matches) {
@@ -202,12 +202,13 @@ $(document).ready(function() {
 		leadIn("translate(49%)", "12px", "translateY(-100%) translateX(-33%)", "-webkit-linear-gradient( left, #fff 94%, transparent");
 		
 	}
+
 	$window.on('scroll', function() {
 			nav_height = $(".nav-bar").outerHeight();
 			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
 			page_indicator();
 			
-		});
+	});
 	$window.on('resize', function() {
 			nav_height = $(".nav-bar").outerHeight();
 			height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
@@ -285,10 +286,6 @@ $(document).ready(function() {
 
 // page indicator function call
 // page indicator function call
-
-	
-
-	$(document).on('scroll', page_indicator);
 
 // page indicator function call
 // page indicator function call
