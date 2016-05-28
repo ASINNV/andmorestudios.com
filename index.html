@@ -6,17 +6,31 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>And More Studios - Web Development, Graphic Design, Tech Repair, and more…</title>
 	<link rel="stylesheet" href="public/style.css" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,300,400italic,700,900,300italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
 	<script>
 		if (localStorage.getItem('key')) {
-		window.location.assign("http://studio3.xyz/home.html");
+		// window.location.assign("http://studio3.xyz/home.html");
+		setTimeout(function() {
+			$( '#welcome-back' ).css("opacity", 1);	
+		}, 800);
+		setTimeout(function() {
+			$( ".enter-button" ).fadeIn( 600 );		
+		}, 1600);
+
 	} else if (!localStorage.getItem('key')) {
+		setTimeout(function() {
+			$('#welcome-back').css('display', 'none')	;
+		}, 300);
+		
 		localStorage.setItem('key', 'value');
+		setTimeout(function() {
+			$( ".enter-button" ).fadeIn( 300 );
+		}, 8100);
 	}
+	
 	</script>
 
 	<a href="home.html" class="crawl-link"></a>
@@ -44,10 +58,11 @@
 			<div class="landing-line-case">
 				<div class="line"></div>	
 			</div>
-
+			<div id="welcome-back">Welcome Back!</div>
 			<div class="button-bar">
 				<a href="home.html" class="enter-button">ENTER</a>
 			</div>
+
 	</div>
 
 
