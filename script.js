@@ -1,15 +1,70 @@
 $.fn.scrollBottom = function() {return $(document).height() - this.scrollTop() - this.height();
 };
 
+
+
+
+
+// var controller = new ScrollMagic.Controller();
+// var scene = new ScrollMagic.Scene({
+// 	triggerElement: '.home-line',
+// 	duration: 400,
+// 	triggerHook: "onLeave"	
+// }).setPin('.stand-in');
+// controller.addScene(scene);
+
+
+	// $(function () { // wait for document ready
+	// 	// init
+	// 	var controller = new ScrollMagic.Controller({
+	// 		globalSceneOptions: {
+	// 			triggerHook: 'onLeave'
+	// 		}
+	// 	});
+
+	// 	// get all slides
+	// 	var slides = document.querySelectorAll(".bio");
+
+	// 	// create scene for every slide
+	// 	for (var i=0; i<slides.length; i++) {
+	// 		new ScrollMagic.Scene({
+	// 				triggerElement: slides[i]
+	// 			})
+	// 			.setPin(slides[i])
+	// 			// .addIndicators() // add indicators (requires plugin)
+	// 			.addTo(controller);
+	// 	}
+	// });
+
+
+var $contact_section = $('.contact-section');
+var $team_content = $('.team-content');
+var $services_section = $('.services-section');
+var $nav_bar = $('.nav-bar');
 // for height of indicator line
+var $welcome_logo_box = $('.welcome-logo-box');
+var $brand_head = $('.brand-head');
+var $stand_in = $('.stand-in');
+var $home_line = $('.home-line');
+
+var $and_more = $('.and-more');
+var $studios = $('.studios');
+var $line = $('.line');
+
 var $indicator_container = $('.indicator-container');
+var $content_indicator_backdrop = $('.content-indicator-backdrop');
+var $content_indicator_1 = $('.content-indicator-1');
+var $content_indicator_2 = $('.content-indicator-2');
+var $content_indicator_3 = $('.content-indicator-3');
+
 
 var $animation_line_elements = $('.animation-line-element');
 var $animation_elements = $('.animation-element');
 var $window = $(window);
+var $document = $(document);
 
 // the point at which indicator line appears on screen
-var origin_top = $(window).scrollTop() + $(".nav-bar").outerHeight() + $indicator_container.outerHeight() + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").outerHeight() + 7.5;
+var origin_top = $window.scrollTop() + $nav_bar.outerHeight() + $indicator_container.outerHeight() + $welcome_logo_box.outerHeight(true) + $brand_head.outerHeight() + 7.5;
 
 // var origin_bottom = origin_top + $('.home-line').outerHeight();
 
@@ -17,57 +72,50 @@ var origin_top = $(window).scrollTop() + $(".nav-bar").outerHeight() + $indicato
 // page indicator JS
 // page indicator JS
 
-	var nav_height = $(".nav-bar").outerHeight();
-	var height_before_animation = nav_height + $(".welcome-logo-box").outerHeight(true) + $(".brand-head").height() + 7.5;
-	var home_line_height_before_animation = $(".welcome-logo-box").outerHeight(true) + $(".brand-head").height() + 7.5 - $indicator_container.outerHeight();
+	var nav_height = $nav_bar.outerHeight();
+	var height_before_animation = nav_height + $welcome_logo_box.outerHeight(true) + $brand_head.height() + 7.5;
+	var home_line_height_before_animation = $welcome_logo_box.outerHeight(true) + $brand_head.height() + 7.5 - $indicator_container.outerHeight();
 
 function page_indicator() {
-		var animation_area = ($(document).outerHeight() + nav_height + $indicator_container.outerHeight() - $(window).outerHeight() - height_before_animation);
+		var animation_area = ($document.outerHeight() + nav_height + $indicator_container.outerHeight() - $window.outerHeight() - height_before_animation);
 		
-		var scroll_position = ($(window).scrollTop() + nav_height + $indicator_container.outerHeight() - height_before_animation);
-		var scroll_from_top = $(window).scrollTop() + nav_height;
-		var home_line_scroll_from_top = $(window).scrollTop();
+		var scroll_position = ($window.scrollTop() + nav_height + $indicator_container.outerHeight() - height_before_animation);
+		var scroll_from_top = $window.scrollTop() + nav_height;
+		var home_line_scroll_from_top = $window.scrollTop();
 		var numerator = (animation_area - scroll_position);
 		var percentage = (numerator / animation_area);
+		var indicator_offset_top;
+		function indicator_width(which) {
+			if (which.length) {
+				indicator_offset_top = which.offset().top;
+			}
+			return ( 100 - ( 100 * ( (animation_area - ( indicator_offset_top + $nav_bar.outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' );
+		}
 		if (scroll_from_top >= height_before_animation) {
 			
-			$('.indicator-container').fadeIn(500);
-			$('.content-indicator-backdrop').fadeIn(500);
-			$('.content-indicator-1').fadeIn(500);
-			$('.content-indicator-1').css('width', ( 100 - ( 100 * ( (animation_area - ( $('.team-content').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) );
-			$('.content-indicator-2').fadeIn(500);
-			$('.content-indicator-2').css('width', ( 100 - ( 100 * ( (animation_area - ( $('.services-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) );
+			$indicator_container.fadeIn(500);
+			$content_indicator_backdrop.fadeIn(500);
+			$content_indicator_1.fadeIn(500);
+			$content_indicator_1.css('width', indicator_width($team_content) );
+			$content_indicator_2.fadeIn(500);
+			$content_indicator_2.css('width', indicator_width($services_section) );
+			$content_indicator_3.fadeIn(500);
+			$content_indicator_3.css('width', indicator_width($contact_section) );
 			
 			
-			$('.stand-in').css( 'width', (100 - (percentage*100) + '%'));
-			
-		
-		
-			// if ( $('.stand-in').css('width') < ( 100 - ( 100 * ( (animation_area - ( $('.team-content').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 4 + '%' ) ){
-			// 	$('.stand-in').css('background', '#f4a259');
-			// } else if (      ( $('.stand-in').css('width') >= ( 100 - ( 100 * ( (animation_area - ( $('.team-content').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) ) && ( $('.stand-in').css('width') < ( 100 - ( 100 * ( (animation_area - ( $('.services-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 4 + '%' ) )       ) {
-			// 	$('.stand-in').css('background', '#fff');
-		
-		
-			
-			
-			// } else if (     ( $('.stand-in').css('width') >= ( 100 - ( 100 * ( (animation_area - ( $('.services-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 2 + '%' ) ) && ( $('.stand-in').css('width') < ( 100 - ( 100 * ( (animation_area - ( $('.contact-section').offset().top + $(".nav-bar").outerHeight() - height_before_animation ) )/animation_area ) ) - 4 + '%' ) )      ) {
-			// 	$('.stand-in').css('background', '#6ed3c7');	
-			// } else {
-				
-			// }
+			$stand_in.css( 'width', (100 - (percentage*100) + '%'));
 			
 
 		} else {
 
-			$('.stand-in').css('width', '0');
-			$('.indicator-container').fadeOut(200);
-			$('.content-indicator-backdrop').fadeOut(200);
-			$('.content-indicator-1').fadeOut(200);
-			$('.content-indicator-2').fadeOut(200);
+			$stand_in.css('width', '0');
+			$indicator_container.fadeOut(200);
+			$content_indicator_backdrop.fadeOut(200);
+			$content_indicator_1.fadeOut(200);
+			$content_indicator_2.fadeOut(200);
 
 			var home_line_percentage = ((home_line_height_before_animation - home_line_scroll_from_top)/home_line_height_before_animation);
-			$('.home-line').css('width', (home_line_percentage*100 + '%'));
+			$home_line.css('width', (home_line_percentage*100 + '%'));
 
 		}
 }
@@ -89,8 +137,8 @@ function check_if_in_view() {
 
 		// check to see if this current container is within viewport
 		if ((element_bottom_position >= window_top_position) && (element_top_position <= window_bottom_position)) {
-			$element.addClass('in-view');
-		} 
+			$element.addClass('in-view');	
+		}
 		// else {
 		// 	$element.removeClass('in-view');
 		// }
@@ -99,7 +147,7 @@ function check_if_in_view() {
 
 
 function check_if_line_touches() {
-	var nav_height = $(".nav-bar").outerHeight();
+	var nav_height = $nav_bar.outerHeight();
 	// var window_height = $window.height();
 	var nav_top_position = $window.scrollTop();
 	var nav_bottom_position = (nav_top_position + nav_height);
@@ -114,9 +162,9 @@ function check_if_line_touches() {
 
 		if (element_top_position <= nav_bottom_position) {
 			// $element.addClass('affix-me');
-			$(".stand-in").show();
+			$stand_in.show();
 		} else if (element_top_position <= origin_top) {
-			$(".stand-in").hide();
+			$stand_in.hide();
 		} 
 	});
 }
@@ -126,8 +174,8 @@ function check_if_line_touches() {
 var leaveCounter = 0;
 
 function leadIn(left, morePad, right, bg) {
-	$( ".and-more" ).css("background", bg);
-	$( ".and-more" ).css("padding-right", morePad);
+	$and_more.css("background", bg);
+	$and_more.css("padding-right", morePad);
 	setTimeout(function() {
 		(function() {
 			var altName = $( ".alt-name" );
@@ -152,15 +200,15 @@ function leadIn(left, morePad, right, bg) {
 
 		setTimeout(function() {
 				// $( ".alt-name" ).css("transform", "translateX(-56%)");
-			$( ".and-more" ).css("transform", right);
-			$( ".studios" ).css("transform", left);
-			$( ".studios" ).animate({opacity: "1"}, 1200);
+			$and_more.css("transform", right);
+			$studios.css("transform", left);
+			$studios.animate({opacity: "1"}, 1200);
 		}, 6000);
-		$( ".line" ).animate({width: "100%"}, 6600, function() {
+		$line.animate({width: "100%"}, 6600, function() {
 			// $( ".line" ).css("transition", "all 1.5s linear");	
 			// $( ".line" ).css("background", "#E4E4E4");
 			setTimeout(function() {
-				$('.line').css("transition", "transform .6s ease-in-out").css("transform", "translateY(15px)");
+				$line.css("transition", "transform .6s ease-in-out").css("transform", "translateY(15px)");
 				
 					
 						
@@ -238,6 +286,7 @@ $(document).ready(function() {
 		$('html, body').animate({ scrollTop: ($( $(this).attr('href') ).offset().top - nav_height) }, 600);
 		return false;
 	});
+	
 
 	$( ".menu-button" ).click(function() {
 		if ($( ".menu" ).css('display') === 'block') {
@@ -314,42 +363,23 @@ $(document).ready(function() {
 
 
 
-
-
-
-
-
-
-
-	// $('.top-of-next').click(function() {
-	// 		$('html, body').animate({ scrollTop: $( this ).parent().next().offset().top }, 600);
-	// 			return false;
-	// });
-
-	// $(window).on('scroll', function() {
-	// 	$('.bio').each(function() {
-	// 		$('html, body').animate({ scrollTop: $( this ).offset().top }, 600);
-	// 	});
-	// });
 	
-
-		// $(document).on('scroll', function() {
-			// $('html, body').animate({ scrollTop: $( this ).parent().next().offset().top }, 600);
-		// 	return false;
-		// });
-
-	// $('.top-of-next').click(function() {
-	// 	$( this ).parent().prev().prev().children().css("transition", "all 2s ease").css("opacity", "0");
-	// 	$( this ).parent().prev().prev().css("transition", "all 2s ease").css("height", "0");
-	// 	setTimeout(function() {
-	// 		$( this ).parent().prev().prev().children().css("display", "none");	
+	
+	// $(".show-rest").click(function() {
+	// 	disableScroll();
+	// 	$('html, body').animate({ scrollTop: ($document.outerHeight() - $window.outerHeight())}, 300, function() {
+	// 		enableScroll();
 	// 	});
-	// 	// enableScroll();
-	// });	
-
-
-
-
+	// 	$('.show-rest').fadeOut(300);
+	// 	return false;
+	// });
+	// $(".top-of-next").click(function() {
+	// 	disableScroll();
+	// 	$('html, body').animate({ scrollTop: ($(this).offset().top)}, 300, function() {
+	// 		enableScroll();
+	// 	});
+	// 	return false;
+	// });
 
 	$(window).scroll(function(){
 		if ($(window).scrollBottom() < 300) {
