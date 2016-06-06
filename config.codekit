@@ -68,6 +68,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/and-more-studios-marketing-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17120,
+		"inputAbbreviatedPath": "\/and-more-studios-marketing-icon.png",
+		"outputAbbreviatedPath": "\/and-more-studios-marketing-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/and-more-studios-phone.png": {
 		"fileType": 32768,
 		"ignore": 0,
