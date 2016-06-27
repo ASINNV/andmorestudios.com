@@ -962,43 +962,6 @@ img {
 	text-align: left;
 	color: white;
 }
-.workers-header {
-  width: 450px;
-  padding-top: 10px;
-  display: none;
-}
-.workers {
-  display: none;
-  width: 450px;
-}
-.worker-nick, .worker-kiljan, .worker-zean, .worker-adrian, .worker-kane {
-  border-radius: 5px;
-  margin-right: 2px;
-  width: 50px;
-  height: 50px;
-  border: 2px solid white;
-  margin-top: 10%;
-}
-.worker-nick {
-  background-size: 700px;
-  background-position: -38px -6px;
-}
-.worker-kiljan {
-  background-size: 700px;
-  background-position: -280px -5px;
-}
-.worker-adrian {
-  background-size: 700px;
-  background-position: -644px -2px;
-}
-.worker-zean {
-  background-size: 1150px;
-  background-position: -230px -9px;
-}
-.worker-kane {
-  background-size: 700px;
-  background-position: -38px -6px;
-}
 
 
 
@@ -1120,11 +1083,6 @@ img {
 .mailer {
 	// text-decoration: none;
 	color: white;
-	cursor: pointer;
-	transition: all .5s ease;
-}
-.mailer:hover {
-	color: #ADB0F3;
 }
 .address-link {
 	color: #fff;
@@ -1625,6 +1583,9 @@ img {
 
 // services page starts here (and uses some of the team page selectors above)
 .down-arrow-case {
+  display: none;
+}
+.realms-holder {
   display: none;
 }
 
@@ -2191,6 +2152,9 @@ img {
 	.alt-name, .studios {
 		font-size: 2.5em;
 	}
+  .menu-button, .name {
+    font-size: 1.3em;
+  }
 	.brand-head {
     font-size: 2.4em;
   }
@@ -2272,9 +2236,12 @@ img {
     font-size: 1.3em;
   }
 	.bio {
-		height: 91vh;
-		height: calc(100vh - 60px);
+		height: 100vh;
+    justify-content: center;
 	}
+  .bio-content {
+    height: calc(100vh - 60px);
+  }
 	.bio:last-child {
 		height: 100vh;
 	}
@@ -2915,9 +2882,6 @@ img {
   .bottom-button {
     font-size: 1.1em;
   }
-	.to-services, .services-section-header {
-		display: none;
-	}
 	.services-section {
 		padding: 0;
 	}
@@ -3006,9 +2970,6 @@ img {
 		width: 90px;
 		height: 90px;
 	}
-  .arrow-and-text:hover {
-    color: red;
-  }
   .plain-menu-box {
     position: relative;
     bottom: auto;
@@ -3118,13 +3079,37 @@ img {
     width: 100px;
     height: 100px;
   }
-  .section-header {
+  .section-header, .contact-head {
+    padding: 0;
     margin: 0;
+    font-size: 3em;
   }
+
   // services section
+  .to-services, .service-head {
+		display: none;
+	}
+  .service-desc {
+    width: 100%;
+    padding: 5% 10%;
+  }
+  .desc-head {
+    font-size: 1.6em;
+    margin-bottom: 20px;
+  }
+  .desc-body {
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
 
   // team section
-
+  .divider-line-case {
+    width: 320px;
+  }
+  .divider-line {
+    display: block;
+    margin: 10px 0 30px 0;
+  }
   .team-banner {
     text-decoration: none;
   }
@@ -3148,6 +3133,30 @@ img {
   	border: 3px solid white;
   	margin-top: 10%;
   }
+  // contact section
+  .contact-divider-line-case {
+    width: 230px;
+  }
+  .emailer {
+    height: auto;
+  }
+  .contact-info-head {
+    width: 60px;
+    height: 60px;
+  }
+  .contact-info {
+    font-size: 1.4em;
+  }
+  .top-arrow {
+    width: 50px;
+    height: 50px;
+  }
+  .to-top-text {
+    font-size: 1.1em;
+  }
+  .arrow-and-text {
+    margin-top: 50px;
+  }
 .nick-member-image, .adrian-member-image, .kiljan-member-image, .kane-member-image {
 	border-radius: 50%;
 	width: 140px;
@@ -3155,7 +3164,7 @@ img {
 	border: 3px solid white;
 	margin-top: 10%;
 }
-.adrian-member-image, .adrian-pic, .zean-member-image, .zean-pic, .nick-member-image, .nick-pic, .kiljan-member-image, .kiljan-pic, .kane-pic, .kane-member-image, .worker-nick, .worker-kiljan, .worker-zean, .worker-adrian, .worker-kane {
+.adrian-member-image, .adrian-pic, .zean-member-image, .zean-pic, .nick-member-image, .nick-pic, .kiljan-member-image, .kiljan-pic, .kane-pic, .kane-member-image {
 	background-image: url("/photos.jpg");
 	background-repeat: no-repeat;
 }
@@ -3209,18 +3218,11 @@ img {
     padding: 0 15px;
     transition: all .2s ease-in-out;
   }
-  .contact-head {
-    padding: 0;
-  }
+  // contact section
   .check-it {
     margin: 0 auto 10px auto;
   }
-  .workers {
-    display: flex;
-  }
-  .workers-header {
-    display: block;
-  }
+
   .blue-line-case {
     width: 196px;
   }
@@ -3240,10 +3242,7 @@ img {
   .service-thumb-holder {
     width: 175px;
   }
-  .service-desc {
-    width: 100%;
-    padding: 10%;
-  }
+
   .future-lettering {
     letter-spacing: 4px;
   }
@@ -3266,8 +3265,16 @@ img {
   .contact-box-container {
     padding: 60px 0;
   }
+  .contact-info-box {
+    width: 440px;
+  }
   .contact-service-plug {
     padding: 7% 0;
+  }
+  .address-link:hover, .mailer:hover {
+    cursor: pointer;
+    transition: all .5s ease;
+    color: #adb0f3;
   }
   // services page
   // .service-image {
@@ -3284,6 +3291,47 @@ img {
     width: 200px;
     height: 200px;
   }
+  // team page
+  .realms-holder {
+    display: block;
+    width: 100%;
+    padding: 0 5%;
+  }
+  .workers-header {
+    width: 100%;
+    padding: 10px 5% 0 5%;
+  }
+  .realm-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #333;
+    background: #6b9b4c;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-right: 2px;
+
+  }
+  .realms, .workers {
+    display: flex;
+    width: 100%;
+  }
+  .realms-header {
+    width: 100%;
+    padding-top: 10px;
+  }
+  .realm {
+    width: 50px;
+    margin: 2px;
+  }
+  .worker {
+    width: 60px;
+  }
+
+
 }
 @media (min-width: 1200px) {
   .all-content-wrapper {
