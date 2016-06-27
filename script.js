@@ -86,8 +86,8 @@ var $services_section = $('.services-section');
 var $team_section = $('.team-section');
 var $contact_section = $('.contact-section');
 
-var $team_banner = $('.team-banner');
-var $blue_line_case = $('.blue-line-case');
+// var $team_banner = $('.team-banner');
+// var $blue_line_case = $('.blue-line-case');
 var $home_nav = $('.home-nav');
 
 var $and_more = $('.and-more');
@@ -186,20 +186,18 @@ function check_if_line_touches() {
 	}
 }
 
-function desktop_banners() {
-	if (window.matchMedia("(min-width: 1024px)").matches) {
-		$team_banner.mouseover(function() {
-			$blue_line_case.animate({bottom: "33px"}, 100);
-			$(this).addClass('future-lettering');
-
-		});
-		$team_banner.mouseleave(function() {
-			$blue_line_case.animate({bottom: "31px"}, 100);
-			$(this).removeClass('future-lettering');
-
-		});
-	}
-}
+// function desktop_banners() {
+// 	if (window.matchMedia("(min-width: 1024px)").matches) {
+// 		$team_banner.mouseover(function() {
+// 			$(this).addClass('future-lettering');
+//
+// 		});
+// 		$team_banner.mouseleave(function() {
+// 			$(this).removeClass('future-lettering');
+//
+// 		});
+// 	}
+// }
 
 function check_if_in_view() {
 	var window_height = $window.height();
@@ -230,7 +228,7 @@ function check_if_in_view() {
 		third_nav();
 		check_if_line_touches();
 		page_indicator();
-		desktop_banners();
+		// desktop_banners();
 	}
 
 

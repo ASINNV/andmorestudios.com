@@ -3033,6 +3033,9 @@ img {
   .team-banner {
     text-decoration: none;
   }
+  .team-banner:hover {
+    letter-spacing: 4px;
+  }
   .team-content {
     -webkit-box-pack: center;
     -webkit-justify-content: center;
@@ -3162,9 +3165,6 @@ img {
   }
   .service-thumb-holder {
     width: 175px;
-  }
-  .future-lettering {
-    letter-spacing: 4px;
   }
   .button-text-group {
     -webkit-transition: -webkit-transform 0.1s ease-in-out;
