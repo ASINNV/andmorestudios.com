@@ -14,23 +14,23 @@
 		if (localStorage.getItem('key')) {
 		// window.location.assign("http://studio3.xyz/home.html");
 		setTimeout(function() {
-			$( '#welcome-back' ).css("opacity", 1);	
+			$( '#welcome-back' ).css("opacity", 1);
 		}, 800);
 		setTimeout(function() {
-			$( ".enter-button" ).fadeIn( 600 );		
+			$( ".enter-button" ).fadeIn( 600 );
 		}, 1600);
 
 	} else if (!localStorage.getItem('key')) {
 		setTimeout(function() {
 			$('#welcome-back').css('display', 'none')	;
 		}, 300);
-		
+
 		localStorage.setItem('key', 'value');
 		setTimeout(function() {
 			$( ".enter-button" ).fadeIn( 300 );
 		}, 8100);
 	}
-	
+
 	</script>
 
 	<a href="home.html" class="crawl-link"></a>
@@ -38,7 +38,7 @@
 	<div class="landing-intro">
 
 			<div class="animation-element landing-logo-box">
-				<img src="and-more-studios-main-logo.png" alt="And More Studios Main Logo" class="landing-logo">
+				<img src="and-more-studios-logo-2-300.png" alt="And More Studios Main Logo" class="landing-logo">
 			</div>
 			<div class="fading-list">
 				<h1 class="alt-name">Web Development</h1>
@@ -47,16 +47,16 @@
 				<h1 class="alt-name">Marketing</h1>
 				<h1 class="alt-name">Graphics</h1>
 				<h1 class="alt-name">Support</h1>
-				
-				
-				
-				
+
+
+
+
 				<div class="studios">Studios</div>
 				<div class="alt-name and-more">And More</div>
-				
+
 			</div>
 			<div class="landing-line-case">
-				<div class="line"></div>	
+				<div class="line"></div>
 			</div>
 			<div id="welcome-back">Welcome Back!</div>
 			<div class="button-bar">
