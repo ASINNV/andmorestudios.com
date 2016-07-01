@@ -240,6 +240,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/device-repair-icon-281h359w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29109,
+		"inputAbbreviatedPath": "\/device-repair-icon-281h359w.png",
+		"outputAbbreviatedPath": "\/device-repair-icon-281h359w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/graphics-icon-281h.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -258,6 +269,17 @@
 		"initialSize": 30173,
 		"inputAbbreviatedPath": "\/graphics-icon-281h359w.png",
 		"outputAbbreviatedPath": "\/graphics-icon-281h359w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/heart-icon-281h359w.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26545,
+		"inputAbbreviatedPath": "\/heart-icon-281h359w.png",
+		"outputAbbreviatedPath": "\/heart-icon-281h359w.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -309,17 +331,6 @@
 		"initialSize": 149462,
 		"inputAbbreviatedPath": "\/kil-silly.png",
 		"outputAbbreviatedPath": "\/kil-silly.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/marketing-icon-281h.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 23759,
-		"inputAbbreviatedPath": "\/marketing-icon-281h.png",
-		"outputAbbreviatedPath": "\/marketing-icon-281h.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

@@ -39,7 +39,7 @@ var $enter_button = $('.enter-button');
 var $white_overlay = $('.white-overlay');
 var $landing_intro = $('.landing-intro');
 
-var $next_button_brand_sub = $('.next-button, .brand-sub, .home-banners, #back');
+var $next_button_brand_sub = $('.next-button, .brand-sub, .home-banners');
 var $all_animation_elements = $('a, p, h1, div');
 var $html_body = $('html, body');
 
@@ -50,7 +50,7 @@ var $click_catcher = $('.clickCatcher');
 var $arrow_and_name = $('.arrow-and-text, .name');
 
 var $body = $('body');
-var $id_one_six = $('#0, #1, #2, #3, #4, #5, #6, .banner-to-web');
+var $id_one_six = $('#0, #1, #2, #3, #4, #5, #6, .banner-to-first, .bio, .right-nav');
 // var $sidebar_indicator = $('.sidebar-indicator');
 // var $sidebar_member_container = $('.sidebar-member-container');
 // var $sidebar_member = $('.sidebar-member');
@@ -68,8 +68,8 @@ var $id_1 = $('#1');
 // var $sidebar_2 = $('.sidebar-2');
 // var $sidebar_1 = $('.sidebar-1');
 
-var $id_one_five = $('#0, #1, #2, #3, #4, #5, .banner-to-zean');
-var $id_one_four = $('#0, #1, #2, #3, #4');
+var $id_one_five = $('#0, #1, #2, #3, #4, #5, .banner-to-first, .bio, .right-nav');
+var $id_one_four = $('#0, #1, #2, #3, #4, .home-section, .intro, .right-nav');
 
 
 
@@ -82,13 +82,14 @@ var $stand_in = $('.stand-in');
 var $home_line = $('.home-line');
 
 var $footer = $('#footer');
-var $services_section = $('.services-section');
-var $team_section = $('.team-section');
-var $contact_section = $('.contact-section');
+var $left_nav = $('.left-nav');
 
 // var $team_banner = $('.team-banner');
 // var $blue_line_case = $('.blue-line-case');
 var $home_nav = $('.home-nav');
+
+// var $tap_disappear = $('.tap-anywhere-wrapper, .next-button, .welcome-page, .team-banner, .services-section, .team-section, .contact-section, .arrow-and-text');
+// var $tap_anywhere_wrapper = $('.tap-anywhere-wrapper');
 
 var $and_more = $('.and-more');
 var $studios = $('.studios');
@@ -152,25 +153,42 @@ function page_indicator() {
 // page indicator JS
 // page indicator JS
 
-function third_nav() {
-	if ((($contact_section.offset().top - $nav_bar.outerHeight()) <= $window.scrollTop()) && window.matchMedia("(orientation: landscape)").matches) {
-		document.getElementById('forward').href = "#footer";
-		document.getElementById('back').href = "#team";
-		document.getElementById('down').href = "contact.html";
 
-	} else if ((($team_section.offset().top - $nav_bar.outerHeight()) <= $window.scrollTop()) && window.matchMedia("(orientation: landscape)").matches) {
-		document.getElementById('forward').href = "#contact";
-		document.getElementById('back').href = "#services";
-		document.getElementById('down').href = "team.html";
-	} else if ((($services_section.offset().top - $nav_bar.outerHeight()) <= $window.scrollTop()) && window.matchMedia("(orientation: landscape)").matches) {
-		document.getElementById('forward').href = "#team";
-		document.getElementById('back').href = "#top";
-		document.getElementById('down').href = "services.html";
-	} else if (window.matchMedia("(orientation: landscape)").matches) {
-		document.getElementById('forward').href = "#services";
-		document.getElementById('back').href = "#top";
-	}
-}
+
+
+
+// function next_section() {
+// 	var bios = document.getElementById('team-bios');
+// 	var no_of_bios = bios.getElementByClassName('bio').length;
+// 	var count = 0;
+// 	for (i = 0; i < no_of_bios; i++) {
+//
+// 	}
+// }
+
+
+
+
+
+// function third_nav() {
+// 	if ((($contact_section.offset().top - $nav_bar.outerHeight()) <= $window.scrollTop()) && window.matchMedia("(orientation: landscape)").matches) {
+// 		document.getElementById('forward').href = "#footer";
+// 		document.getElementById('back').href = "#team";
+// 		// document.getElementById('down').href = "contact.html";
+//
+// 	} else if ((($team_section.offset().top - $nav_bar.outerHeight()) <= $window.scrollTop()) && window.matchMedia("(orientation: landscape)").matches) {
+// 		document.getElementById('forward').href = "#contact";
+// 		document.getElementById('back').href = "#services";
+// 		// document.getElementById('down').href = "team.html";
+// 	} else if ((($services_section.offset().top - $nav_bar.outerHeight()) <= $window.scrollTop()) && window.matchMedia("(orientation: landscape)").matches) {
+// 		document.getElementById('forward').href = "#team";
+// 		document.getElementById('back').href = "#top";
+// 		// document.getElementById('down').href = "services.html";
+// 	} else if (window.matchMedia("(orientation: landscape)").matches) {
+// 		document.getElementById('forward').href = "#services";
+// 		document.getElementById('back').href = "#top";
+// 	}
+// }
 
 function check_if_line_touches() {
 	var nav_height = $nav_bar.outerHeight();
@@ -224,11 +242,19 @@ function check_if_in_view() {
 		$home_nav.slideDown(300);
 		$('landscape-blue-line').css('width', '100%');
 	}
+
 	if ($body.hasClass('home-page')) {
-		third_nav();
+		// third_nav();
 		check_if_line_touches();
 		page_indicator();
 		// desktop_banners();
+		if (window.matchMedia("(orientation: landscape)").matches && ($window.scrollTop() < 125)) {
+			$('.nav-arrows').fadeOut();
+
+		} else {
+			$('.nav-arrows').fadeIn();
+
+		}
 	}
 
 
@@ -323,7 +349,7 @@ $(document).ready(function() {
 	$('.white-overlay-home').fadeOut(750);
 
 	if (window.matchMedia( "(min-width: 1024px)" ).matches) {
-		leadIn("translateX(49.5%)", "translateY(-100%) translateX(-33%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
+		leadIn("translateX(45%)", "translateY(-100%) translateX(-33%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
 
 	} else if (window.matchMedia( "(max-width: 1023px) and (min-width: 466px)" ).matches) {
 		leadIn("translateX(50%)", "translateY(-100%) translateX(-33.5%)", "-webkit-linear-gradient( left, #fff 93%, transparent");
@@ -349,7 +375,9 @@ $(document).ready(function() {
 	//
 	// });
 
-
+// $tap_disappear.click(function() {
+// 	$tap_anywhere_wrapper.hide('slow');
+// });
 
 	$enter_button.click(function(e) {
 		e.preventDefault();
@@ -381,9 +409,9 @@ $(document).ready(function() {
 		$html_body.animate({ scrollTop: ($( $(this).attr('href') ).offset().top) }, 'slow');
 		return false;
 	});
-	$('#back').click(function() {
-		$html_body.animate({ scrollTop: ($( $(this).attr('href') ).offset().top) }, 'slow');
-	});
+	// $('#back').click(function() {
+	// 	$html_body.animate({ scrollTop: ($( $(this).attr('href') ).offset().top) }, 'slow');
+	// });
 
 	$menu_button.click(function() {
 		if ($menu.css('display') === 'block') {
@@ -412,71 +440,138 @@ $(document).ready(function() {
 
 	$id_one_six.click(function() {
 
-		if (($window.scrollTop() >= ($id_6.offset().top) - 15) && ($window.scrollTop() < $document.height())) {
+		if (($window.scrollTop() >= ($id_6.offset().top - 5))) {
 			$html_body.animate({ scrollTop: $document.height() }, 600);
 		}
-		else if (($window.scrollTop() >= ($id_5.offset().top) - 5) && ($window.scrollTop() < $id_6.offset().top)) {
+		else if (($window.scrollTop() >= ($id_5.offset().top - 5)) && ($window.scrollTop() < $id_6.offset().top)) {
 			$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
 
 		}
-		else if (($window.scrollTop() >= ($id_4.offset().top) - 5) && ($window.scrollTop() < $id_5.offset().top)) {
+		else if (($window.scrollTop() >= ($id_4.offset().top - 5)) && ($window.scrollTop() < $id_5.offset().top)) {
 			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
 
 		}
-		else if (($window.scrollTop() >= ($id_3.offset().top) - 5) && ($window.scrollTop() < $id_4.offset().top)) {
+		else if (($window.scrollTop() >= ($id_3.offset().top - 5)) && ($window.scrollTop() < $id_4.offset().top)) {
 			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
 
 		}
-		else if (($window.scrollTop() >= ($id_2.offset().top) - 5) && ($window.scrollTop() < $id_3.offset().top)) {
+		else if (($window.scrollTop() >= ($id_2.offset().top - 5)) && ($window.scrollTop() < $id_3.offset().top)) {
 			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_1.offset().top) - 5) && ($window.scrollTop() < $id_2.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_1.offset().top - 5)) && ($window.scrollTop() < $id_2.offset().top)) {
 			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
 
-		} else if ($window.scrollTop() < ($id_1.offset().top - 5)) {
+		} else if ($window.scrollTop() < ($id_1.offset().top) - 5) {
 			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+
+		}
+	});
+	$left_nav.click(function() {
+
+		if ($window.scrollTop() > ($id_6.offset().top)) {
+			$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
+		}
+		else if (($window.scrollTop() > ($id_5.offset().top)) && ($window.scrollTop() <= $id_6.offset().top)) {
+			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
+
+		}
+		else if (($window.scrollTop() > ($id_4.offset().top)) && ($window.scrollTop() <= $id_5.offset().top)) {
+			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
+
+		}
+		else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
+			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
+
+		}
+		else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
+			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
+			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+
+		} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= ($id_1.offset().top))) {
+			$html_body.animate({ scrollTop: 0 }, 600);
 
 		}
 	});
 } else if ($body.hasClass('team-body')) {
 
 	$id_one_five.click(function() {
-		if (($window.scrollTop() >= ($id_5.offset().top) - 15) && ($window.scrollTop() < $document.height())) {
+		if ($window.scrollTop() >= $id_5.offset().top - 5) {
 			$html_body.animate({ scrollTop: $document.height() }, 600);
 
-		} else if (($window.scrollTop() >= ($id_4.offset().top) - 5) && ($window.scrollTop() < $id_5.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_4.offset().top - 5)) && ($window.scrollTop() < $id_5.offset().top)) {
 			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_3.offset().top) - 5) && ($window.scrollTop() < $id_4.offset().top)) {
+		} else if (($window.scrollTop() >= $id_3.offset().top - 5) && ($window.scrollTop() < $id_4.offset().top)) {
 			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_2.offset().top) - 5) && ($window.scrollTop() < $id_3.offset().top)) {
+		} else if (($window.scrollTop() >= $id_2.offset().top - 5) && ($window.scrollTop() < $id_3.offset().top)) {
 			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_1.offset().top) - 5) && ($window.scrollTop() < $id_2.offset().top)) {
+		} else if (($window.scrollTop() >= $id_1.offset().top - 5) && ($window.scrollTop() < $id_2.offset().top)) {
 			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
 
-		} else if ($window.scrollTop() < ($id_1.offset().top - 5)) {
+		} else if (($window.scrollTop() >= 0) && ($window.scrollTop() < $id_1.offset().top)) {
 			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+
+		}
+	});
+	$left_nav.click(function() {
+		if (($window.scrollTop() > ($id_5.offset().top))) {
+			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_4.offset().top)) && ($window.scrollTop() <= $id_5.offset().top)) {
+			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
+			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
+			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
+			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+
+		} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= ($id_1.offset().top))) {
+			$html_body.animate({ scrollTop: 0 }, 600);
 
 		}
 	});
 } else {
 	$id_one_four.click(function() {
-		if (($window.scrollTop() >= ($id_4.offset().top) - 15) && ($window.scrollTop() < $document.height())) {
+		if ($window.scrollTop() >= $id_4.offset().top) {
 			$html_body.animate({ scrollTop: $document.height() }, 600);
 
-		} else if (($window.scrollTop() >= ($id_3.offset().top) - 5) && ($window.scrollTop() < $id_4.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_3.offset().top)) && ($window.scrollTop() < $id_4.offset().top)) {
 			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_2.offset().top) - 5) && ($window.scrollTop() < $id_3.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_2.offset().top)) && ($window.scrollTop() < $id_3.offset().top)) {
 			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_1.offset().top) - 5) && ($window.scrollTop() < $id_2.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_1.offset().top)) && ($window.scrollTop() < $id_2.offset().top)) {
 			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
 
-		} else if ($window.scrollTop() < ($id_1.offset().top - 5)) {
+		} else if (($window.scrollTop() >= 0) && $window.scrollTop() < ($id_1.offset().top)) {
 			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+
+		}
+	});
+	$left_nav.click(function() {
+		if ($window.scrollTop() > ($id_4.offset().top)) {
+			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
+			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
+			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
+
+		} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
+			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+
+		} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= $id_1.offset().top)) {
+			$html_body.animate({ scrollTop: 0 }, 600);
 
 		}
 	});
