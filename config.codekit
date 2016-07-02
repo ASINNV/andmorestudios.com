@@ -46,17 +46,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/and-more-studios-envelope-front.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14229,
-		"inputAbbreviatedPath": "\/and-more-studios-envelope-front.png",
-		"outputAbbreviatedPath": "\/and-more-studios-envelope-front.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/and-more-studios-graphic-design.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -79,28 +68,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/and-more-studios-main-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 27648,
-		"inputAbbreviatedPath": "\/and-more-studios-main-logo.png",
-		"outputAbbreviatedPath": "\/and-more-studios-main-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-marketing-icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 17120,
-		"inputAbbreviatedPath": "\/and-more-studios-marketing-icon.png",
-		"outputAbbreviatedPath": "\/and-more-studios-marketing-icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/and-more-studios-phone.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -108,17 +75,6 @@
 		"initialSize": 23404,
 		"inputAbbreviatedPath": "\/and-more-studios-phone.png",
 		"outputAbbreviatedPath": "\/and-more-studios-phone.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-power-button.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30895,
-		"inputAbbreviatedPath": "\/and-more-studios-power-button.png",
-		"outputAbbreviatedPath": "\/and-more-studios-power-button.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -211,17 +167,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/AndMoreIcons_systeminstall.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 57157,
-		"inputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
-		"outputAbbreviatedPath": "\/AndMoreIcons_systeminstall.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/contact.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -293,17 +238,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/icons.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 103474,
-		"inputAbbreviatedPath": "\/icons.png",
-		"outputAbbreviatedPath": "\/icons.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -357,17 +291,6 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/photos.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 117524,
-		"inputAbbreviatedPath": "\/photos.jpg",
-		"outputAbbreviatedPath": "\/photos.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/style.css": {
 		"fileType": 16,
 		"ignore": 1,
@@ -406,6 +329,17 @@
 		"initialSize": 23921,
 		"inputAbbreviatedPath": "\/repair-icon-281h359w.png",
 		"outputAbbreviatedPath": "\/repair-icon-281h359w.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/richLinenPattern.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8407,
+		"inputAbbreviatedPath": "\/richLinenPattern.jpg",
+		"outputAbbreviatedPath": "\/richLinenPattern.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
