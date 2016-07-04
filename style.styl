@@ -397,12 +397,15 @@ img {
 /*home.html page*/
 /*home.html page*/
 /*intro section*/
+.intro, .page-head, .contact-foot, .friends, .nav-bar, .all-content {
+  background: #fff;
+  background: url('/richLinenPattern.jpg');
+}
 .intro {
   width: 100%;
   height: 320px;
   height: 92vh;
   height: calc(100vh - 41px);
-  border-bottom: 2px solid #6b9b4c;
 }
 .nav-center {
   height: 41px;
@@ -427,7 +430,6 @@ img {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #fff;
   border-bottom: 1px solid #c0c0c0;
   position: fixed;
   z-index: 14;
@@ -621,7 +623,7 @@ img {
 .plain-menu-box,
 .hidden-shadow-box {
   position: relative;
-  padding-top: 10px;
+  padding: 20px 0;
   width: 95%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -685,6 +687,12 @@ img {
 }
 .contact-next:active {
   box-shadow: -1px 1px 1px 0px rgba(0,0,0,0.6);
+}
+.link {
+  text-decoration: none;
+}
+.emplore {
+  color: rgba(0,0,0,.2);
 }
 .hidden-shadow-box {
   padding-top: 15px;
@@ -1952,7 +1960,6 @@ img {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  background: #fff;
 }
 .click-catcher-2 {
   display: none;
