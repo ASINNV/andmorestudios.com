@@ -293,7 +293,7 @@
 		},
 	"\/public\/style.css": {
 		"fileType": 16,
-		"ignore": 0,
+		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -374,7 +374,7 @@
 		"inputAbbreviatedPath": "\/style.styl",
 		"outputAbbreviatedPath": "\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
+		"outputPathIsSetByUser": 1,
 		"outputStyle": 0,
 		"resolveRelativeURLS": 0,
 		"shouldRunAutoprefixer": 0,
