@@ -39,7 +39,7 @@ var $enter_button = $('.enter-button');
 var $white_overlay = $('.white-overlay');
 var $landing_intro = $('.landing-intro');
 
-var $next_button_brand_sub = $('.next-button, .brand-sub, .home-banners');
+var $next_button_brand_sub = $('.link, .brand-sub, .home-banners');
 var $all_animation_elements = $('a, p, h1, div');
 var $html_body = $('html, body');
 
@@ -589,16 +589,16 @@ $(document).ready(function() {
 	});
 } else {
 	$id_one_four.click(function() {
-		if ($window.scrollTop() >= $id_4.offset().top) {
+		if ($window.scrollTop() >= ($id_4.offset().top - 5)) {
 			$html_body.animate({ scrollTop: $document.height() }, 1200);
 
-		} else if (($window.scrollTop() >= ($id_3.offset().top)) && ($window.scrollTop() < $id_4.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_3.offset().top - 5)) && ($window.scrollTop() < $id_4.offset().top)) {
 			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_2.offset().top)) && ($window.scrollTop() < $id_3.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_2.offset().top - 5)) && ($window.scrollTop() < $id_3.offset().top)) {
 			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_1.offset().top)) && ($window.scrollTop() < $id_2.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_1.offset().top - 5)) && ($window.scrollTop() < $id_2.offset().top)) {
 			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
 
 		} else if (($window.scrollTop() >= 0) && $window.scrollTop() < ($id_1.offset().top)) {

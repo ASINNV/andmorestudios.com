@@ -202,12 +202,7 @@ img {
 .line-index-motion {
 	transform: translateY(22px);
 }
-.line-case {
-	width: 140px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: center;
-}
+
 #welcome-back {
   font-size: .8em;
 	opacity: 0;
@@ -268,19 +263,10 @@ img {
 }
 
 
-.home-line-inner-case {
-	display: flex;
-	justify-content: center;
+.quiver {
+  display: none;
 }
-.home-line {
-	// margin: 7.5px 0 15px 0;
-	margin: 3px 0 5px 0;
-	width: 0%;
-	height: 3px;
-	background: #F4A259;
-  box-shadow: 0px 3px 4px 0px rgba(50,50,50,.3);
-  border-radius: 30%;
-}
+
 .tracker-wrapper {
   position: fixed;
   top: 41px;
@@ -323,13 +309,16 @@ img {
 /*home.html page*/
 /*home.html page*/
 
+.all-content {
+  background: url('/richLinenPattern.jpg');
+}
 /*intro section*/
 .intro {
 	width: 100%;
-  height: 320px;
-  height: 92vh;
-	height: calc(100vh - 41px);
-  border-bottom: 2px solid #6b9b4c;
+  min-height: 400px;
+  // height: 92vh;
+	// height: calc(100vh - 41px);
+  // border-bottom: 2px solid #6b9b4c;
 }
 .nav-center {
 	height: 41px;
@@ -346,7 +335,8 @@ img {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: #fff;
+	// background: #fff;
+  background: url('/richLinenPattern.jpg');
 	border-bottom: 1px solid silver;
 	position: fixed;
 	z-index: 14;
@@ -527,22 +517,41 @@ img {
 	// width: 35%;
 }
 .welcome-logo {
-	width: 105px;
+	width: 130px;
 	height: 72.5;
 }
 .brand-head {
 	color: #444;
   font-weight: 900;
-	font-size: 2.8em;
+	font-size: 3.2em;
   // text-shadow: 0px 0px rgba(0,0,0,.3);
 }
 .grey-studios {
 	color: #777;
 }
+.line-case {
+	width: 170px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+}
+.home-line-inner-case {
+	display: flex;
+	justify-content: center;
+}
+.home-line {
+	// margin: 7.5px 0 15px 0;
+	margin: 3px 0 5px 0;
+	width: 0%;
+	height: 3px;
+	background: #F4A259;
+  box-shadow: 0px 3px 4px 0px rgba(50,50,50,.3);
+  border-radius: 30%;
+}
 .brand-sub {
 	text-decoration: none;
 	color: #146db3;
-	font-size: 1.6em;
+	font-size: 1.8em;
 	/*font-weight: 200;*/
 }
 /*.project-text {
@@ -556,40 +565,57 @@ img {
 	color: #FF6767;
 }*/
 .bottom-button {
-	margin: 5px 0;
+	padding: 5px 0;
 	font-size: .7em;
 	line-height: 1em;
+  width: 100%;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  background: #6b9b4c;
+  // background: #009688;
+  // background: linear-gradient(130deg, yellow, orange 120%);
+  // color: #146db3;
+  color: #fff;
 }
 
 .contact-logo-welcome {
 		height: 60px;
 		width: 60px;
+    margin: 0 10px;
 	}
-.plain-menu-box, .hidden-shadow-box {
+.plain-menu-box {
   position: relative;
-  padding-top: 10px;
+  padding: 10px 0;
   width: 95%;
 	display: flex;
   justify-content: space-around;
 	align-items: center;
   margin: 0 auto;
 }
+.link {
+  text-decoration: none;
+}
+
 .next-button {
   position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 75px;
-	height: 75px;
+	// width: 75px;
+	// height: 75px;
 	color: #404040;
-	text-decoration: none;
 	font-size: 1.2em;
 	line-height: 1.2em;
 	font-weight: 600;
 	padding: 0;
   border-radius: 5px;
+  box-shadow: 0px 4px 1px 0px rgba(0,0,0,.5)
 }
+.next-button:active {
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,.5);
+}
+
 .services-next {
   background: #172938;
 }
@@ -599,15 +625,44 @@ img {
 .contact-next {
   background: #146db3;
 }
-.hidden-shadow-box {
-  padding-top: 15px;
+.emplore {
+  color: rgba(0,0,0,.2);
+  width: 260px;
+  margin: 0 auto;
 }
-.shadows {
-  width: 70px;
-  height: 5px;
-  border-radius: 40%;
-  background: rgba(50, 50, 50, .2);
+.content-divider {
+  background: #4d76b5;
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 5px 0;
 }
+.other-content-divider {
+  background: #4d76b5;
+  color: white;
+  text-align: center;
+  // text-decoration: underline;
+  font-size: 1.3em;
+  font-weight: 900;
+  padding: 20px 0;
+  position: relative;
+  z-index: 10;
+  margin-bottom: 15px;
+  transform: skewY(-4deg);
+}
+.team-page-pad {
+  background: #7ddceb;
+}
+// .hidden-shadow-box {
+//   padding-top: 15px;
+// }
+// .shadows {
+//   width: 70px;
+//   height: 5px;
+//   border-radius: 40%;
+//   background: rgba(50, 50, 50, .2);
+// }
 // .next-button:last-child {
 // 	background: #2196F3;
 // 	color: #fff;
@@ -636,21 +691,22 @@ img {
 .link-pad {
   position: absolute;
   top: -45px;
+  left: 0;
 
   height: 45px;
   width: 100%;
 }
 .other-link-pad {
-  height: 40px;
-
-  top: -40px;
+  height: 41px;
+  top: -41px;
+  background: #7ddceb;
 }
 .team-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0 0 10px 0;
+	margin: 10px 0;
 }
 
 
@@ -868,7 +924,6 @@ img {
 	border-radius: 8px;
 	// box-shadow: 0px 0px 0px 2px #666;
 	padding: 10px 10px;
-  margin-bottom: 40px;
 }
 
 .to-services {
@@ -885,9 +940,9 @@ img {
 
 /*start of services section*/
 .home-section {
-  height: 320px;
+  height: 480px;
   height: 92vh;
-  height: calc(100vh - 41px);
+  height: calc(100vh - 44px);
 
   display: flex;
 	flex-direction: column;
@@ -895,8 +950,8 @@ img {
 	align-items: center;
 
   color: #fff;
-  border-top: 2px solid #6b9b4c;
-  border-bottom: 2px solid #6b9b4c;
+  // border-top: 2px solid #6b9b4c;
+  // border-bottom: 2px solid #6b9b4c;
 
   position: relative;
   padding: 0;
@@ -926,7 +981,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0;
+	margin: 10px 0;
 }
 .you {
 	color: #F4A259;
@@ -936,7 +991,7 @@ img {
 }
 .service {
 	display: flex;
-	margin: 3% auto;
+	margin: 5% auto;
 	width: 95%;
 	justify-content: center;
 	text-decoration: none;
@@ -958,6 +1013,9 @@ img {
 .service-thumb-holder {
   margin: 10px auto;
   width: 100px;
+}
+.service-thumb {
+  height: 47px;
 }
 .service-desc {
 	width: 75%;
@@ -1108,7 +1166,7 @@ img {
 	background-color: #172938;
 	// opacity: 0;
 	// z-index: 1;
-  border-top: 2px solid #6b9b4c;
+  // border-top: 2px solid #6b9b4c;
 }
 .foot-list {
   display: flex;
@@ -1152,7 +1210,7 @@ img {
 
 // team page content starts here
 .page-head {
-  border-bottom: 2px solid #6b9b4c;
+  // border-bottom: 2px solid #6b9b4c;
 }
 .member-sidebar {
   display none
@@ -1263,9 +1321,12 @@ img {
 .team-welcome {
 	text-align: center;
 	width: 100%;
-	margin: 5px auto 10px auto;
-	padding: 4% 0;
-
+	padding: 5% 0;
+}
+.contact-info-wrapper {
+  text-align: center;
+  width: 100%;
+  padding: 5% 0;
 }
 .team-welcome-head {
 	font-size: 1.8em;
@@ -1358,7 +1419,7 @@ img {
 // }
 .bio {
 	position: relative;
-  height: 320px;
+  height: 480px;
 	height: calc(100vh - 41px);
 	display: flex;
 	flex-direction: column;
@@ -1658,7 +1719,6 @@ img {
 	align-items: flex-start;
 	justify-content: space-around;
 	font-weight 600
-	background-color #fff
 	// opacity: 0;
 	// z-index: 1;
 
@@ -1827,7 +1887,7 @@ img {
 	margin: 0 auto;
 	text-align center
 	position: relative;
-	background: #fff;
+	background: url('/richLinenPattern.jpg');
 }
 .click-catcher-2 {
 	display: none;
@@ -1923,1991 +1983,2057 @@ img {
 //     font-size: 1.1em;
 //   }
 // }
-.quiver {
-  display: none;
-}
 
-@media (min-width: 320px) and (min-height: 520px) and (orientation: portrait) {
-  // landing page
-  // landing page
-  // landing page
-  // landing page
-  .landing-logo-box {
+
+
+
+// added below code on july 4th
+// added below code on july 4th
+// added below code on july 4th
+// added below code on july 4th
+// added below code on july 4th
+// added below code on july 4th
+// added below code on july 4th
+
+@media (min-width: 375px) {
+  .nav-center, .nav-bar, .nav-bar-placeholder {
+    height: 60px;
+  }
+  .tracker-wrapper {
+    top: 60px;
+  }
+  .welcome-logo {
     width: 180px;
   }
-  .fading-list {
-    height: 35px;
-  }
-  .alt-name {
-    font-size: 2.2em;
-  }
-  .and-more {
-    font-size: 2.7em;
-  }
-  .studios {
-
-  }
-  .down-move {
-    transform: translateY(40px);
-  }
-  .stalled-spacing {
-    letter-spacing: 6px;
-  }
-  .line {
-    margin-bottom: 35px;
-  }
-  .line-index-motion {
-    transform: translateY(25px);
-  }
-
-}
-
-@media (min-width: 321px) and (orientation: portrait) {
-
-  // landing page
-  // landing page
-  // landing page
-  // landing page
-  .landing-intro {
-    padding-bottom: 100px;
-  }
-  .alt-name {
-    font-size: 2.5em;
-  }
-  .and-more {
-    font-size: 3em;
-  }
-  .studios {
-    font-size: 1.4em;
-  }
-  .down-move {
-    transform: translateY(45px);
-  }
-  .stalled-spacing {
-    // letter-spacing: 6px;
-  }
-  .line {
-    margin-top: 15px;
-  }
-  .landing-line-case {
-    width: 140px;
-  }
-  #welcome-back {
-    font-size: 1em;
-  }
-  .enter-button {
-    font-size: 1.15em;
-    line-height: 2.925em;
-    width: 60px;
-    height: 60px;
-    margin-top: 45px;
-  }
-  .nav-logo {
-    width: 55px;
-  }
-  .menu-button, .logo-box {
-    width: 80px;
-  }
-  .contact-logo {
-    height: 90px;
-    width: 90px;
-  }
-  .welcome-page {
-    height: 100%;
-    justify-content: flex-start;
-  }
-  .logo-name-line-slogan {
-    width: 80%;
-    padding-bottom: 40px;
-  }
   .brand-head {
     font-size: 4em;
   }
+  .line-case {
+    width: 200px;
+  }
   .brand-sub {
-    font-size: 1.9em;
+    font-size: 2em;
   }
   .buttons-shadows {
-    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 15%;
   }
-  .buttons-shadows, .logo-name-line-slogan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .intro, .home-section {
-    height: 414px;
-    height: 100vh;
-    height: calc(100vh - 60px);
-  }
-  .link-pad {
-    top: -60px;
-    height: 60px;
-  }
-
-  // from max 650 - min 414 section
-  // from max 650 - min 414 section
-  // from max 650 - min 414 section
-  // from max 650 - min 414 section
-
-
-    .menu-button {
-      font-size: 1.2em;
-    }
-    .name {
-      font-size: 1.6em;
-    }
-    .plain-menu-box {
-      padding-top: 20px;
-    }
-  	.line-case {
-  		width: 190px;
-  	}
-  	.divider-line-case {
-  		width: 250px;
-  	}
-  	.contact-divider-line-case {
-  	width: 140px;
-  	}
-    .tracker-wrapper {
-  		top: 60px;
-  	}
-  	.stand-in {
-  	display: none;
-  	position: fixed;
-  	left: 50%;
-  	transform: translateX(-50%);
-  	// margin: 7.5px 0 15px 0;
-  	width: 0;
-  	height: 3px;
-  	}
-  	.welcome-logo-box {
-  		margin-top: 20px;
-  	}
-  	.welcome-logo {
-  		width: 170px;
-  	}
-  	.bottom-button {
-  		// margin-top: 15px;
-  	}
-  	.nav-bar-placeholder, .nav-bar, .nav-center {
-  		height: 60px;
-  	}
-    .blue-line-case {
-      width: 195px;
-    }
-  	.section-header {
-  		margin: 0;
-      font-size: 2.2em;
-  	}
-  	.bio {
-      height: 321px;
-      height: 100vh;
-  		height: calc(100vh - 60px);
-      justify-content: center;
-  	}
-    .bio-content {
-      height: 100%;
-    }
-  	// .zean-bio {
-  	// 	padding-top: 20px;
-  	// }
-
-    // services section
-
-    .service {
-      margin: 10px auto;
-    }
-    .desc-head {
-      font-size: 1.5em;
-      font-weight: 400;
-    }
-    .desc-body {
-      font-size: 1.1em;
-    }
-    .show-next {
-      width: auto;
-      font-size: 1.5em;
-      padding: 10px 15px;
-      transition: all .2s ease-in-out;
-    }
-
-    // team section
-    .team-container {
-      padding: 20px 0;
-    }
-    .members-contain {
-      width: 95%;
-      padding-bottom: 20px;
-    }
-    .home-team-image {
-      width: 70px;
-      height: 70px;
-    }
-    .mini-desc {
-      width: 90%;
-      font-size: 1.2em;
-    }
-
-  	.contact-head {
-      font-size: 2.2em;
-  	}
-    .contact-divider-line-case {
-      width: 160px;
-      margin-bottom: 20px;
-    }
-    .contact-info-box {
-      width: 310px;
-    }
-    .contact-info {
-      font-size: 1.2em;
-    }
-  	.team-banner {
-  		width: 200px;
-  	}
-  	.bio-image, .service-image {
-  		margin: 0 auto 10px auto;
-  	}
-  	.partner, .scaled-partner, .downscaled-partner {
-  		width: 55px;
-  		height: 55px;
-  		margin: 20px 0;
-  	}
-  	.check-it {
-  		width: 300px;
-  		font-size: 1.6em;
-  		margin 20px auto 10px auto
-  	}
-  	.top-of-next, .show-rest {
-  		height: 60px;
-  	}
-    // team page
-    .team-welcome-head {
-      font-size: 2.2em;
-    }
-    .bio-text {
-      font-size: 1.2em;
-    }
-
-}
-@media (min-width: 650px) and (orientation: portrait) {
-  // landing page
-  .landing-intro {
-    padding-bottom: 200px;
-  }
-  .landing-logo-box {
-    width: 250px;
-    padding-bottom: 15px;
-  }
-
-
-  .fading-list {
-    height: 80px;
-  }
-  .alt-name {
-    font-size: 4em;
-  }
-  .and-more {
-    font-size: 5em;
-    transform: translateY(-71%);
-  }
-  .studios {
-    font-size: 2.6em;
-  }
-  .down-move {
-    transform: translateY(63px);
-  }
-  .stalled-spacing {
-    letter-spacing: 8px;
-  }
-  .line-index-motion {
-    transform: translateY(23px);
-  }
-  .landing-line-case {
-    width: 240px;
-  }
-  #welcome-back {
-    font-size: 1.2em;
-    transform: translateY(8px);
-  }
-  .enter-button {
-    width: 90px;
-    height: 90px;
-    font-size: 1.5em;
-    line-height: 3.4em;
-    margin-top: 115px;
-    background: #fff;
-  }
-
-  // home page
-  .logo-box, .menu-button {
-    width: 100px;
-  }
-  .nav-logo {
-    width: 75px;
-  }
-  .menu-button {
-    font-size: 1.4em;
-  }
-  .tracker-wrapper, .stand-in, .content-indicator-backdrop {
-    height: 6px;
-  }
-  .menu-item {
-    font-size: 1.2em;
-  }
-  .welcome-logo {
-    width: 230px;
-  }
-  .brand-head {
-    font-size: 4.5em;
-  }
-  .line-case {
-    width: 240px;
-  }
-  .home-line {
-    height: 6px;
-    border-radius: 40%;
-  }
-  .brand-sub {
-    font-size: 2.3em;
-  }
-  .next-button {
-    width: 175px;
-    height: 145px;
-    border: 10px double #fff;
-    border-radius: 10px;
-  }
-  .contact-logo-welcome {
-    height: 100px;
-    width: 100px;
-  }
-  .bottom-button {
-    font-size: 1.4em;
-  }
-  .hidden-shadow-box {
-    padding-top: 50px;
-  }
-  .shadows {
-    width: 170px;
-    height: 7px;
-
-  }
-  .bottom-banner {
-    top: -54px;
-  }
-  .team-banner {
-    width: 240px;
-    height: 50px;
-    font-size: 1.8em;
-  }
-  .team-banner::before {
-    left: -50px;
-    border-top: 25px solid transparent;
-    border-right: 25px solid #6b9b4c;
-    border-left: 25px solid transparent;
-    border-bottom: 25px solid #6b9b4c;
-  }
-  .team-banner::after {
-    right: -50px;
-    border-top: 25px solid transparent;
-    border-right: 25px solid transparent;
-    border-left: 25px solid #6b9b4c;
-    border-bottom: 25px solid #6b9b4c;
-  }
-  // services section
-  .section-header {
-    font-size: 3.5em;
-  }
-  .divider-line-case {
-    width: 400px;
-  }
-  .divider-line {
-    height: 2px;
-    margin-top: 10px;
-  }
-  .service {
-    width: 90%;
-    margin: 50px auto;
-  }
-  .thumb-holder {
-    width: 130px;
-  }
-  .desc-head {
-    font-size: 2em;
-    margin-bottom: 0;
-  }
-  .desc-body {
-    font-size: 1.4em;
-  }
-  .show-next {
-    font-size: 2em;
-  }
-  .to-services {
-    border-width: 3px;
-  }
-
-  // team section
-  .team-container {
-    padding: 40px 0;
-  }
-  .home-team-image {
-    width: 140px;
-    height: 140px;
-  }
-  .nameplate {
-    font-size: 1.6em;
-  }
-  .mini-desc {
-    width: 80%;
-    font-size: 1.6em;
-  }
-  .members-contain {
-    padding-bottom: 30px;
-  }
-
-  // contact section
-  .contact-head {
-    font-size: 3.5em;
-  }
-  .contact-divider-line-case {
-    width: 280px;
-  }
-  .info-box {
-    margin-bottom: 20px;
-  }
-  .contact-info-grouping {
-    margin: 15px 0;
-  }
-  .contact-info-head {
-    width: 70px;
-    height: 70px;
-  }
-  .contact-info {
-    font-size: 1.8em;
-    font-weight: 400;
-    padding: 0 0 0 15px;
-  }
-  .emailer {
-    height: 65px;
-  }
-  .top-arrow {
-    width: 70px;
-    height: 70px;
-  }
-  .to-top-text {
-    font-weight: 400;
-    font-size: 1.4em;
-  }
-  // foot section
-  .foot-head {
-    font-size: 1.8em;
-  }
-  .foot-item {
-    font-size: 1.4em;
-  }
-  .copy {
-    font-size: 1.2em;
-  }
-
-  // services page
-  .contact-logo {
-    height: 120px;
-    width: 120px;
-  }
-  .team-welcome-head {
-    font-size: 3em;
-  }
-  .team-welcome-sub {
-    width: 300px;
-    font-size: 1.6em;
-  }
-  // .welcome-head {
-  //   font-size: 3em;
-  // }
-  .service-thumb-holder {
-    width: 200px;
-  }
-  .bio-name {
-    font-size: 2.4em;
-  }
-  .bio-text {
-    font-size: 1.6em;
-    padding: 2% 10%;
-  }
-  .realms-holder {
-    display: block;
-    width: 100%;
-    padding: 0 10%;
-  }
-  .workers-header {
-    width: 100%;
-    padding: 10px 5% 0 5%;
-  }
-  .realm-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #333;
-    background: #6b9b4c;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 15px;
-    box-shadow: 2px 2px 1px 0px rgba(0,0,0,.5);
-    transition: all .2s ease-in-out;
-  }
-  .realms, .workers {
-    display: flex;
-    width: 100%;
-  }
-  .realms-header {
-    width: 100%;
-    padding-top: 10px;
-  }
-  .realm {
-    width: 50px;
-    margin: 2px;
-  }
-  .worker {
-    width: 52px;
-  }
-
-
-  // contact page
-  .contact-info-box {
-    width: 480px;
-  }
-	.friends {
-		font-size: .8em;
-		width: 65px;
-	}
-	.partner-band {
-		margin: 0 20px;
-	}
-	.partner, .scaled-partner, .downscaled-partner {
-		width: 80px;
-		height: 80px;
-		margin: 25px 0;
-	}
-  .contact-foot-head {
-    font-size: 1.5em;
-    font-weight: 100;
-
-  }
-  .contact-foot-item {
-    font-size: 1.2em;
-    font-weight: 100;
-    color: #222;
-  }
-  .copy {
-    font-size: 1.2em;
-  }
-}
-
-@media (max-width: 800px) and (orientation: landscape) {
-  .landing-logo-box {
-    width: 25%;
-  }
-  .menu-item {
-    padding: 3% 0;
-  }
-  .hidden-shadow-box {
-    margin-top: 10px;
-  }
-
   .welcome-logo-box {
-    margin-top: 5px;
-  }
-  .line-case, .brand-sub {
-    display: none;
-  }
-  .next-button {
-    width: 65px;
-    height: 65px;
-  }
-  // services section
-  .section-header {
-    margin-bottom: 0px;
-  }
-  .services-section-header {
-    margin-bottom: 10px;
-  }
-
-  .divider-line-case {
-    display: none;
-  }
-  .sp-1 {
-    display: flex;
-    justify-content: space-around;
-  }
-  .service {
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 33%;
-    margin: 0;
-    padding: 4px;
-    padding-top: 0;
-    border-radius: 5px;
-    background: #1b3041;
-    border: 1px solid blue;
-  }
-  .thumb-holder {
-    margin: 5px auto;
-    width: 60px;
-  }
-  .service-thumb-holder {
-    margin: 10px auto;
-    width: 100px;
-  }
-  .service-desc {
-    width: auto;
-  }
-  .desc-head {
-    text-align: center;
-    font-size: 1em;
-  }
-  .desc-body {
-    font-size: .8em;
-  }
-
-  .animation-element.in-view.to-team {
-    transform: translateY(-10px);
-  }
-  // team section
-  .team-container {
-    margin: 0;
-  }
-  .mini-desc {
-    font-size: 0.95em;
-    line-height: 1.15em;
-  }
-  .home-banners {
-    width: 100px;
-  }
-  .bottom-banner {
-    top: 0;
-  }
-  .landscape-hide {
-    display: none;
-  }
-  .home-nav {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 30px;
-    bottom: 0;
-    z-index: 10;
-    transition: display .3s ease-in-out;
-  }
-  .forward-wrapper {
-    transform: translateX(110%);
-  }
-  .backward-wrapper {
-    transform: translateX(-210%);
-  }
-  .blue-line-case {
-    width: 100px;
-  }
-  // contact section
-  .contact-info-grouping {
-    padding: 0;
-  }
-  .arrow-and-text {
-    margin: 10px 0 44px 0;
-  }
-  .contact-head {
-    margin-bottom: 5px;
-    // text-shadow: 1px 1px #222;
-  }
-  // .section-header {
-  //   text-shadow: 1px 1px #222;
-  // }
-  // .contact-info {
-  //   padding-bottom: 8px;
-  // }
-
-  // team PAGE
-  .logo-box, .menu-button {
-    width: 50px;
-  }
-  .bio {
-    justify-content: center;
-    -webkit-tap-highlight-color: transparent;
-  }
-  .bio-image {
-    margin: 5px auto;
-  }
-  .bio-content {
-    flex-direction: row;
-    padding: 0 10px;
-  }
-  .centered-bio-text {
-    width: 75%;
-  }
-  .bio-name {
-    font-size: 1em;
-    padding: 0;
-  }
-
-  // services PAGE
-  .bio {
-    justify-content: flex-end;
-  }
-  .bio-text {
-    padding: 2% 10px;
-    font-size: 1em;
-    line-height: 1.2em;
-  }
-  .service-image {
-    width: auto;
-    height: 100px;
-    margin-bottom: 5px;
-  }
-  .web-icon {
-    background-position: -247px 0;
-  }
-  .graphic-icon {
-    background-position: -433px 0;
-  }
-  .repair-icon {
-    background-position: 34px 0;
-  }
-  .systems-icon {
-    background-size: 800px;
-    background-position: -602px 10px;
-    margin-bottom: 0;
-  }
-  .social-icon {
-    background-position: -105px 0;
-  }
-  .support-icon {
-    background-position: -919px 0;
-  }
-  .member-title {
-    display: block;
-    margin: 0 auto;
-    color: rgba(0, 0, 0, .4);
-    font-size: .8em;
-  }
-  .bio-image-holder {
-    width: 28.5%;
-    margin: 0 auto;
-  }
-  // contact PAGE
-  .team-welcome {
-    padding: 0;
-    margin: 10px auto;
-  }
-  .contact-info-box {
-    width: 60%;
-  }
-}
-
-
-
-
-
-@media (max-height: 320px) and (orientation: landscape) {
-  .nav-center {
-    left: auto;
-    right: auto;
-  }
-  .nav-bar {
-    width: 80%;
-  }
-  .menu {
-    width: 80%;
-    left: auto;
-    right: auto;
-  }
-  .all-content-wrapper {
-    background: #4c76b8;
-    background: -webkit-linear-gradient(#4c76b8, #588d34);
-  }
-  .all-content {
-    width: 80%;
-    margin: 0 auto;
-    background: #fff;
-  }
-  // intro section
-  .tracker-wrapper {
-    width: 80%;
-  }
-  .stand-in, .content-indicator-backdrop {
-    max-width: 100%;
-  }
-  .welcome-logo {
-    width: 80px;
-  }
-  .logo-name-line-slogan {
-    padding-bottom: 10px;
-  }
-  .hidden-shadow-box, .plain-menu-box {
-    padding-top: 0;
-  }
-
-  // services section
-  .services-container {
-    margin-bottom: 15px;
-    border-top: 1px solid rgba(0,0,0,.2);
-    border-bottom: 1px solid rgba(0,0,0,.2);
-  }
-  .service {
-    border: none;
-    border-radius: 0;
-  }
-  .service:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    border-right: none;
-  }
-  .service:nth-child(2n) {
-    border-radius: 0;
-    border-left: none;
-    border-right: none;
-  }
-  .service:last-child {
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-left: none;
-  }
-  // contact section
-  .contact-divider-line-case {
-    display: none;
-  }
-  .contact-info-grouping {
-    margin: 0;
-  }
-  .arrow-and-text {
-    margin: 5px 0 0 0;
-  }
-  .side-nav {
-
-  }
-  .nav-arrows {
-    font-size: 2.5em;
-    font-weight: 900;
-    text-decoration: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    position: fixed;
-    z-index: 10;
-    width: 10%;
-    height: 100%;
-    bottom: 0;
-    // background: rgba(0,0,0,.2);
-
-    cursor: pointer;
-  }
-  .side-text {
-    text-align: center;
-    width: 45px;
-    height: 45px;
-  }
-  .left-nav {
-    left: 0;
-  }
-  .right-nav {
-    right: 0;
-  }
-  .forer {
-    transform: rotate(90deg);
-    color: #8cca64;
-  }
-  .backer {
-    transform: rotate(-90deg);
-    color: #f56e6e;
-  }
-  .show-next {
-    margin: 0;
-  }
-  .to-team {
-    margin-top: 8px;
-  }
-
-  // team page
-  // team page
-  // team page
-  // team page
-  .bio {
-    height: calc(100vh - 41px);
-  }
-  .bio-name {
-    font-size: .95em;
-  }
-  .bio-text {
-    font-size: .9em;
-  }
-.link-pad {
-  top: -41px;
-  height: 41px;
-}
-  .bio-image {
-    width: 100px;
-    height: 100px;
-  }
-
-
-  // contact page
-  // contact page
-  // contact page
-  // contact page
-
-  .team-welcome {
-    position: relative;
-
-    padding: 10px 0;
-    margin: 0 auto;
-
-  }
-  .contact-box-container {
-    background: none;
-    border: 0;
-  }
-  .contact-info-box {
-    width: 75%;
-  }
-  .contact-info-grouping {
-    padding: 5px 0;
-  }
-}
-@media (min-height: 321px) and (min-width: 640px) and (orientation: landscape) {
-  .nav-arrows {
-    font-size: 2.5em;
-    font-weight: 900;
-    text-decoration: none;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    position: fixed;
-    z-index: 10;
-    width: 10%;
-    height: 100%;
-    bottom: 0;
-    // background: rgba(0,0,0,.2);
-  }
-  .side-text {
-    text-align: center;
-    width: 45px;
-    height: 45px;
-  }
-  .left-nav {
-    left: 0;
-
-  }
-  .right-nav {
-    right: 0;
-  }
-  .forer {
-    transform: rotate(90deg);
-    color: #8cca64;
-  }
-  .backer {
-    transform: rotate(-90deg);
-    color: #f56e6e;
-  }
-  .nav-center {
-    left: auto;
-    right: auto;
-  }
-  .nav-bar {
-    width: 80%;
-  }
-  .menu {
-    width: 80%;
-    left: auto;
-    right: auto;
-  }
-  .all-content-wrapper {
-    background: #4c76b8;
-    background: -webkit-linear-gradient(#4c76b8, #588d34);
-  }
-  .all-content {
-    width: 80%;
-    margin: 0 auto;
-    background: #fff;
-  }
-  // intro section
-  .tracker-wrapper {
-    width: 80%;
-  }
-  .stand-in, .content-indicator-backdrop {
-    max-width: 100%;
-  }
-  .welcome-logo {
-    width: 120px;
-  }
-  .brand-head {
-    font-size: 3.3em;
-  }
-  .logo-name-line-slogan {
-    padding-bottom: 10px;
-  }
-  .hidden-shadow-box, .plain-menu-box {
-    padding-top: 0;
-  }
-
-  // services section
-  .services-container {
-    margin-bottom: 15px;
-    border-top: 1px solid rgba(0,0,0,.2);
-    border-bottom: 1px solid rgba(0,0,0,.2);
-  }
-  .service {
-    border: none;
-    border-radius: 0;
-  }
-  .desc-head {
-    font-size: 1.3em;
-    font-weight: 600;
-  }
-  .desc-body {
-    font-size: 1em;
-    font-weight: 400;
-  }
-
-  // team section
-  .home-team-image {
-      width: 75px;
-      height: 75px;
-
-  }
-  .mini-desc {
-    font-size: 1.2em;
-    font-weight: 400;
-  }
-
-
-  // contact section
-  .contact-head {
-    font-size: 2.2em;
-  }
-  .contact-info {
-    font-size: 1.3em;
-    font-weight: 400;
-  }
-  .contact-divider-line-case {
-    display: none;
-  }
-  .contact-info-grouping {
-    margin: 0;
-  }
-  .arrow-and-text {
-    margin: 5px 0 0 0;
-  }
-  .show-next {
-    margin: 0;
-  }
-  .to-team {
-    margin-top: 8px;
-  }
-
-  // foot section
-  .foot-head {
-    font-size: 1.6em;
-  }
-  .foot-item {
-    font-size: 1.3em;
-  }
-  .copy {
-    font-size: 1em;
-  }
-
-  // team page
-  // team page
-  // team page
-  // team page
-  .bio {
-    height: calc(100vh - 41px);
-  }
-  .bio-name {
-    font-size: 1.3em;
-  }
-  .bio-text {
-    font-size: 1.1em;
-    font-weight: 400;
-  }
-.link-pad {
-  top: -41px;
-  height: 41px;
-}
-  .bio-image {
-    width: 100px;
-    height: 100px;
-  }
-
-
-  // contact page
-  // contact page
-  // contact page
-  // contact page
-
-  .team-welcome {
-    position: relative;
-
-    padding: 10px 0;
-    margin: 0 auto;
-
-  }
-  .contact-box-container {
-    background: none;
-    border: 0;
-  }
-  .contact-info-box {
-    width: 75%;
-  }
-  .contact-info-grouping {
-    padding: 5px 0;
-  }
-  .partner {
-    width: 65px;
-    height: 65px;
-  }
-  .contact-foot-head {
-    font-size: 1.4em;
-    font-weight: 100;
-  }
-  .contact-foot-item {
-    font-size: 1em;
-    font-weight: 100;
-  }
-  .contact-copy {
-    font-size: .9em;
-  }
-}
-@media (min-height: 376px) and (orientation: landscape) {
-  .nav-bar, .nav-bar-placeholder, .nav-center {
-    height: 60px;
-    padding: 0;
-  }
-  .tracker-wrapper {
-    top: 60px;
-  }
-
-  .nav-logo {
-    max-height: none;
-    width: 70px;
-  }
-  .menu-button {
-    font-size: 1.3em;
+    margin-top: 40px;
   }
   .menu-button, .logo-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 90px;
-  }
-}
-@media (min-height: 446px) and (orientation: landscape) {
-  .nav-bar {
-    display: flex;
-  }
-  .name {
-    padding-top: 0;
-  }
-  .link-pad {
-    top: -64px;
-    height: 64px;
-  }
-  .enter-button {
-    margin-top: 65px;
-  }
-  .stalled-spacing {
-    letter-spacing: 5px;
-  }
-  .menu-button {
-    display: none;
-  }
-  .welcome-logo {
-    width: 35%;
-  }
-  .brand-head {
-    font-size: 4em;
-  }
-  .next-button {
-    width: 200px;
-    height: 160px;
-    border-radius: 10px;
-  }
-  .logo-name-line-slogan {
-    padding-bottom: 50px;
-  }
-  .plain-menu-box {
-    justify-content: space-around;
-  }
-  .hidden-shadow-box {
-    display: flex;
-    padding-top: 50px;
-  }
-  .shadows {
-    width: 160px;
-  }
-
-  // service section
-  .services-container {
-    margin: 0;
-  }
-  .service {
-    border: 2px solid #000;
-  }
-  // team section
-  .divider-line {
-    margin: 10px 0;
-  }
-  .team-container {
-    width: 90%;
-    margin: 0;
-  }
-  .members-contain {
-    margin: 20px 0;
-  }
-  .home-team-image {
-    width: 130px;
-    height: 130px;
-  }
-  .mini-desc {
-    font-size: 1.3em;
-  }
-  .to-team {
-    margin-top: 20px;
-  }
-
-  // contact section
-  .contact-head {
-    font-size: 3em;
-  }
-  .contact-divider-line-case {
-    display: flex;
-  }
-  .divider-line {
-    height: 2px;
-  }
-  .info-box {
-    margin: 15px 0;
-  }
-  .contact-info-grouping {
-    padding: 10px 0;
-  }
-  .contact-info {
-    font-size: 1.5em;
-  }
-
-  // team page
-  .contact-logo {
-    padding: 0;
-    margin-top: 30px;
-  }
-  .other-link-pad {
-    height: 59px;
-    top: -59px;
-  }
-  .bio {
-    height: 900px;
-    height: 100vh;
-    height: calc(100vh - 60px);
-  }
-  .bio-image {
-    width: 160px;
-    height: 160px;
-  }
-  .bio-name {
-    font-size: 1.8em;
-    padding: 0 0 15px 0;
-  }
-  .bio-text {
-    padding: 2% 10%;
-  }
-  .realms-holder {
-    padding: 0 10%;
-  }
-
-  // contact page
-  .contact-info-box {
-    width: 60%;
-  }
-  .partner {
-    width: 85px;
-    height: 85px;
-  }
-  .partner:hover {
-    transform: translateY(0) scale(1);
-  }
-
-}
-
-@media (min-width: 1024px) {
-  .tracker-wrapper {
-    width: 1024px;
-  }
-  .all-content-wrapper {
-    background: blue;
-    background: -webkit-linear-gradient(blue, #50346f, blue);
-  }
-  .all-content {
-    width: 1024px;
-    margin: 0 auto;
-    background: #fff;
-    box-shadow: 0 0 15px 10px rgba(0,0,0,.2);
-  }
-  // landing page
-  // landing page
-  // landing page
-  // landing page
-  #welcome-back {
-    transform: translateY(20px);
-  }
-  .line {
-    background: rgba(101, 101, 101, .2);
-    transform:translateY(4px);
-  }
-  .line-index-motion {
-    transform: translateY(37px);
-  }
-  .lower-m {
-
-  }
-  .grey-studios {
-  }
-
-  // old code, may need updating
-  // old code, may need updating
-  // old code, may need updating
-  // old code, may need updating
-
-  .and-more {
-    transform: translateY(-50%);
-  }
-	.nav-center {
-		border-bottom: 1px solid silver;
-	}
-  .nav-bar, .nav-center, .nav-bar-placeholder {
-    height: 60px;
-  }
-  .nav-bar {
-    display: block;
-    width: 1024px;
-    left: 50%;
-		transform: translateX(-50%);
-  }
-  .logo-box {
-    padding: 5px 20px;
-    position: absolute;
-    width: auto;
-  }
-  .name {
-    margin: 0 auto;
-    padding-top: 20px;
-  }
-  .desktop-menu {
-    display: flex;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    margin-right: 20px;
-  }
-  .menu-button {
-    display: none;
-  }
-  .welcome-logo {
-    width: 200px;
-  }
-  .contact-logo-welcome {
-    width: 70px;
-    height: 70px;
-  }
-  .contact-info-box {
-		width: 400px;
-		border-left: 4px double #fff;
-		border-right: 4px double #fff;
-		padding: 0 30px;
-	}
-
-	.landing-logo-box {
-		width: 350px;
-	}
-	.fading-list {
-		height: 56px;
-	}
-	.alt-name {
-		font-size: 3.5em;
-	}
-  .studios {
-    transition: transform .4s ease-in-out;
-    font-size: 2em;
-  }
-  .stalled-spacing {
-    transition: letter-spacing .45s ease-in-out;
-    letter-spacing: 4px;
-  }
-  .spacing {
-    transition: font-weight .2s ease-in-out;
-    // letter-spacing: 4px;
-    font-weight: 900;
-  }
-  .up-move {
-    transform: translateY(-10px);
-  }
-  .down-move {
-    transform: translateY(59px);
-  }
-	.landing-line-case {
-		width: 140px;
-	}
-	.divider-line {
-		display: none;
-	}
-	.divider-line-case {
-		width: 250px;
-	}
-	.button-bar {
-		height: 70px;
-	}
-
-	.enter-button {
-		padding: 0;
-		height: 70px;
-    width: 70px;
-		font-size: 1.1em;
-		line-height: 3.6em;
-		margin-top: 38px;
-    border-radius: 50px;
-	}
-
-
-
-  .hidden-shadow-box {
-    display: none;
-  }
-
-	.welcome-logo-box {
-		width: inherit;
-	}
-	.welcome-logo {
-	}
-	.brand-head {
-		font-weight: 900;
-	}
-	.extra-desktop-services {
-		display: block;
-	}
-	.section-header {
-		margin: 30px 0 0 0;
-		font-size: 2.2em;
-	}
-  .bottom-button {
-    font-size: 1.1em;
-  }
-  .services-containing-container {
-    width: 100%;
-  }
-	.services-container {
-		width: 100%;
-		height: 100%;
-    margin-top: 3px;
-    margin-bottom: 0;
-	}
-	.service-pair {
-		width 100%
-		height: 50%;
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		text-align: center;
-	}
-	.service-desc {
-		width: 300px;
-		padding: 5%;
-	}
-  .workers-header, .workers {
-    width: 675px;
-  }
-	.service {
-		flex-direction: column;
-		width: 33.3333%;
-		height: 100%;
-		align-items: center;
-		margin: 0;
-		border: 2px solid black;
-		transition: border 0s ease-in-out, background 0s ease-in-out;
-	}
-  .service:hover {
-		border: 2px solid #adb0f3;
-		background: #2C506D;
-	}
-	.service-plug {
-		padding: 50px 0;
-	}
-	.team-welcome {
-		margin: 0 auto;
-	}
-	.team-welcome-sub {
-		width: 500px;
-	}
-	.team-banner {
-		width: 200px;
-	}
-	.team-content {
-		// padding: 50px 0 10px 0;
-	}
-	.team-content::before {
-		border-width: 18px;
-		top: -2px;
-	}
-	.bio-image-holder {
-
-	}
-	.centered-bio-text {
-		width: 750px;
-	}
-	.bio-name {
-		padding: 15px 0;
-    font-size: 2em;
-	}
-	.thumb-holder {
-		margin: 0 auto;
-	}
-	.contact-head {
-		padding: 60px 0 0 0
-	}
-	.bio {
-	}
-	.zean-bio {
-		padding-top: 30px;
-	}
-	.partner-band {
-		width: 90%;
-		margin: 0 auto;
-	}
-	.partner, .scaled-partner, .downscaled-partner {
-		width: 90px;
-		height: 90px;
-	}
-  .plain-menu-box {
-    position: relative;
-    bottom: auto;
-    justify-content: center;
-    padding-top: 50px;
-  }
-  .members-contain {
-    width: 40%;
-  }
-
-  // June 20th and after implementations
-  // June 20th and after implementations
-  // June 20th and after implementations
-  // June 20th and after implementations
-  .welcome-logo {
-		width: 250px;
-	}
-	.brand-head {
-		font-size: 4.4em;
-	}
-	.brand-sub {
-		font-size: 2.2em;
-		width: 500px;
-	}
-  .plain-menu-box {
-    padding-top: 50px;
-  }
-	.next-button {
-    width: 260px;
-		height: 200px;
-		margin: 0 20px;
-    border: 10px double #fff;
-	}
-  .next-button:first-child {
-    border-right: 10px double #fff;
-  }
-  .next-button:last-child {
-    border-left: 10px double #fff;
-  }
-  .intro {
-    min-height: 700px;
-    height: 100vh;
-    height: calc(100vh - 60px);
-  }
-  .link-pad {
-    top: -59px;
-    height: 59px;
-  }
-  .services-section, .team-section, .contact-section {
-    height: calc(100vh - 60px);
-  }
-  .logo-box {
-    margin: 0;
-  }
-  .tracker-wrapper {
-    top: 60px;
-  }
-  .contact-logo-welcome {
-    width: 100px;
-    height: 100px;
-  }
-  .section-header, .contact-head {
-    padding: 0;
-    margin: 0;
-    font-size: 3em;
-  }
-  .logo-name-line-slogan {
-    width: 530px;
-  }
-  .line-case {
-    width: 210px;
-  }
-  // services section
-  .to-services, .service-head {
-		display: none;
-	}
-  .service-desc {
-    width: 100%;
-    padding: 5% 7%;
-  }
-  .desc-head {
-    font-size: 1.6em;
-    margin-bottom: 20px;
-    font-weight: 400;
-  }
-  .desc-body {
     font-size: 1.2em;
-    line-height: 1.2em;
+    width: 80px;
   }
-
-  // team section
-  .divider-line-case {
-    width: 320px;
+  .nav-logo {
+    width: 65px;
   }
-  .divider-line {
-    display: block;
-    margin: 10px 0 30px 0;
-  }
-  .team-banner {
-    text-decoration: none;
-  }
-  .team-banner:hover {
-    letter-spacing: 4px;
-  }
-  .team-content {
-    justify-content: center;
-  }
-  .team-container {
-    width: 80%;
-    margin: 0 0 50px 0;
-  }
-  .members-contain {
-    width: 100%;
-    margin: 20px 0 60px 0;
-  }
-  .zean-member-image {
-  	background-position: -564px -22px;
-    background-size: 2860px;
-  	border-radius: 50%;
-  	width: 140px;
-  	height: 140px;
-  	border: 3px solid white;
-  	margin-top: 10%;
-  }
-  // contact section
-  .contact-divider-line-case {
-    width: 230px;
-  }
-  .emailer {
-    height: auto;
-  }
-  .contact-info-head {
-    width: 60px;
-    height: 60px;
-  }
-  .contact-info {
-    font-size: 1.4em;
-  }
-  .top-arrow {
-    width: 50px;
-    height: 50px;
-  }
-  .to-top-text {
-    font-size: 1.1em;
-  }
-  .arrow-and-text {
-    margin-top: 50px;
-  }
-.home-team-image {
-	border-radius: 50%;
-	width: 140px;
-	height: 140px;
-	border: 3px solid #333;
-	margin-top: 10%;
-  box-shadow: 0px 5px 2px 0px rgba(0,0,0,.3);
-  transition: box-shadow .2s ease-in-out;
-}
-.home-team-image:hover {
-  box-shadow: 0px 8px 3px 0px rgba(0,0,0,.3);
-}
-// .adrian-member-image, .adrian-pic, .zean-member-image, .zean-pic, .nick-member-image, .nick-pic, .kiljan-member-image, .kiljan-pic, .kane-pic, .kane-member-image {
-// 	background-image: url("/photos.jpg");
-// 	background-repeat: no-repeat;
-// }
-// .nick-member-image{
-// 	background-size: 1500px;
-//   background-position: -68px -6px;
-// }
-// .adrian-member-image{
-// 	  background-position: -1442px -2px;
-//     background-size: 1580px;
-// }
-// .kiljan-member-image {
-//   background-position: -677px -7px;
-//   background-size: 1720px;
-// }
-// .kane-member-image{
-// 	background-position: -1372px -6px;
-//   background-size: 1750px;
-// }
-.mini-desc {
-  width: 70%;
-  font-size: 1.3em;
-  line-height: 1.3em;
-}
-.member {
-  transition: transform .2s ease-in-out;
-}
-.member:hover {
-  transform: scale(1.3);
-}
-// .adrian-pic {
-// 	background-size: 1480px;
-// 	background-position: -1347px 0px;
-// }
-// .nick-pic {
-// 	background-size: 1280px;
-// 	background-position: -55px 0px;
-// }
-// .kiljan-pic {
-// 	background-position: -738px 0px;
-// 	background-size: 1400px;
-// }
-// .kane-pic {
-// 	background-position: -1088px -2px;
-// 	background-size: 1400px;
-// }
-
-  .show-next {
-    width: auto;
-    font-size: 1.5em;
-    padding: 15px 25px;
-    transition: all .2s ease-in-out;
-  }
-  .show-next:hover {
-  	border: 2px solid #fff;
-  	color: #fff;
-  	background: #2196f3;
-  	// box-shadow: 0px 0px 0px 2px #2196f3;
-  }
-  // contact section
-  .check-it {
-    margin: 0 auto 10px auto;
-  }
-
-  .blue-line-case {
-    width: 196px;
-  }
-  .blue-line {
-    height: 3px;
-  }
-  .team-banner {
-    transition: letter-spacing .1s ease-in-out;
-  }
-  .thumb-holder {
-    width: 140px;
-  }
-  .service-thumb {
-    height: auto;
-    width: auto;
-  }
-  .service-thumb-holder {
-    width: 175px;
-  }
-
-
-
-  .button-text-group {
-    transition: transform .1s ease-in-out;
-  }
-  .button-text-group:hover {
-    transform: scale(1.1, 1.1);
-  }
-  .contact-logo {
-    width: 100px;
-    height: 100px;
-  }
-  .team-welcome-head {
-    font-size: 3em;
-  }
-  .team-welcome-sub {
-    font-size: 1.5em;
-  }
-  .contact-box-container {
-    padding: 60px 0;
-  }
-  .contact-info-box {
-    width: 450px;
-  }
-
-  .contact-service-plug {
-    padding: 7% 0;
-  }
-  .address-link:hover, .mailer:hover {
-    cursor: pointer;
-    color: #adb0f3;
-  }
-  // services page
-  // .service-image {
-  //   margin: 0 auto;
-  //   width: 150px;
-  //   height: auto;
-  // }
 
   // team page
-  .bio-thumb-holder {
-
-  }
-  .bio-image {
-    width: 200px;
-    height: 200px;
-  }
+  // team page
+  // team page
   // team page
   .bio-text {
-    font-weight: 400;
-    font-size: 1.3em;
-    padding: 2% 3%;
-  }
-  .realms-holder {
-    display: block;
-    width: 100%;
-    padding: 0 3%;
-  }
-  .workers-header {
-    width: 100%;
-    padding: 10px 5% 0 5%;
-  }
-  .realm-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: 60px;
-    height: 60px;
-    border: 2px solid #333;
-    background: #6b9b4c;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-right: 15px;
-    box-shadow: 2px 2px 1px 0px rgba(0,0,0,.5);
-    transition: all .2s ease-in-out;
-  }
-  .realm-box:hover {
-    box-shadow: 6px 6px 3px 0px rgba(0,0,0,.5);
-    transform: scale(1.2);
-  }
-  .realms, .workers {
-    display: flex;
-    width: 100%;
-  }
-  .realms-header {
-    width: 100%;
-    padding-top: 10px;
-  }
-  .realm {
-    width: 50px;
-    margin: 2px;
-  }
-  .worker {
-    width: 52px;
-  }
-
-
-  // contact page
-  .partner:hover {
-    transform: translateY(0) scale(1.3, 1.3);
-  }
-  .contact-foot-item:hover {
-  	color: #2196f3;
-  	transition: color .01s ease;
+    font-size: 1.1em;
   }
 
 }
-@media (min-width: 1200px) {
-  .landing-logo-box {
-    margin-bottom: 10px;
-  }
-  .and-more {
-    font-size: 4.5em;
-  }
-  .alt-name {
-    font-size: 4em;
-  }
-  .down-move {
-    transform: translateY(61px);
-  }
-  .stalled-spacing {
-    letter-spacing: 8px;
-  }
-  .landing-line-case {
-    width: 190px;
-  }
-  .line {
-    transform: translateY(10px);
-  }
-  .line-index-motion {
-    transform: translateY(45px);
-  }
-  #welcome-back {
-    font-size: 1.3em;
-    transform: translateY(42px);
-  }
-  .enter-button {
-    margin-top: 140px;
-  }
 
-  // old code, might need updating
+// added above code on july 4th
+// added above code on july 4th
+// added above code on july 4th
+// added above code on july 4th
+// added above code on july 4th
+// added above code on july 4th
+// added above code on july 4th
 
 
-	.show-next {
-		margin: 60px 0;
-		width: 425px;
-	}
-	.services-container {
-		// width: 1200px;
-	}
-	.bio {
-	}
-	.zean-bio {
-		padding-top: 30px;
-	}
-	.partner-band {
-
-		margin: 0 auto;
-	}
-	.partner, .scaled-partner, .downscaled-partner {
-		width: 90px;
-		height: 90px;
-	}
-	.contact-foot {
-		margin: 0 auto;
-	}
-
-  // June 20th and after implementations
 
 
-}
+
+
+//
+// @media (min-width: 320px) and (min-height: 520px) and (orientation: portrait) {
+//   // landing page
+//   // landing page
+//   // landing page
+//   // landing page
+//   .landing-logo-box {
+//     width: 180px;
+//   }
+//   .fading-list {
+//     height: 35px;
+//   }
+//   .alt-name {
+//     font-size: 2.2em;
+//   }
+//   .and-more {
+//     font-size: 2.7em;
+//   }
+//   .studios {
+//
+//   }
+//   .down-move {
+//     transform: translateY(40px);
+//   }
+//   .stalled-spacing {
+//     letter-spacing: 6px;
+//   }
+//   .line {
+//     margin-bottom: 35px;
+//   }
+//   .line-index-motion {
+//     transform: translateY(25px);
+//   }
+//
+// }
+//
+// @media (min-width: 321px) and (orientation: portrait) {
+//
+//   // landing page
+//   // landing page
+//   // landing page
+//   // landing page
+//   .landing-intro {
+//     padding-bottom: 100px;
+//   }
+//   .alt-name {
+//     font-size: 2.5em;
+//   }
+//   .and-more {
+//     font-size: 3em;
+//   }
+//   .studios {
+//     font-size: 1.4em;
+//   }
+//   .down-move {
+//     transform: translateY(45px);
+//   }
+//   .stalled-spacing {
+//     // letter-spacing: 6px;
+//   }
+//   .line {
+//     margin-top: 15px;
+//   }
+//   .landing-line-case {
+//     width: 140px;
+//   }
+//   #welcome-back {
+//     font-size: 1em;
+//   }
+//   .enter-button {
+//     font-size: 1.15em;
+//     line-height: 2.925em;
+//     width: 60px;
+//     height: 60px;
+//     margin-top: 45px;
+//   }
+//   .nav-logo {
+//     width: 55px;
+//   }
+//   .menu-button, .logo-box {
+//     width: 80px;
+//   }
+//   .contact-logo {
+//     height: 90px;
+//     width: 90px;
+//   }
+//   .welcome-page {
+//     height: 100%;
+//     justify-content: flex-start;
+//   }
+//   .logo-name-line-slogan {
+//     width: 80%;
+//     padding-bottom: 40px;
+//   }
+//   .brand-head {
+//     font-size: 4em;
+//   }
+//   .brand-sub {
+//     font-size: 1.9em;
+//   }
+//   .buttons-shadows {
+//     width: 100%;
+//   }
+//   .buttons-shadows, .logo-name-line-slogan {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//   }
+//   .intro, .home-section {
+//     height: 414px;
+//     height: 100vh;
+//     height: calc(100vh - 60px);
+//   }
+//   .link-pad {
+//     top: -60px;
+//     height: 60px;
+//   }
+//
+//   // from max 650 - min 414 section
+//   // from max 650 - min 414 section
+//   // from max 650 - min 414 section
+//   // from max 650 - min 414 section
+//
+//
+//     .menu-button {
+//       font-size: 1.2em;
+//     }
+//     .name {
+//       font-size: 1.6em;
+//     }
+//     .plain-menu-box {
+//       padding-top: 20px;
+//     }
+//   	.line-case {
+//   		width: 190px;
+//   	}
+//   	.divider-line-case {
+//   		width: 250px;
+//   	}
+//   	.contact-divider-line-case {
+//   	width: 140px;
+//   	}
+//     .tracker-wrapper {
+//   		top: 60px;
+//   	}
+//   	.stand-in {
+//   	display: none;
+//   	position: fixed;
+//   	left: 50%;
+//   	transform: translateX(-50%);
+//   	// margin: 7.5px 0 15px 0;
+//   	width: 0;
+//   	height: 3px;
+//   	}
+//   	.welcome-logo-box {
+//   		margin-top: 20px;
+//   	}
+//   	.welcome-logo {
+//   		width: 170px;
+//   	}
+//   	.bottom-button {
+//   		// margin-top: 15px;
+//   	}
+//   	.nav-bar-placeholder, .nav-bar, .nav-center {
+//   		height: 60px;
+//   	}
+//     .blue-line-case {
+//       width: 195px;
+//     }
+//   	.section-header {
+//   		margin: 0;
+//       font-size: 2.2em;
+//   	}
+//   	.bio {
+//       height: 321px;
+//       height: 100vh;
+//   		height: calc(100vh - 60px);
+//       justify-content: center;
+//   	}
+//     .bio-content {
+//       height: 100%;
+//     }
+//   	// .zean-bio {
+//   	// 	padding-top: 20px;
+//   	// }
+//
+//     // services section
+//
+//     .service {
+//       margin: 10px auto;
+//     }
+//     .desc-head {
+//       font-size: 1.5em;
+//       font-weight: 400;
+//     }
+//     .desc-body {
+//       font-size: 1.1em;
+//     }
+//     .show-next {
+//       width: auto;
+//       font-size: 1.5em;
+//       padding: 10px 15px;
+//       transition: all .2s ease-in-out;
+//     }
+//
+//     // team section
+//     .team-container {
+//       padding: 20px 0;
+//     }
+//     .members-contain {
+//       width: 95%;
+//       padding-bottom: 20px;
+//     }
+//     .home-team-image {
+//       width: 70px;
+//       height: 70px;
+//     }
+//     .mini-desc {
+//       width: 90%;
+//       font-size: 1.2em;
+//     }
+//
+//   	.contact-head {
+//       font-size: 2.2em;
+//   	}
+//     .contact-divider-line-case {
+//       width: 160px;
+//       margin-bottom: 20px;
+//     }
+//     .contact-info-box {
+//       width: 310px;
+//     }
+//     .contact-info {
+//       font-size: 1.2em;
+//     }
+//   	.team-banner {
+//   		width: 200px;
+//   	}
+//   	.bio-image, .service-image {
+//   		margin: 0 auto 10px auto;
+//   	}
+//   	.partner, .scaled-partner, .downscaled-partner {
+//   		width: 55px;
+//   		height: 55px;
+//   		margin: 20px 0;
+//   	}
+//   	.check-it {
+//   		width: 300px;
+//   		font-size: 1.6em;
+//   		margin 20px auto 10px auto
+//   	}
+//   	.top-of-next, .show-rest {
+//   		height: 60px;
+//   	}
+//     // team page
+//     .team-welcome-head {
+//       font-size: 2.2em;
+//     }
+//     .bio-text {
+//       font-size: 1.2em;
+//     }
+//
+// }
+// @media (min-width: 650px) and (orientation: portrait) {
+//   // landing page
+//   .landing-intro {
+//     padding-bottom: 200px;
+//   }
+//   .landing-logo-box {
+//     width: 250px;
+//     padding-bottom: 15px;
+//   }
+//
+//
+//   .fading-list {
+//     height: 80px;
+//   }
+//   .alt-name {
+//     font-size: 4em;
+//   }
+//   .and-more {
+//     font-size: 5em;
+//     transform: translateY(-71%);
+//   }
+//   .studios {
+//     font-size: 2.6em;
+//   }
+//   .down-move {
+//     transform: translateY(63px);
+//   }
+//   .stalled-spacing {
+//     letter-spacing: 8px;
+//   }
+//   .line-index-motion {
+//     transform: translateY(23px);
+//   }
+//   .landing-line-case {
+//     width: 240px;
+//   }
+//   #welcome-back {
+//     font-size: 1.2em;
+//     transform: translateY(8px);
+//   }
+//   .enter-button {
+//     width: 90px;
+//     height: 90px;
+//     font-size: 1.5em;
+//     line-height: 3.4em;
+//     margin-top: 115px;
+//     background: #fff;
+//   }
+//
+//   // home page
+//   .logo-box, .menu-button {
+//     width: 100px;
+//   }
+//   .nav-logo {
+//     width: 75px;
+//   }
+//   .menu-button {
+//     font-size: 1.4em;
+//   }
+//   .tracker-wrapper, .stand-in, .content-indicator-backdrop {
+//     height: 6px;
+//   }
+//   .menu-item {
+//     font-size: 1.2em;
+//   }
+//   .welcome-logo {
+//     width: 230px;
+//   }
+//   .brand-head {
+//     font-size: 4.5em;
+//   }
+//   .line-case {
+//     width: 240px;
+//   }
+//   .home-line {
+//     height: 6px;
+//     border-radius: 40%;
+//   }
+//   .brand-sub {
+//     font-size: 2.3em;
+//   }
+//   .next-button {
+//     width: 175px;
+//     height: 145px;
+//     border: 10px double #fff;
+//     border-radius: 10px;
+//   }
+//   .contact-logo-welcome {
+//     height: 100px;
+//     width: 100px;
+//   }
+//   .bottom-button {
+//     font-size: 1.4em;
+//   }
+//   .hidden-shadow-box {
+//     padding-top: 50px;
+//   }
+//   .shadows {
+//     width: 170px;
+//     height: 7px;
+//
+//   }
+//   .bottom-banner {
+//     top: -54px;
+//   }
+//   .team-banner {
+//     width: 240px;
+//     height: 50px;
+//     font-size: 1.8em;
+//   }
+//   .team-banner::before {
+//     left: -50px;
+//     border-top: 25px solid transparent;
+//     border-right: 25px solid #6b9b4c;
+//     border-left: 25px solid transparent;
+//     border-bottom: 25px solid #6b9b4c;
+//   }
+//   .team-banner::after {
+//     right: -50px;
+//     border-top: 25px solid transparent;
+//     border-right: 25px solid transparent;
+//     border-left: 25px solid #6b9b4c;
+//     border-bottom: 25px solid #6b9b4c;
+//   }
+//   // services section
+//   .section-header {
+//     font-size: 3.5em;
+//   }
+//   .divider-line-case {
+//     width: 400px;
+//   }
+//   .divider-line {
+//     height: 2px;
+//     margin-top: 10px;
+//   }
+//   .service {
+//     width: 90%;
+//     margin: 50px auto;
+//   }
+//   .thumb-holder {
+//     width: 130px;
+//   }
+//   .desc-head {
+//     font-size: 2em;
+//     margin-bottom: 0;
+//   }
+//   .desc-body {
+//     font-size: 1.4em;
+//   }
+//   .show-next {
+//     font-size: 2em;
+//   }
+//   .to-services {
+//     border-width: 3px;
+//   }
+//
+//   // team section
+//   .team-container {
+//     padding: 40px 0;
+//   }
+//   .home-team-image {
+//     width: 140px;
+//     height: 140px;
+//   }
+//   .nameplate {
+//     font-size: 1.6em;
+//   }
+//   .mini-desc {
+//     width: 80%;
+//     font-size: 1.6em;
+//   }
+//   .members-contain {
+//     padding-bottom: 30px;
+//   }
+//
+//   // contact section
+//   .contact-head {
+//     font-size: 3.5em;
+//   }
+//   .contact-divider-line-case {
+//     width: 280px;
+//   }
+//   .info-box {
+//     margin-bottom: 20px;
+//   }
+//   .contact-info-grouping {
+//     margin: 15px 0;
+//   }
+//   .contact-info-head {
+//     width: 70px;
+//     height: 70px;
+//   }
+//   .contact-info {
+//     font-size: 1.8em;
+//     font-weight: 400;
+//     padding: 0 0 0 15px;
+//   }
+//   .emailer {
+//     height: 65px;
+//   }
+//   .top-arrow {
+//     width: 70px;
+//     height: 70px;
+//   }
+//   .to-top-text {
+//     font-weight: 400;
+//     font-size: 1.4em;
+//   }
+//   // foot section
+//   .foot-head {
+//     font-size: 1.8em;
+//   }
+//   .foot-item {
+//     font-size: 1.4em;
+//   }
+//   .copy {
+//     font-size: 1.2em;
+//   }
+//
+//   // services page
+//   .contact-logo {
+//     height: 120px;
+//     width: 120px;
+//   }
+//   .team-welcome-head {
+//     font-size: 3em;
+//   }
+//   .team-welcome-sub {
+//     width: 300px;
+//     font-size: 1.6em;
+//   }
+//   // .welcome-head {
+//   //   font-size: 3em;
+//   // }
+//   .service-thumb-holder {
+//     width: 200px;
+//   }
+//   .bio-name {
+//     font-size: 2.4em;
+//   }
+//   .bio-text {
+//     font-size: 1.6em;
+//     padding: 2% 10%;
+//   }
+//   .realms-holder {
+//     display: block;
+//     width: 100%;
+//     padding: 0 10%;
+//   }
+//   .workers-header {
+//     width: 100%;
+//     padding: 10px 5% 0 5%;
+//   }
+//   .realm-box {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     width: 60px;
+//     height: 60px;
+//     border: 2px solid #333;
+//     background: #6b9b4c;
+//     border-radius: 5px;
+//     margin-top: 10px;
+//     margin-right: 15px;
+//     box-shadow: 2px 2px 1px 0px rgba(0,0,0,.5);
+//     transition: all .2s ease-in-out;
+//   }
+//   .realms, .workers {
+//     display: flex;
+//     width: 100%;
+//   }
+//   .realms-header {
+//     width: 100%;
+//     padding-top: 10px;
+//   }
+//   .realm {
+//     width: 50px;
+//     margin: 2px;
+//   }
+//   .worker {
+//     width: 52px;
+//   }
+//
+//
+//   // contact page
+//   .contact-info-box {
+//     width: 480px;
+//   }
+// 	.friends {
+// 		font-size: .8em;
+// 		width: 65px;
+// 	}
+// 	.partner-band {
+// 		margin: 0 20px;
+// 	}
+// 	.partner, .scaled-partner, .downscaled-partner {
+// 		width: 80px;
+// 		height: 80px;
+// 		margin: 25px 0;
+// 	}
+//   .contact-foot-head {
+//     font-size: 1.5em;
+//     font-weight: 100;
+//
+//   }
+//   .contact-foot-item {
+//     font-size: 1.2em;
+//     font-weight: 100;
+//     color: #222;
+//   }
+//   .copy {
+//     font-size: 1.2em;
+//   }
+// }
+//
+// @media (max-width: 800px) and (orientation: landscape) {
+//   .landing-logo-box {
+//     width: 25%;
+//   }
+//   .menu-item {
+//     padding: 3% 0;
+//   }
+//   .hidden-shadow-box {
+//     margin-top: 10px;
+//   }
+//
+//   .welcome-logo-box {
+//     margin-top: 5px;
+//   }
+//   .line-case, .brand-sub {
+//     display: none;
+//   }
+//   .next-button {
+//     width: 65px;
+//     height: 65px;
+//   }
+//   // services section
+//   .section-header {
+//     margin-bottom: 0px;
+//   }
+//   .services-section-header {
+//     margin-bottom: 10px;
+//   }
+//
+//   .divider-line-case {
+//     display: none;
+//   }
+//   .sp-1 {
+//     display: flex;
+//     justify-content: space-around;
+//   }
+//   .service {
+//     flex-direction: column;
+//     justify-content: flex-start;
+//     width: 33%;
+//     margin: 0;
+//     padding: 4px;
+//     padding-top: 0;
+//     border-radius: 5px;
+//     background: #1b3041;
+//     border: 1px solid blue;
+//   }
+//   .thumb-holder {
+//     margin: 5px auto;
+//     width: 60px;
+//   }
+//   .service-thumb-holder {
+//     margin: 10px auto;
+//     width: 100px;
+//   }
+//   .service-desc {
+//     width: auto;
+//   }
+//   .desc-head {
+//     text-align: center;
+//     font-size: 1em;
+//   }
+//   .desc-body {
+//     font-size: .8em;
+//   }
+//
+//   .animation-element.in-view.to-team {
+//     transform: translateY(-10px);
+//   }
+//   // team section
+//   .team-container {
+//     margin: 0;
+//   }
+//   .mini-desc {
+//     font-size: 0.95em;
+//     line-height: 1.15em;
+//   }
+//   .home-banners {
+//     width: 100px;
+//   }
+//   .bottom-banner {
+//     top: 0;
+//   }
+//   .landscape-hide {
+//     display: none;
+//   }
+//   .home-nav {
+//     display: none;
+//     position: fixed;
+//     width: 100%;
+//     height: 30px;
+//     bottom: 0;
+//     z-index: 10;
+//     transition: display .3s ease-in-out;
+//   }
+//   .forward-wrapper {
+//     transform: translateX(110%);
+//   }
+//   .backward-wrapper {
+//     transform: translateX(-210%);
+//   }
+//   .blue-line-case {
+//     width: 100px;
+//   }
+//   // contact section
+//   .contact-info-grouping {
+//     padding: 0;
+//   }
+//   .arrow-and-text {
+//     margin: 10px 0 44px 0;
+//   }
+//   .contact-head {
+//     margin-bottom: 5px;
+//     // text-shadow: 1px 1px #222;
+//   }
+//   // .section-header {
+//   //   text-shadow: 1px 1px #222;
+//   // }
+//   // .contact-info {
+//   //   padding-bottom: 8px;
+//   // }
+//
+//   // team PAGE
+//   .logo-box, .menu-button {
+//     width: 50px;
+//   }
+//   .bio {
+//     justify-content: center;
+//     -webkit-tap-highlight-color: transparent;
+//   }
+//   .bio-image {
+//     margin: 5px auto;
+//   }
+//   .bio-content {
+//     flex-direction: row;
+//     padding: 0 10px;
+//   }
+//   .centered-bio-text {
+//     width: 75%;
+//   }
+//   .bio-name {
+//     font-size: 1em;
+//     padding: 0;
+//   }
+//
+//   // services PAGE
+//   .bio {
+//     justify-content: flex-end;
+//   }
+//   .bio-text {
+//     padding: 2% 10px;
+//     font-size: 1em;
+//     line-height: 1.2em;
+//   }
+//   .service-image {
+//     width: auto;
+//     height: 100px;
+//     margin-bottom: 5px;
+//   }
+//   .web-icon {
+//     background-position: -247px 0;
+//   }
+//   .graphic-icon {
+//     background-position: -433px 0;
+//   }
+//   .repair-icon {
+//     background-position: 34px 0;
+//   }
+//   .systems-icon {
+//     background-size: 800px;
+//     background-position: -602px 10px;
+//     margin-bottom: 0;
+//   }
+//   .social-icon {
+//     background-position: -105px 0;
+//   }
+//   .support-icon {
+//     background-position: -919px 0;
+//   }
+//   .member-title {
+//     display: block;
+//     margin: 0 auto;
+//     color: rgba(0, 0, 0, .4);
+//     font-size: .8em;
+//   }
+//   .bio-image-holder {
+//     width: 28.5%;
+//     margin: 0 auto;
+//   }
+//   // contact PAGE
+//   .team-welcome {
+//     padding: 0;
+//     margin: 10px auto;
+//   }
+//   .contact-info-box {
+//     width: 60%;
+//   }
+// }
+//
+//
+//
+//
+//
+// @media (max-height: 320px) and (orientation: landscape) {
+//   .nav-center {
+//     left: auto;
+//     right: auto;
+//   }
+//   .nav-bar {
+//     width: 80%;
+//   }
+//   .menu {
+//     width: 80%;
+//     left: auto;
+//     right: auto;
+//   }
+//   .all-content-wrapper {
+//     background: #4c76b8;
+//     background: -webkit-linear-gradient(#4c76b8, #588d34);
+//   }
+//   .all-content {
+//     width: 80%;
+//     margin: 0 auto;
+//     background: #fff;
+//   }
+//   // intro section
+//   .tracker-wrapper {
+//     width: 80%;
+//   }
+//   .stand-in, .content-indicator-backdrop {
+//     max-width: 100%;
+//   }
+//   .welcome-logo {
+//     width: 80px;
+//   }
+//   .logo-name-line-slogan {
+//     padding-bottom: 10px;
+//   }
+//   .hidden-shadow-box, .plain-menu-box {
+//     padding-top: 0;
+//   }
+//
+//   // services section
+//   .services-container {
+//     margin-bottom: 15px;
+//     border-top: 1px solid rgba(0,0,0,.2);
+//     border-bottom: 1px solid rgba(0,0,0,.2);
+//   }
+//   .service {
+//     border: none;
+//     border-radius: 0;
+//   }
+//   .service:first-child {
+//     border-top-right-radius: 0;
+//     border-bottom-right-radius: 0;
+//     border-right: none;
+//   }
+//   .service:nth-child(2n) {
+//     border-radius: 0;
+//     border-left: none;
+//     border-right: none;
+//   }
+//   .service:last-child {
+//     border-top-left-radius: 0;
+//     border-bottom-left-radius: 0;
+//     border-left: none;
+//   }
+//   // contact section
+//   .contact-divider-line-case {
+//     display: none;
+//   }
+//   .contact-info-grouping {
+//     margin: 0;
+//   }
+//   .arrow-and-text {
+//     margin: 5px 0 0 0;
+//   }
+//   .side-nav {
+//
+//   }
+//   .nav-arrows {
+//     font-size: 2.5em;
+//     font-weight: 900;
+//     text-decoration: none;
+//
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//
+//     position: fixed;
+//     z-index: 10;
+//     width: 10%;
+//     height: 100%;
+//     bottom: 0;
+//     // background: rgba(0,0,0,.2);
+//
+//     cursor: pointer;
+//   }
+//   .side-text {
+//     text-align: center;
+//     width: 45px;
+//     height: 45px;
+//   }
+//   .left-nav {
+//     left: 0;
+//   }
+//   .right-nav {
+//     right: 0;
+//   }
+//   .forer {
+//     transform: rotate(90deg);
+//     color: #8cca64;
+//   }
+//   .backer {
+//     transform: rotate(-90deg);
+//     color: #f56e6e;
+//   }
+//   .show-next {
+//     margin: 0;
+//   }
+//   .to-team {
+//     margin-top: 8px;
+//   }
+//
+//   // team page
+//   // team page
+//   // team page
+//   // team page
+//   .bio {
+//     height: calc(100vh - 41px);
+//   }
+//   .bio-name {
+//     font-size: .95em;
+//   }
+//   .bio-text {
+//     font-size: .9em;
+//   }
+// .link-pad {
+//   top: -41px;
+//   height: 41px;
+// }
+//   .bio-image {
+//     width: 100px;
+//     height: 100px;
+//   }
+//
+//
+//   // contact page
+//   // contact page
+//   // contact page
+//   // contact page
+//
+//   .team-welcome {
+//     position: relative;
+//
+//     padding: 10px 0;
+//     margin: 0 auto;
+//
+//   }
+//   .contact-box-container {
+//     background: none;
+//     border: 0;
+//   }
+//   .contact-info-box {
+//     width: 75%;
+//   }
+//   .contact-info-grouping {
+//     padding: 5px 0;
+//   }
+// }
+// @media (min-height: 321px) and (min-width: 640px) and (orientation: landscape) {
+//   .nav-arrows {
+//     font-size: 2.5em;
+//     font-weight: 900;
+//     text-decoration: none;
+//
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//
+//     position: fixed;
+//     z-index: 10;
+//     width: 10%;
+//     height: 100%;
+//     bottom: 0;
+//     // background: rgba(0,0,0,.2);
+//   }
+//   .side-text {
+//     text-align: center;
+//     width: 45px;
+//     height: 45px;
+//   }
+//   .left-nav {
+//     left: 0;
+//
+//   }
+//   .right-nav {
+//     right: 0;
+//   }
+//   .forer {
+//     transform: rotate(90deg);
+//     color: #8cca64;
+//   }
+//   .backer {
+//     transform: rotate(-90deg);
+//     color: #f56e6e;
+//   }
+//   .nav-center {
+//     left: auto;
+//     right: auto;
+//   }
+//   .nav-bar {
+//     width: 80%;
+//   }
+//   .menu {
+//     width: 80%;
+//     left: auto;
+//     right: auto;
+//   }
+//   .all-content-wrapper {
+//     background: #4c76b8;
+//     background: -webkit-linear-gradient(#4c76b8, #588d34);
+//   }
+//   .all-content {
+//     width: 80%;
+//     margin: 0 auto;
+//     background: #fff;
+//   }
+//   // intro section
+//   .tracker-wrapper {
+//     width: 80%;
+//   }
+//   .stand-in, .content-indicator-backdrop {
+//     max-width: 100%;
+//   }
+//   .welcome-logo {
+//     width: 120px;
+//   }
+//   .brand-head {
+//     font-size: 3.3em;
+//   }
+//   .logo-name-line-slogan {
+//     padding-bottom: 10px;
+//   }
+//   .hidden-shadow-box, .plain-menu-box {
+//     padding-top: 0;
+//   }
+//
+//   // services section
+//   .services-container {
+//     margin-bottom: 15px;
+//     border-top: 1px solid rgba(0,0,0,.2);
+//     border-bottom: 1px solid rgba(0,0,0,.2);
+//   }
+//   .service {
+//     border: none;
+//     border-radius: 0;
+//   }
+//   .desc-head {
+//     font-size: 1.3em;
+//     font-weight: 600;
+//   }
+//   .desc-body {
+//     font-size: 1em;
+//     font-weight: 400;
+//   }
+//
+//   // team section
+//   .home-team-image {
+//       width: 75px;
+//       height: 75px;
+//
+//   }
+//   .mini-desc {
+//     font-size: 1.2em;
+//     font-weight: 400;
+//   }
+//
+//
+//   // contact section
+//   .contact-head {
+//     font-size: 2.2em;
+//   }
+//   .contact-info {
+//     font-size: 1.3em;
+//     font-weight: 400;
+//   }
+//   .contact-divider-line-case {
+//     display: none;
+//   }
+//   .contact-info-grouping {
+//     margin: 0;
+//   }
+//   .arrow-and-text {
+//     margin: 5px 0 0 0;
+//   }
+//   .show-next {
+//     margin: 0;
+//   }
+//   .to-team {
+//     margin-top: 8px;
+//   }
+//
+//   // foot section
+//   .foot-head {
+//     font-size: 1.6em;
+//   }
+//   .foot-item {
+//     font-size: 1.3em;
+//   }
+//   .copy {
+//     font-size: 1em;
+//   }
+//
+//   // team page
+//   // team page
+//   // team page
+//   // team page
+//   .bio {
+//     height: calc(100vh - 41px);
+//   }
+//   .bio-name {
+//     font-size: 1.3em;
+//   }
+//   .bio-text {
+//     font-size: 1.1em;
+//     font-weight: 400;
+//   }
+// .link-pad {
+//   top: -41px;
+//   height: 41px;
+// }
+//   .bio-image {
+//     width: 100px;
+//     height: 100px;
+//   }
+//
+//
+//   // contact page
+//   // contact page
+//   // contact page
+//   // contact page
+//
+//   .team-welcome {
+//     position: relative;
+//
+//     padding: 10px 0;
+//     margin: 0 auto;
+//
+//   }
+//   .contact-box-container {
+//     background: none;
+//     border: 0;
+//   }
+//   .contact-info-box {
+//     width: 75%;
+//   }
+//   .contact-info-grouping {
+//     padding: 5px 0;
+//   }
+//   .partner {
+//     width: 65px;
+//     height: 65px;
+//   }
+//   .contact-foot-head {
+//     font-size: 1.4em;
+//     font-weight: 100;
+//   }
+//   .contact-foot-item {
+//     font-size: 1em;
+//     font-weight: 100;
+//   }
+//   .contact-copy {
+//     font-size: .9em;
+//   }
+// }
+// @media (min-height: 376px) and (orientation: landscape) {
+//   .nav-bar, .nav-bar-placeholder, .nav-center {
+//     height: 60px;
+//     padding: 0;
+//   }
+//   .tracker-wrapper {
+//     top: 60px;
+//   }
+//
+//   .nav-logo {
+//     max-height: none;
+//     width: 70px;
+//   }
+//   .menu-button {
+//     font-size: 1.3em;
+//   }
+//   .menu-button, .logo-box {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     margin: 0;
+//     padding: 0;
+//     height: 100%;
+//     width: 90px;
+//   }
+// }
+// @media (min-height: 446px) and (orientation: landscape) {
+//   .nav-bar {
+//     display: flex;
+//   }
+//   .name {
+//     padding-top: 0;
+//   }
+//   .link-pad {
+//     top: -64px;
+//     height: 64px;
+//   }
+//   .enter-button {
+//     margin-top: 65px;
+//   }
+//   .stalled-spacing {
+//     letter-spacing: 5px;
+//   }
+//   .menu-button {
+//     display: none;
+//   }
+//   .welcome-logo {
+//     width: 35%;
+//   }
+//   .brand-head {
+//     font-size: 4em;
+//   }
+//   .next-button {
+//     width: 200px;
+//     height: 160px;
+//     border-radius: 10px;
+//   }
+//   .logo-name-line-slogan {
+//     padding-bottom: 50px;
+//   }
+//   .plain-menu-box {
+//     justify-content: space-around;
+//   }
+//   .hidden-shadow-box {
+//     display: flex;
+//     padding-top: 50px;
+//   }
+//   .shadows {
+//     width: 160px;
+//   }
+//
+//   // service section
+//   .services-container {
+//     margin: 0;
+//   }
+//   .service {
+//     border: 2px solid #000;
+//   }
+//   // team section
+//   .divider-line {
+//     margin: 10px 0;
+//   }
+//   .team-container {
+//     width: 90%;
+//     margin: 0;
+//   }
+//   .members-contain {
+//     margin: 20px 0;
+//   }
+//   .home-team-image {
+//     width: 130px;
+//     height: 130px;
+//   }
+//   .mini-desc {
+//     font-size: 1.3em;
+//   }
+//   .to-team {
+//     margin-top: 20px;
+//   }
+//
+//   // contact section
+//   .contact-head {
+//     font-size: 3em;
+//   }
+//   .contact-divider-line-case {
+//     display: flex;
+//   }
+//   .divider-line {
+//     height: 2px;
+//   }
+//   .info-box {
+//     margin: 15px 0;
+//   }
+//   .contact-info-grouping {
+//     padding: 10px 0;
+//   }
+//   .contact-info {
+//     font-size: 1.5em;
+//   }
+//
+//   // team page
+//   .contact-logo {
+//     padding: 0;
+//     margin-top: 30px;
+//   }
+//   .other-link-pad {
+//     height: 59px;
+//     top: -59px;
+//   }
+//   .bio {
+//     height: 900px;
+//     height: 100vh;
+//     height: calc(100vh - 60px);
+//   }
+//   .bio-image {
+//     width: 160px;
+//     height: 160px;
+//   }
+//   .bio-name {
+//     font-size: 1.8em;
+//     padding: 0 0 15px 0;
+//   }
+//   .bio-text {
+//     padding: 2% 10%;
+//   }
+//   .realms-holder {
+//     padding: 0 10%;
+//   }
+//
+//   // contact page
+//   .contact-info-box {
+//     width: 60%;
+//   }
+//   .partner {
+//     width: 85px;
+//     height: 85px;
+//   }
+//   .partner:hover {
+//     transform: translateY(0) scale(1);
+//   }
+//
+// }
+//
+// @media (min-width: 1024px) {
+//   .tracker-wrapper {
+//     width: 1024px;
+//   }
+//   .all-content-wrapper {
+//     background: blue;
+//     background: -webkit-linear-gradient(blue, #50346f, blue);
+//   }
+//   .all-content {
+//     width: 1024px;
+//     margin: 0 auto;
+//     background: #fff;
+//     box-shadow: 0 0 15px 10px rgba(0,0,0,.2);
+//   }
+//   // landing page
+//   // landing page
+//   // landing page
+//   // landing page
+//   #welcome-back {
+//     transform: translateY(20px);
+//   }
+//   .line {
+//     background: rgba(101, 101, 101, .2);
+//     transform:translateY(4px);
+//   }
+//   .line-index-motion {
+//     transform: translateY(37px);
+//   }
+//   .lower-m {
+//
+//   }
+//   .grey-studios {
+//   }
+//
+//   // old code, may need updating
+//   // old code, may need updating
+//   // old code, may need updating
+//   // old code, may need updating
+//
+//   .and-more {
+//     transform: translateY(-50%);
+//   }
+// 	.nav-center {
+// 		border-bottom: 1px solid silver;
+// 	}
+//   .nav-bar, .nav-center, .nav-bar-placeholder {
+//     height: 60px;
+//   }
+//   .nav-bar {
+//     display: block;
+//     width: 1024px;
+//     left: 50%;
+// 		transform: translateX(-50%);
+//   }
+//   .logo-box {
+//     padding: 5px 20px;
+//     position: absolute;
+//     width: auto;
+//   }
+//   .name {
+//     margin: 0 auto;
+//     padding-top: 20px;
+//   }
+//   .desktop-menu {
+//     display: flex;
+//     position: absolute;
+//     right: 0;
+//     top: 20px;
+//     margin-right: 20px;
+//   }
+//   .menu-button {
+//     display: none;
+//   }
+//   .welcome-logo {
+//     width: 200px;
+//   }
+//   .contact-logo-welcome {
+//     width: 70px;
+//     height: 70px;
+//   }
+//   .contact-info-box {
+// 		width: 400px;
+// 		border-left: 4px double #fff;
+// 		border-right: 4px double #fff;
+// 		padding: 0 30px;
+// 	}
+//
+// 	.landing-logo-box {
+// 		width: 350px;
+// 	}
+// 	.fading-list {
+// 		height: 56px;
+// 	}
+// 	.alt-name {
+// 		font-size: 3.5em;
+// 	}
+//   .studios {
+//     transition: transform .4s ease-in-out;
+//     font-size: 2em;
+//   }
+//   .stalled-spacing {
+//     transition: letter-spacing .45s ease-in-out;
+//     letter-spacing: 4px;
+//   }
+//   .spacing {
+//     transition: font-weight .2s ease-in-out;
+//     // letter-spacing: 4px;
+//     font-weight: 900;
+//   }
+//   .up-move {
+//     transform: translateY(-10px);
+//   }
+//   .down-move {
+//     transform: translateY(59px);
+//   }
+// 	.landing-line-case {
+// 		width: 140px;
+// 	}
+// 	.divider-line {
+// 		display: none;
+// 	}
+// 	.divider-line-case {
+// 		width: 250px;
+// 	}
+// 	.button-bar {
+// 		height: 70px;
+// 	}
+//
+// 	.enter-button {
+// 		padding: 0;
+// 		height: 70px;
+//     width: 70px;
+// 		font-size: 1.1em;
+// 		line-height: 3.6em;
+// 		margin-top: 38px;
+//     border-radius: 50px;
+// 	}
+//
+//
+//
+//   .hidden-shadow-box {
+//     display: none;
+//   }
+//
+// 	.welcome-logo-box {
+// 		width: inherit;
+// 	}
+// 	.welcome-logo {
+// 	}
+// 	.brand-head {
+// 		font-weight: 900;
+// 	}
+// 	.extra-desktop-services {
+// 		display: block;
+// 	}
+// 	.section-header {
+// 		margin: 30px 0 0 0;
+// 		font-size: 2.2em;
+// 	}
+//   .bottom-button {
+//     font-size: 1.1em;
+//   }
+//   .services-containing-container {
+//     width: 100%;
+//   }
+// 	.services-container {
+// 		width: 100%;
+// 		height: 100%;
+//     margin-top: 3px;
+//     margin-bottom: 0;
+// 	}
+// 	.service-pair {
+// 		width 100%
+// 		height: 50%;
+// 		display: flex;
+// 		flex-direction: row;
+// 		align-items: flex-start;
+// 		text-align: center;
+// 	}
+// 	.service-desc {
+// 		width: 300px;
+// 		padding: 5%;
+// 	}
+//   .workers-header, .workers {
+//     width: 675px;
+//   }
+// 	.service {
+// 		flex-direction: column;
+// 		width: 33.3333%;
+// 		height: 100%;
+// 		align-items: center;
+// 		margin: 0;
+// 		border: 2px solid black;
+// 		transition: border 0s ease-in-out, background 0s ease-in-out;
+// 	}
+//   .service:hover {
+// 		border: 2px solid #adb0f3;
+// 		background: #2C506D;
+// 	}
+// 	.service-plug {
+// 		padding: 50px 0;
+// 	}
+// 	.team-welcome {
+// 		margin: 0 auto;
+// 	}
+// 	.team-welcome-sub {
+// 		width: 500px;
+// 	}
+// 	.team-banner {
+// 		width: 200px;
+// 	}
+// 	.team-content {
+// 		// padding: 50px 0 10px 0;
+// 	}
+// 	.team-content::before {
+// 		border-width: 18px;
+// 		top: -2px;
+// 	}
+// 	.bio-image-holder {
+//
+// 	}
+// 	.centered-bio-text {
+// 		width: 750px;
+// 	}
+// 	.bio-name {
+// 		padding: 15px 0;
+//     font-size: 2em;
+// 	}
+// 	.thumb-holder {
+// 		margin: 0 auto;
+// 	}
+// 	.contact-head {
+// 		padding: 60px 0 0 0
+// 	}
+// 	.bio {
+// 	}
+// 	.zean-bio {
+// 		padding-top: 30px;
+// 	}
+// 	.partner-band {
+// 		width: 90%;
+// 		margin: 0 auto;
+// 	}
+// 	.partner, .scaled-partner, .downscaled-partner {
+// 		width: 90px;
+// 		height: 90px;
+// 	}
+//   .plain-menu-box {
+//     position: relative;
+//     bottom: auto;
+//     justify-content: center;
+//     padding-top: 50px;
+//   }
+//   .members-contain {
+//     width: 40%;
+//   }
+//
+//   // June 20th and after implementations
+//   // June 20th and after implementations
+//   // June 20th and after implementations
+//   // June 20th and after implementations
+//   .welcome-logo {
+// 		width: 250px;
+// 	}
+// 	.brand-head {
+// 		font-size: 4.4em;
+// 	}
+// 	.brand-sub {
+// 		font-size: 2.2em;
+// 		width: 500px;
+// 	}
+//   .plain-menu-box {
+//     padding-top: 50px;
+//   }
+// 	.next-button {
+//     width: 260px;
+// 		height: 200px;
+// 		margin: 0 20px;
+//     border: 10px double #fff;
+// 	}
+//   .next-button:first-child {
+//     border-right: 10px double #fff;
+//   }
+//   .next-button:last-child {
+//     border-left: 10px double #fff;
+//   }
+//   .intro {
+//     min-height: 700px;
+//     height: 100vh;
+//     height: calc(100vh - 60px);
+//   }
+//   .link-pad {
+//     top: -59px;
+//     height: 59px;
+//   }
+//   .services-section, .team-section, .contact-section {
+//     height: calc(100vh - 60px);
+//   }
+//   .logo-box {
+//     margin: 0;
+//   }
+//   .tracker-wrapper {
+//     top: 60px;
+//   }
+//   .contact-logo-welcome {
+//     width: 100px;
+//     height: 100px;
+//   }
+//   .section-header, .contact-head {
+//     padding: 0;
+//     margin: 0;
+//     font-size: 3em;
+//   }
+//   .logo-name-line-slogan {
+//     width: 530px;
+//   }
+//   .line-case {
+//     width: 210px;
+//   }
+//   // services section
+//   .to-services, .service-head {
+// 		display: none;
+// 	}
+//   .service-desc {
+//     width: 100%;
+//     padding: 5% 7%;
+//   }
+//   .desc-head {
+//     font-size: 1.6em;
+//     margin-bottom: 20px;
+//     font-weight: 400;
+//   }
+//   .desc-body {
+//     font-size: 1.2em;
+//     line-height: 1.2em;
+//   }
+//
+//   // team section
+//   .divider-line-case {
+//     width: 320px;
+//   }
+//   .divider-line {
+//     display: block;
+//     margin: 10px 0 30px 0;
+//   }
+//   .team-banner {
+//     text-decoration: none;
+//   }
+//   .team-banner:hover {
+//     letter-spacing: 4px;
+//   }
+//   .team-content {
+//     justify-content: center;
+//   }
+//   .team-container {
+//     width: 80%;
+//     margin: 0 0 50px 0;
+//   }
+//   .members-contain {
+//     width: 100%;
+//     margin: 20px 0 60px 0;
+//   }
+//   .zean-member-image {
+//   	background-position: -564px -22px;
+//     background-size: 2860px;
+//   	border-radius: 50%;
+//   	width: 140px;
+//   	height: 140px;
+//   	border: 3px solid white;
+//   	margin-top: 10%;
+//   }
+//   // contact section
+//   .contact-divider-line-case {
+//     width: 230px;
+//   }
+//   .emailer {
+//     height: auto;
+//   }
+//   .contact-info-head {
+//     width: 60px;
+//     height: 60px;
+//   }
+//   .contact-info {
+//     font-size: 1.4em;
+//   }
+//   .top-arrow {
+//     width: 50px;
+//     height: 50px;
+//   }
+//   .to-top-text {
+//     font-size: 1.1em;
+//   }
+//   .arrow-and-text {
+//     margin-top: 50px;
+//   }
+// .home-team-image {
+// 	border-radius: 50%;
+// 	width: 140px;
+// 	height: 140px;
+// 	border: 3px solid #333;
+// 	margin-top: 10%;
+//   box-shadow: 0px 5px 2px 0px rgba(0,0,0,.3);
+//   transition: box-shadow .2s ease-in-out;
+// }
+// .home-team-image:hover {
+//   box-shadow: 0px 8px 3px 0px rgba(0,0,0,.3);
+// }
+// // .adrian-member-image, .adrian-pic, .zean-member-image, .zean-pic, .nick-member-image, .nick-pic, .kiljan-member-image, .kiljan-pic, .kane-pic, .kane-member-image {
+// // 	background-image: url("/photos.jpg");
+// // 	background-repeat: no-repeat;
+// // }
+// // .nick-member-image{
+// // 	background-size: 1500px;
+// //   background-position: -68px -6px;
+// // }
+// // .adrian-member-image{
+// // 	  background-position: -1442px -2px;
+// //     background-size: 1580px;
+// // }
+// // .kiljan-member-image {
+// //   background-position: -677px -7px;
+// //   background-size: 1720px;
+// // }
+// // .kane-member-image{
+// // 	background-position: -1372px -6px;
+// //   background-size: 1750px;
+// // }
+// .mini-desc {
+//   width: 70%;
+//   font-size: 1.3em;
+//   line-height: 1.3em;
+// }
+// .member {
+//   transition: transform .2s ease-in-out;
+// }
+// .member:hover {
+//   transform: scale(1.3);
+// }
+// // .adrian-pic {
+// // 	background-size: 1480px;
+// // 	background-position: -1347px 0px;
+// // }
+// // .nick-pic {
+// // 	background-size: 1280px;
+// // 	background-position: -55px 0px;
+// // }
+// // .kiljan-pic {
+// // 	background-position: -738px 0px;
+// // 	background-size: 1400px;
+// // }
+// // .kane-pic {
+// // 	background-position: -1088px -2px;
+// // 	background-size: 1400px;
+// // }
+//
+//   .show-next {
+//     width: auto;
+//     font-size: 1.5em;
+//     padding: 15px 25px;
+//     transition: all .2s ease-in-out;
+//   }
+//   .show-next:hover {
+//   	border: 2px solid #fff;
+//   	color: #fff;
+//   	background: #2196f3;
+//   	// box-shadow: 0px 0px 0px 2px #2196f3;
+//   }
+//   // contact section
+//   .check-it {
+//     margin: 0 auto 10px auto;
+//   }
+//
+//   .blue-line-case {
+//     width: 196px;
+//   }
+//   .blue-line {
+//     height: 3px;
+//   }
+//   .team-banner {
+//     transition: letter-spacing .1s ease-in-out;
+//   }
+//   .thumb-holder {
+//     width: 140px;
+//   }
+//   .service-thumb {
+//     height: auto;
+//     width: 140px;
+//   }
+//   .service-thumb-holder {
+//     width: 175px;
+//   }
+//
+//
+//
+//   .button-text-group {
+//     transition: transform .1s ease-in-out;
+//   }
+//   .button-text-group:hover {
+//     transform: scale(1.1, 1.1);
+//   }
+//   .contact-logo {
+//     width: 100px;
+//     height: 100px;
+//   }
+//   .team-welcome-head {
+//     font-size: 3em;
+//   }
+//   .team-welcome-sub {
+//     font-size: 1.5em;
+//   }
+//   .contact-box-container {
+//     padding: 60px 0;
+//   }
+//   .contact-info-box {
+//     width: 450px;
+//   }
+//
+//   .contact-service-plug {
+//     padding: 7% 0;
+//   }
+//   .address-link:hover, .mailer:hover {
+//     cursor: pointer;
+//     color: #adb0f3;
+//   }
+//   // services page
+//   // .service-image {
+//   //   margin: 0 auto;
+//   //   width: 150px;
+//   //   height: auto;
+//   // }
+//
+//   // team page
+//   .bio-thumb-holder {
+//
+//   }
+//   .bio-image {
+//     width: 200px;
+//     height: 200px;
+//   }
+//   // team page
+//   .bio-text {
+//     font-weight: 400;
+//     font-size: 1.3em;
+//     padding: 2% 3%;
+//   }
+//   .realms-holder {
+//     display: block;
+//     width: 100%;
+//     padding: 0 3%;
+//   }
+//   .workers-header {
+//     width: 100%;
+//     padding: 10px 5% 0 5%;
+//   }
+//   .realm-box {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
+//     width: 60px;
+//     height: 60px;
+//     border: 2px solid #333;
+//     background: #6b9b4c;
+//     border-radius: 5px;
+//     margin-top: 10px;
+//     margin-right: 15px;
+//     box-shadow: 2px 2px 1px 0px rgba(0,0,0,.5);
+//     transition: all .2s ease-in-out;
+//   }
+//   .realm-box:hover {
+//     box-shadow: 6px 6px 3px 0px rgba(0,0,0,.5);
+//     transform: scale(1.2);
+//   }
+//   .realms, .workers {
+//     display: flex;
+//     width: 100%;
+//   }
+//   .realms-header {
+//     width: 100%;
+//     padding-top: 10px;
+//   }
+//   .realm {
+//     width: 50px;
+//     margin: 2px;
+//   }
+//   .worker {
+//     width: 52px;
+//   }
+//
+//
+//   // contact page
+//   .partner:hover {
+//     transform: translateY(0) scale(1.3, 1.3);
+//   }
+//   .contact-foot-item:hover {
+//   	color: #2196f3;
+//   	transition: color .01s ease;
+//   }
+//
+// }
+// @media (min-width: 1200px) {
+//   .landing-logo-box {
+//     margin-bottom: 10px;
+//   }
+//   .and-more {
+//     font-size: 4.5em;
+//   }
+//   .alt-name {
+//     font-size: 4em;
+//   }
+//   .down-move {
+//     transform: translateY(61px);
+//   }
+//   .stalled-spacing {
+//     letter-spacing: 8px;
+//   }
+//   .landing-line-case {
+//     width: 190px;
+//   }
+//   .line {
+//     transform: translateY(10px);
+//   }
+//   .line-index-motion {
+//     transform: translateY(45px);
+//   }
+//   #welcome-back {
+//     font-size: 1.3em;
+//     transform: translateY(42px);
+//   }
+//   .enter-button {
+//     margin-top: 140px;
+//   }
+//
+//   // old code, might need updating
+//
+//
+// 	.show-next {
+// 		margin: 60px 0;
+// 		width: 425px;
+// 	}
+// 	.services-container {
+// 		// width: 1200px;
+// 	}
+// 	.bio {
+// 	}
+// 	.zean-bio {
+// 		padding-top: 30px;
+// 	}
+// 	.partner-band {
+//
+// 		margin: 0 auto;
+// 	}
+// 	.partner, .scaled-partner, .downscaled-partner {
+// 		width: 90px;
+// 		height: 90px;
+// 	}
+// 	.contact-foot {
+// 		margin: 0 auto;
+// 	}
+//
+//   // June 20th and after implementations
+//
+//
+// }
