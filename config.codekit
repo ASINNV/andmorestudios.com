@@ -293,7 +293,7 @@
 		},
 	"\/public\/style.css": {
 		"fileType": 16,
-		"ignore": 1,
+		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/style.css",
 		"outputAbbreviatedPath": "No Output Path",
@@ -372,12 +372,12 @@
 		"ignoreWasSetByUser": 0,
 		"importCSS": 0,
 		"inputAbbreviatedPath": "\/style.styl",
-		"outputAbbreviatedPath": "\/public\/style.css",
+		"outputAbbreviatedPath": "\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 1,
+		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
 		"resolveRelativeURLS": 0,
-		"shouldRunAutoprefixer": 1,
+		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
 	"\/support-icon-281h.png": {
