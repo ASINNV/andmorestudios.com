@@ -50,7 +50,7 @@ var $click_catcher = $('.clickCatcher');
 var $arrow_and_name = $('.arrow-and-text, .name');
 
 var $body = $('body');
-var $id_one_six = $('#0, #1, #2, #3, #4, #5, #6, .banner-to-first, .bio, .right-nav');
+var $id_one_six = $('#0, #1, #2, #3, #4, #5, #6, .banner-to-first, .bio, .right-nav, .other-content-divider');
 // var $sidebar_indicator = $('.sidebar-indicator');
 // var $sidebar_member_container = $('.sidebar-member-container');
 // var $sidebar_member = $('.sidebar-member');
@@ -68,8 +68,8 @@ var $id_1 = $('#1');
 // var $sidebar_2 = $('.sidebar-2');
 // var $sidebar_1 = $('.sidebar-1');
 
-var $id_one_five = $('#0, #1, #2, #3, #4, #5, .banner-to-first, .bio, .right-nav');
-var $id_one_four = $('#0, #1, #2, #3, #4, .home-section, .intro, .right-nav');
+var $id_one_five = $('#0, #1, #2, #3, #4, #5, .banner-to-first, .bio, .right-nav, .other-content-divider');
+var $id_one_four = $('#0, #1, #2, #3, #4, .home-section, .intro, .right-nav, .other-content-divider');
 
 
 
@@ -395,6 +395,9 @@ $(document).ready(function() {
 	if ($body.hasClass('landing')) {
 		leadIn();
 	}
+	if ($('.all-content').width() === 1024) {
+		$('.service').removeClass('animation-element');
+	}
 
 	// if (window.matchMedia( "(min-width: 1024px)" ).matches) {
 	// 	leadIn("-webkit-linear-gradient( #fff 93%, transparent");
@@ -589,16 +592,16 @@ $(document).ready(function() {
 	});
 } else {
 	$id_one_four.click(function() {
-		if ($window.scrollTop() >= $id_4.offset().top) {
+		if ($window.scrollTop() >= ($id_4.offset().top - 5)) {
 			$html_body.animate({ scrollTop: $document.height() }, 1200);
 
-		} else if (($window.scrollTop() >= ($id_3.offset().top)) && ($window.scrollTop() < $id_4.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_3.offset().top - 5)) && ($window.scrollTop() < $id_4.offset().top)) {
 			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_2.offset().top)) && ($window.scrollTop() < $id_3.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_2.offset().top - 5)) && ($window.scrollTop() < $id_3.offset().top)) {
 			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_1.offset().top)) && ($window.scrollTop() < $id_2.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_1.offset().top - 5)) && ($window.scrollTop() < $id_2.offset().top)) {
 			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
 
 		} else if (($window.scrollTop() >= 0) && $window.scrollTop() < ($id_1.offset().top)) {
