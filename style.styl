@@ -2336,6 +2336,7 @@ img {
   // }
   .service-thumb {
     height: 100px;
+    width: auto;
     margin-right: 10px;
   }
   .desc-head {
@@ -2521,6 +2522,11 @@ img {
   }
   .copy {
     font-size: 1.2em;
+  }
+}
+@media (min-width: 900px) and (orientation: portrait) {
+  .other-content-divider {
+    transform: skewY(-3deg);
   }
 }
 @media (max-width: 800px) and (orientation: landscape) {
@@ -2960,6 +2966,12 @@ img {
             transform: rotate(-90deg);
     color: #f56e6e;
   }
+  .nav-center, .nav-bar, .nav-bar-placeholder {
+    height: 60px;
+  }
+  .tracker-wrapper {
+    top: 60px;
+  }
   .nav-center {
     left: auto;
     right: auto;
@@ -2989,10 +3001,10 @@ img {
     max-width: 100%;
   }
   .welcome-logo {
-    width: 120px;
+    width: 100px;
   }
   .brand-head {
-    font-size: 3.3em;
+    font-size: 3em;
   }
   .logo-name-line-slogan {
     padding-bottom: 10px;
@@ -3035,7 +3047,7 @@ img {
     font-size: 2.2em;
   }
   .contact-info {
-    font-size: 1.3em;
+    font-size: 1.2em;
     font-weight: 400;
   }
   .contact-divider-line-case {
@@ -3096,7 +3108,7 @@ img {
     width: 340px;
   }
   .contact-info-grouping {
-    padding: 10px 0;
+    padding: 5px 0;
   }
   .partner {
     width: 65px;
