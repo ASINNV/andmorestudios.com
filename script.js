@@ -81,7 +81,7 @@ var $brand_head = $('.brand-head');
 var $stand_in = $('.stand-in');
 var $home_line = $('.home-line');
 
-var $footer = $('#footer');
+// var $footer = $('#footer');
 var $left_nav = $('.left-nav');
 
 // var $team_banner = $('.team-banner');
@@ -134,6 +134,9 @@ function page_indicator() {
 		if (scroll_from_top >= height_before_animation) {
 
 			$content_indicator_backdrop.fadeIn(500);
+			if (($('.all-content').width() !== 1024) && (window.matchMedia('(orientation: landscape)').matches)) {
+				$('.quiver').fadeIn(500);
+			}
 
 			$stand_in.css( 'width', (100 - (percentage*100) + '%'));
 
@@ -142,7 +145,9 @@ function page_indicator() {
 			$stand_in.css('width', '0');
 
 			$content_indicator_backdrop.fadeOut(200);
-
+			if (($('.all-content').width() !== 1024) && (window.matchMedia('(orientation: landscape)').matches)) {
+				$('.quiver').fadeOut(500);
+			}
 
 			var home_line_percentage = ((home_line_height_before_animation - home_line_scroll_from_top)/home_line_height_before_animation);
 			$home_line.css('width', (home_line_percentage*100 + '%'));
@@ -236,21 +241,21 @@ function check_if_in_view() {
 		// 	$element.removeClass('in-view');
 		// }
 	});
-	if ((($window.scrollTop() < 125) && window.matchMedia("(orientation: landscape)").matches) || (($window.scrollTop() > ($document.height() - $window.height() - $footer.height() - $nav_bar.height())) && window.matchMedia("(orientation: landscape)").matches)) {
-		// $home_nav.slideUp(300);
-	} else {
-		// $home_nav.slideDown(300);
-		$('landscape-blue-line').css('width', '100%');
-	}
-	if ($('.all-content').width() !== 1024) {
-		if ((window.matchMedia("(orientation: landscape)").matches) && ($window.scrollTop() < 125)) {
-			$('.quiver').fadeOut(300);
-		} else if (window.matchMedia("(orientation: landscape)").matches) {
-			$('.quiver').fadeIn(300);
-		} else {
-			$('.quiver').css('display', 'none');
-		}
-	}
+	// if ((($window.scrollTop() < 125) && window.matchMedia("(orientation: landscape)").matches) || (($window.scrollTop() > ($document.height() - $window.height() - $footer.height() - $nav_bar.height())) && window.matchMedia("(orientation: landscape)").matches)) {
+	// 	// $home_nav.slideUp(300);
+	// } else {
+	// 	// $home_nav.slideDown(300);
+	// 	$('landscape-blue-line').css('width', '100%');
+	// }
+	// if ($('.all-content').width() !== 1024) {
+	// 	if ((window.matchMedia("(orientation: landscape)").matches) && ($window.scrollTop() < 125)) {
+	// 		$('.quiver').fadeOut(300);
+	// 	} else if (window.matchMedia("(orientation: landscape)").matches && ($window.scrollTop() >= 125)) {
+	// 		$('.quiver').fadeIn(300);
+	// 	} else {
+	// 		$('.quiver').css('display', 'none');
+	// 	}
+	// }
 
 
 	// if ($('.quiver').hasClass('landscape-only')) {
