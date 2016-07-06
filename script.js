@@ -433,10 +433,10 @@ $(document).ready(function() {
 
 	$enter_button.click(function(e) {
 		e.preventDefault();
-		$enter_button.css("transition", "transform .25s cubic-bezier(0, 1, 0, 1), opacity .25s linear").css("transform", "scale(.1, .1)").css("opacity", 0);
+		// $enter_button.addClass('exit-button');
 		// setTimeout(function() {
 			$white_overlay.fadeIn(750);
-			$landing_intro.css("transition", "all .75s cubic-bezier(1, 0, 1, 0)").css("transform", "scale(.1, .1)");
+			$landing_intro.addClass('landing-outro');
 		// }, 100);
 
 		// setTimeout(function() {
@@ -444,7 +444,7 @@ $(document).ready(function() {
 		// }, 25);
 		setTimeout( function() {
 				document.location.assign("/home.html");
-		}, 850);
+		}, 650);
 	});
 
 
