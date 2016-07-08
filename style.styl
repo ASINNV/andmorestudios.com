@@ -190,7 +190,7 @@ img {
   background-image: url("/richLinenPattern.jpg");
   background-repeat: repeat;
   width: 100%;
-  padding-top: 20px;
+  height: 70%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -245,6 +245,7 @@ img {
   color: #16a8c7;
   font-size: 1.5em;
   letter-spacing: 0;
+  text-indent: 0;
   text-align: center;
   -webkit-transition: -webkit-transform 0.4s ease-in-out;
   transition: -webkit-transform 0.4s ease-in-out;
@@ -260,9 +261,9 @@ img {
           transform: translateY(8px);
 }
 .stalled-spacing {
-  -webkit-transition: letter-spacing 0.45s ease-in-out;
-  transition: letter-spacing 0.45s ease-in-out;
+  transition: letter-spacing 0.45s ease-in-out, text-indent 0.45s ease-in-out;
   letter-spacing: 5px;
+  text-indent: 5px;
 }
 .landing-line-case {
   display: -webkit-box;
@@ -606,8 +607,11 @@ img {
   text-decoration: none;
   color: #146db3;
   font-size: 2em;
-  letter-spacing: 4px;
 /*font-weight: 200;*/
+}
+.brand-sub-text {
+  letter-spacing: 4px;
+  text-indent: 4px;
 }
 /*.project-text {
 	color: #555;
@@ -2728,9 +2732,6 @@ img {
 //   // }
 // }
 @media (max-width: 480px) and (orientation: landscape) {
-  .landing-intro {
-    padding-bottom: 120px;
-  }
   .landing-logo-box {
     width: 90px;
     margin-top: 0;
@@ -2747,6 +2748,7 @@ img {
   }
   .stalled-spacing {
     letter-spacing: 4px;
+    text-indent: 4px;
   }
   .landing-line-case {
     margin: 0 auto 3px auto;
@@ -2979,6 +2981,7 @@ img {
   }
   .stalled-spacing {
     letter-spacing: 6px;
+    text-indent: 6px;
   }
   .landing-line-case {
     width: 170px;
@@ -3097,6 +3100,7 @@ img {
   }
   .other-content-divider {
     padding: 3% 0;
+    font-size: 1.7em;
   }
   .bio-text {
     font-size: .8em;
@@ -3134,9 +3138,7 @@ img {
 
 }
 @media (min-width: 376px) and (max-width: 425px) and (orientation: portrait) {
-  .landing-intro {
-    padding-top: 100px;
-  }
+
   .landing-logo-box {
     width: 200px;
     padding-bottom: 10px;
@@ -3149,6 +3151,7 @@ img {
   }
   .stalled-spacing {
     letter-spacing: 7px;
+    text-indent: 7px;
   }
   .line {
     margin-top: 10px;
@@ -3254,9 +3257,6 @@ img {
 
 }
 @media (min-width: 426px) and (orientation: portrait) {
-  .landing-intro {
-    padding-top: 200px;
-  }
   .landing-logo-box {
     width: 230px;
     margin-bottom: 10px;
@@ -3269,6 +3269,7 @@ img {
   }
   .stalled-spacing {
     letter-spacing: 8px;
+    text-indent: 8px;
   }
   .landing-line-case {
     margin-bottom: 26px;
@@ -3399,6 +3400,7 @@ img {
   .other-content-divider {
     margin-bottom: 4%;
     padding: 3% 0;
+    font-size: 1.7em;
   }
   .centered-bio-text, .realms-holder {
     width: 75%;
@@ -4102,6 +4104,7 @@ img {
     width: 250px;
   }
   .line {
+    margin-bottom: 35px;
     background: rgba(101,101,101,0.2);
     -webkit-transform: translateY(4px);
             transform: translateY(4px);
@@ -4109,7 +4112,7 @@ img {
   .line-index-motion {
     -webkit-transform: translateY(60px);
             transform: translateY(60px);
-            margin-bottom: 35px;
+
   }
   .and-more {
 
@@ -4193,9 +4196,9 @@ img {
     transform: translateY(-10px);
   }
   .stalled-spacing {
-    -webkit-transition: letter-spacing 0.45s ease-in-out;
-    transition: letter-spacing 0.45s ease-in-out;
+    transition: letter-spacing 0.45s ease-in-out, text-indent 0.45s ease-in-out;
     letter-spacing: 10px;
+    text-indent: 10px;
   }
   .up-move {
     -webkit-transform: translateY(-10px);
@@ -4461,7 +4464,8 @@ img {
   // team page
   .other-content-divider {
     margin: 0 0 32px 0;
-    padding: 3% 0;
+    padding: 2.5% 0;
+    font-size: 1.7em;
     transform: skewY(-3deg);
   }
   .bio-content {
