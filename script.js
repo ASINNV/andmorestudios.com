@@ -368,12 +368,6 @@ function leadIn() {
 				setTimeout(function() {
 						$('.studios').addClass('stalled-spacing');
 				}, 400);
-
-
-
-
-
-
 			}, 400);
 		});
 	}, 400);
