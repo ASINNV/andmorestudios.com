@@ -241,6 +241,7 @@ img {
   opacity: 0;
   color: #16a8c7;
   font-size: 1.5em;
+  text-indent: 5px;
   letter-spacing: 0;
   text-indent: 0;
   text-align: center;
@@ -258,9 +259,8 @@ img {
   transform: translateY(8px);
 }
 .stalled-spacing {
-  transition: letter-spacing 0.45s ease-in-out, text-indent 0.45s ease-in-out;
+  transition: letter-spacing 0.4s cubic-bezier(0.68, 0, 0.35, 1.21);
   letter-spacing: 5px;
-  text-indent: 5px;
 }
 .landing-line-case {
   display: -webkit-box;
@@ -2512,6 +2512,7 @@ img {
     transition: transform 0.3s ease-in-out;
   }
   .studios {
+    text-indent: 10px;
     -webkit-transition: -webkit-transform 0.4s ease-in-out;
     transition: -webkit-transform 0.4s ease-in-out;
     transition: transform 0.4s ease-in-out;
@@ -2520,9 +2521,8 @@ img {
     transform: translateY(-10px);
   }
   .stalled-spacing {
-    transition: letter-spacing 0.45s ease-in-out, text-indent 0.45s ease-in-out;
+    transition: letter-spacing 0.4s cubic-bezier(0.68, 0, 0.35, 1.21);
     letter-spacing: 10px;
-    text-indent: 10px;
   }
   .up-move {
     -webkit-transform: translateY(-10px);
