@@ -422,6 +422,28 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/team_200.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6263,
+		"inputAbbreviatedPath": "\/team_200.png",
+		"outputAbbreviatedPath": "\/team_200.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/team_icon_200.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 22665,
+		"inputAbbreviatedPath": "\/team_icon_200.png",
+		"outputAbbreviatedPath": "\/team_icon_200.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/web-icon-281h.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -429,6 +451,17 @@
 		"initialSize": 26595,
 		"inputAbbreviatedPath": "\/web-icon-281h.png",
 		"outputAbbreviatedPath": "\/web-icon-281h.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/web_design_200.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4165,
+		"inputAbbreviatedPath": "\/web_design_200.png",
+		"outputAbbreviatedPath": "\/web_design_200.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
