@@ -220,6 +220,9 @@ $(document).ready(function() {
 	// if (window.matchMedia("(orientation: landscape)").matches) {
 	// 	$window.trigger('resize');
 	// }
+	$('.interstate').click(function(e) {
+		e.stopPropagation();
+	});
 	setTimeout(function() {
 		$( ".home-line-inner-case" ).animate({width: "100%"}, 600);
 	}, 300);

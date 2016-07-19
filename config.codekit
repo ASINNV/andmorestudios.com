@@ -2,13 +2,13 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19127",
 "files": {
-	"\/adrian.png": {
-		"fileType": 32768,
+	"\/a2.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 173663,
-		"inputAbbreviatedPath": "\/adrian.png",
-		"outputAbbreviatedPath": "\/adrian.png",
+		"initialSize": 91185,
+		"inputAbbreviatedPath": "\/a2.jpg",
+		"outputAbbreviatedPath": "\/a2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -247,24 +247,35 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/kane.png": {
-		"fileType": 32768,
+	"\/jo2.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 169368,
-		"inputAbbreviatedPath": "\/kane.png",
-		"outputAbbreviatedPath": "\/kane.png",
+		"initialSize": 9.72631e+06,
+		"inputAbbreviatedPath": "\/jo2.jpg",
+		"outputAbbreviatedPath": "\/jo2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/kil-silly.png": {
-		"fileType": 32768,
+	"\/jy2.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 149462,
-		"inputAbbreviatedPath": "\/kil-silly.png",
-		"outputAbbreviatedPath": "\/kil-silly.png",
+		"initialSize": 103669,
+		"inputAbbreviatedPath": "\/jy2.jpg",
+		"outputAbbreviatedPath": "\/jy2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/k2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 90927,
+		"inputAbbreviatedPath": "\/k2.jpg",
+		"outputAbbreviatedPath": "\/k2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -290,26 +301,6 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
-		},
-	"\/public\/style.css": {
-		"fileType": 16,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/style.css",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/ren.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 193204,
-		"inputAbbreviatedPath": "\/ren.png",
-		"outputAbbreviatedPath": "\/ren.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/repair-icon-281h.png": {
 		"fileType": 32768,
@@ -422,13 +413,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/team_200.png": {
+	"\/team_icon.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 6263,
-		"inputAbbreviatedPath": "\/team_200.png",
-		"outputAbbreviatedPath": "\/team_200.png",
+		"initialSize": 26960,
+		"inputAbbreviatedPath": "\/team_icon.png",
+		"outputAbbreviatedPath": "\/team_icon.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -466,13 +457,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/zean.png": {
-		"fileType": 32768,
+	"\/z2.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 112789,
-		"inputAbbreviatedPath": "\/zean.png",
-		"outputAbbreviatedPath": "\/zean.png",
+		"initialSize": 106859,
+		"inputAbbreviatedPath": "\/z2.jpg",
+		"outputAbbreviatedPath": "\/z2.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
