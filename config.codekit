@@ -196,6 +196,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/dp2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 103793,
+		"inputAbbreviatedPath": "\/dp2.jpg",
+		"outputAbbreviatedPath": "\/dp2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/graphics-icon-281h.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -280,6 +291,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/kane.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 169368,
+		"inputAbbreviatedPath": "\/kane.png",
+		"outputAbbreviatedPath": "\/kane.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/kc2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 96430,
+		"inputAbbreviatedPath": "\/kc2.jpg",
+		"outputAbbreviatedPath": "\/kc2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/marketing-icon-281h359w.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -301,6 +334,17 @@
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
+		},
+	"\/n2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 82223,
+		"inputAbbreviatedPath": "\/n2.jpg",
+		"outputAbbreviatedPath": "\/n2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
 		},
 	"\/repair-icon-281h.png": {
 		"fileType": 32768,
