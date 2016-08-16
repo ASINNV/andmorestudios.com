@@ -9,10 +9,15 @@ var $menu = $('.menu');
 var $click_catcher = $('.clickCatcher');
 var $arrow_and_name = $('.arrow-and-text, .name');
 var $body = $('body');
+var $member = $('.member');
 
-var $id_one_six = $('#0, #1, #2, #3, #4, #5, #6, .banner-to-first, .bio, .right-nav, .other-content-divider');
-var $id_one_five = $('#0, #1, #2, #3, #4, #5, .banner-to-first, .bio, .right-nav, .other-content-divider');
-var $id_one_four = $('#0, #1, #2, #3, #4, .home-section, .intro, .right-nav, .other-content-divider');
+var $id_one_six = $('#0, #1, #2, #3, #4, #5, #6, #7, .banner-to-first, .bio, .other-content-divider');
+var $id_one_five = $('#0, #1, #2, #3, #4, #5, #6, #7, .banner-to-first, .bio,  .other-content-divider');
+var $id_one_four = $('#0, #1, #2, #3, #4, .home-section, .intro, .other-content-divider');
+var $id_10 = $('#10');
+var $id_9 = $('#9');
+var $id_8 = $('#8');
+var $id_7 = $('#7');
 var $id_6 = $('#6');
 var $id_5 = $('#5');
 var $id_4 = $('#4');
@@ -26,7 +31,7 @@ var $welcome_logo_box = $('.welcome-logo-box');
 var $brand_head = $('.brand-head');
 var $stand_in = $('.stand-in');
 var $home_line = $('.home-line');
-var $left_nav = $('.left-nav');
+// var $left_nav = $('.left-nav');
 var $studios = $('.studios');
 var $line = $('.line');
 var $content_indicator_backdrop = $('.content-indicator-backdrop');
@@ -198,7 +203,7 @@ function leadIn() {
 			setTimeout(function() {
 				$line.addClass('line-index-motion');
 				$('.studios').addClass('down-move');
-				$('.and-more').addClass('spacing');
+				// $('.and-more').addClass('spacing');
 				setTimeout(function() {
 						$('.studios').addClass('stalled-spacing');
 				}, 400);
@@ -328,8 +333,24 @@ $(document).ready(function() {
 
 	$id_one_six.click(function() {
 
-		if (($window.scrollTop() >= ($id_6.offset().top - 5))) {
+		if (($window.scrollTop() >= ($id_10.offset().top - 5))) {
 			$html_body.animate({ scrollTop: $document.height() }, 1200);
+		}
+		else if (($window.scrollTop() >= ($id_9.offset().top - 5)) && ($window.scrollTop() < $id_10.offset().top)) {
+			$html_body.animate({ scrollTop: $id_10.offset().top }, 600);
+
+		}
+		else if (($window.scrollTop() >= ($id_8.offset().top - 5)) && ($window.scrollTop() < $id_9.offset().top)) {
+			$html_body.animate({ scrollTop: $id_9.offset().top }, 600);
+
+		}
+		else if (($window.scrollTop() >= ($id_7.offset().top - 5)) && ($window.scrollTop() < $id_8.offset().top)) {
+			$html_body.animate({ scrollTop: $id_8.offset().top }, 600);
+
+		}
+		else if (($window.scrollTop() >= ($id_6.offset().top - 5)) && ($window.scrollTop() < $id_7.offset().top)) {
+			$html_body.animate({ scrollTop: $id_7.offset().top }, 600);
+
 		}
 		else if (($window.scrollTop() >= ($id_5.offset().top - 5)) && ($window.scrollTop() < $id_6.offset().top)) {
 			$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
@@ -354,39 +375,45 @@ $(document).ready(function() {
 
 		}
 	});
-	$left_nav.click(function() {
-
-		if ($window.scrollTop() > ($id_6.offset().top)) {
-			$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
-		}
-		else if (($window.scrollTop() > ($id_5.offset().top)) && ($window.scrollTop() <= $id_6.offset().top)) {
-			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
-
-		}
-		else if (($window.scrollTop() > ($id_4.offset().top)) && ($window.scrollTop() <= $id_5.offset().top)) {
-			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
-
-		}
-		else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
-			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
-
-		}
-		else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
-			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
-			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
-
-		} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= ($id_1.offset().top))) {
-			$html_body.animate({ scrollTop: 0 }, 600);
-
-		}
-	});
+	// $left_nav.click(function() {
+	//
+	// 	if ($window.scrollTop() > ($id_6.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
+	// 	}
+	// 	else if (($window.scrollTop() > ($id_5.offset().top)) && ($window.scrollTop() <= $id_6.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
+	//
+	// 	}
+	// 	else if (($window.scrollTop() > ($id_4.offset().top)) && ($window.scrollTop() <= $id_5.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
+	//
+	// 	}
+	// 	else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
+	//
+	// 	}
+	// 	else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= ($id_1.offset().top))) {
+	// 		$html_body.animate({ scrollTop: 0 }, 600);
+	//
+	// 	}
+	// });
 } else if ($body.hasClass('team-body')) {
 
 	$id_one_five.click(function() {
-		if ($window.scrollTop() >= $id_5.offset().top - 5) {
+		if ($window.scrollTop() >= $id_7.offset().top - 5) {
 			$html_body.animate({ scrollTop: $document.height() }, 1200);
+
+		} else if (($window.scrollTop() >= ($id_6.offset().top - 5)) && ($window.scrollTop() < $id_7.offset().top)) {
+			$html_body.animate({ scrollTop: $id_7.offset().top }, 600);
+
+		} else if (($window.scrollTop() >= ($id_5.offset().top - 5)) && ($window.scrollTop() < $id_6.offset().top)) {
+			$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
 
 		} else if (($window.scrollTop() >= ($id_4.offset().top - 5)) && ($window.scrollTop() < $id_5.offset().top)) {
 			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
@@ -405,27 +432,27 @@ $(document).ready(function() {
 
 		}
 	});
-	$left_nav.click(function() {
-		if (($window.scrollTop() > ($id_5.offset().top))) {
-			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_4.offset().top)) && ($window.scrollTop() <= $id_5.offset().top)) {
-			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
-			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
-			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
-			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
-
-		} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= ($id_1.offset().top))) {
-			$html_body.animate({ scrollTop: 0 }, 600);
-
-		}
-	});
+	// $left_nav.click(function() {
+	// 	if (($window.scrollTop() > ($id_5.offset().top))) {
+	// 		$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_4.offset().top)) && ($window.scrollTop() <= $id_5.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= ($id_1.offset().top))) {
+	// 		$html_body.animate({ scrollTop: 0 }, 600);
+	//
+	// 	}
+	// });
 } else {
 	$id_one_four.click(function() {
 		if ($window.scrollTop() >= ($id_4.offset().top - 5)) {
@@ -445,24 +472,24 @@ $(document).ready(function() {
 
 		}
 	});
-	$left_nav.click(function() {
-		if ($window.scrollTop() > ($id_4.offset().top)) {
-			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
-			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
-			$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
-
-		} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
-			$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
-
-		} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= $id_1.offset().top)) {
-			$html_body.animate({ scrollTop: 0 }, 600);
-
-		}
-	});
+	// $left_nav.click(function() {
+	// 	if ($window.scrollTop() > ($id_4.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_3.offset().top)) && ($window.scrollTop() <= $id_4.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_2.offset().top)) && ($window.scrollTop() <= $id_3.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_2.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > ($id_1.offset().top)) && ($window.scrollTop() <= $id_2.offset().top)) {
+	// 		$html_body.animate({ scrollTop: $id_1.offset().top }, 600);
+	//
+	// 	} else if (($window.scrollTop() > 0) && ($window.scrollTop() <= $id_1.offset().top)) {
+	// 		$html_body.animate({ scrollTop: 0 }, 600);
+	//
+	// 	}
+	// });
 }
 
 
@@ -624,7 +651,12 @@ $(document).ready(function() {
 	});
 
 	// PARTNERS JS (CLICK AWAY TO NEGATE EFFECT)
-
+  $member.mouseenter(function() {
+		$(this).children('.nameplate').css("transition", "opacity .2s ease-in-out").css("opacity", "0");
+	});
+	$member.mouseleave(function() {
+		$(this).children('.nameplate').css("transition", "opacity .2s ease-in-out").css("opacity", "1");
+	});
 
 	// PARTNERS BAND JS (GROW & SHRINK)
 	// PARTNERS BAND JS (GROW & SHRINK)

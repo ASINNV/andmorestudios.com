@@ -13,50 +13,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/and-more-studios-address-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13111,
-		"inputAbbreviatedPath": "\/and-more-studios-address-logo.png",
-		"outputAbbreviatedPath": "\/and-more-studios-address-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-device-repair.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 19026,
-		"inputAbbreviatedPath": "\/and-more-studios-device-repair.png",
-		"outputAbbreviatedPath": "\/and-more-studios-device-repair.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-envelope-back.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 20911,
-		"inputAbbreviatedPath": "\/and-more-studios-envelope-back.png",
-		"outputAbbreviatedPath": "\/and-more-studios-envelope-back.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-graphic-design.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24095,
-		"inputAbbreviatedPath": "\/and-more-studios-graphic-design.png",
-		"outputAbbreviatedPath": "\/and-more-studios-graphic-design.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/and-more-studios-logo-2-300.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -64,94 +20,6 @@
 		"initialSize": 40598,
 		"inputAbbreviatedPath": "\/and-more-studios-logo-2-300.png",
 		"outputAbbreviatedPath": "\/and-more-studios-logo-2-300.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-social-media-management.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 14255,
-		"inputAbbreviatedPath": "\/and-more-studios-social-media-management.png",
-		"outputAbbreviatedPath": "\/and-more-studios-social-media-management.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-systems-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 39423,
-		"inputAbbreviatedPath": "\/and-more-studios-systems-logo.png",
-		"outputAbbreviatedPath": "\/and-more-studios-systems-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-systems.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 47305,
-		"inputAbbreviatedPath": "\/and-more-studios-systems.png",
-		"outputAbbreviatedPath": "\/and-more-studios-systems.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-team-logo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 34679,
-		"inputAbbreviatedPath": "\/and-more-studios-team-logo.png",
-		"outputAbbreviatedPath": "\/and-more-studios-team-logo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-technical-support.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18966,
-		"inputAbbreviatedPath": "\/and-more-studios-technical-support.png",
-		"outputAbbreviatedPath": "\/and-more-studios-technical-support.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-up-arrow.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 25521,
-		"inputAbbreviatedPath": "\/and-more-studios-up-arrow.png",
-		"outputAbbreviatedPath": "\/and-more-studios-up-arrow.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-web-development-2.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 18638,
-		"inputAbbreviatedPath": "\/and-more-studios-web-development-2.png",
-		"outputAbbreviatedPath": "\/and-more-studios-web-development-2.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/and-more-studios-web-development.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 10913,
-		"inputAbbreviatedPath": "\/and-more-studios-web-development.png",
-		"outputAbbreviatedPath": "\/and-more-studios-web-development.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -185,17 +53,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/device-repair-icon-281h359w.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 29109,
-		"inputAbbreviatedPath": "\/device-repair-icon-281h359w.png",
-		"outputAbbreviatedPath": "\/device-repair-icon-281h359w.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/dr2.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -214,39 +71,6 @@
 		"initialSize": 0,
 		"inputAbbreviatedPath": "\/dy2.jpg",
 		"outputAbbreviatedPath": "\/dy2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/graphics-icon-281h.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 28768,
-		"inputAbbreviatedPath": "\/graphics-icon-281h.png",
-		"outputAbbreviatedPath": "\/graphics-icon-281h.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/graphics-icon-281h359w.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 30173,
-		"inputAbbreviatedPath": "\/graphics-icon-281h359w.png",
-		"outputAbbreviatedPath": "\/graphics-icon-281h359w.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/heart-icon-281h359w.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26545,
-		"inputAbbreviatedPath": "\/heart-icon-281h359w.png",
-		"outputAbbreviatedPath": "\/heart-icon-281h359w.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -324,6 +148,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/logos\/and-more-studios-address-logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 17060,
+		"inputAbbreviatedPath": "\/logos\/and-more-studios-address-logo.png",
+		"outputAbbreviatedPath": "\/logos\/and-more-studios-address-logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/logos\/and-more-studios-envelope-back.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18980,
+		"inputAbbreviatedPath": "\/logos\/and-more-studios-envelope-back.png",
+		"outputAbbreviatedPath": "\/logos\/and-more-studios-envelope-back.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/logos\/and-more-studios-up-arrow.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18712,
+		"inputAbbreviatedPath": "\/logos\/and-more-studios-up-arrow.png",
+		"outputAbbreviatedPath": "\/logos\/and-more-studios-up-arrow.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/logos\/and_moore_icons_animation.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -372,7 +229,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 54937,
+		"initialSize": 23766,
 		"inputAbbreviatedPath": "\/logos\/and_moore_icons_marketing.png",
 		"outputAbbreviatedPath": "\/logos\/and_moore_icons_marketing.png",
 		"outputPathIsOutsideProject": 0,
@@ -401,17 +258,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/logos\/and_moore_icons_photo.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 33098,
-		"inputAbbreviatedPath": "\/logos\/and_moore_icons_photo.png",
-		"outputAbbreviatedPath": "\/logos\/and_moore_icons_photo.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/logos\/and_moore_icons_products.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -430,6 +276,17 @@
 		"initialSize": 28458,
 		"inputAbbreviatedPath": "\/logos\/and_moore_icons_repair.png",
 		"outputAbbreviatedPath": "\/logos\/and_moore_icons_repair.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/logos\/and_moore_icons_services.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 29711,
+		"inputAbbreviatedPath": "\/logos\/and_moore_icons_services.png",
+		"outputAbbreviatedPath": "\/logos\/and_moore_icons_services.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -478,17 +335,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/marketing-icon-281h359w.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24638,
-		"inputAbbreviatedPath": "\/marketing-icon-281h359w.png",
-		"outputAbbreviatedPath": "\/marketing-icon-281h359w.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/min\/script-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -511,24 +357,57 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/repair-icon-281h.png": {
+	"\/partners\/atc.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 22829,
-		"inputAbbreviatedPath": "\/repair-icon-281h.png",
-		"outputAbbreviatedPath": "\/repair-icon-281h.png",
+		"initialSize": 26313,
+		"inputAbbreviatedPath": "\/partners\/atc.png",
+		"outputAbbreviatedPath": "\/partners\/atc.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/repair-icon-281h359w.png": {
+	"\/partners\/city_pa.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 23921,
-		"inputAbbreviatedPath": "\/repair-icon-281h359w.png",
-		"outputAbbreviatedPath": "\/repair-icon-281h359w.png",
+		"initialSize": 124108,
+		"inputAbbreviatedPath": "\/partners\/city_pa.png",
+		"outputAbbreviatedPath": "\/partners\/city_pa.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/partners\/ECI.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26352,
+		"inputAbbreviatedPath": "\/partners\/ECI.png",
+		"outputAbbreviatedPath": "\/partners\/ECI.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/partners\/hush.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 21202,
+		"inputAbbreviatedPath": "\/partners\/hush.png",
+		"outputAbbreviatedPath": "\/partners\/hush.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/partners\/stillman_sound.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 28993,
+		"inputAbbreviatedPath": "\/partners\/stillman_sound.png",
+		"outputAbbreviatedPath": "\/partners\/stillman_sound.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -580,39 +459,6 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0
 		},
-	"\/support-icon-281h.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 23182,
-		"inputAbbreviatedPath": "\/support-icon-281h.png",
-		"outputAbbreviatedPath": "\/support-icon-281h.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/support-icon-281h359w.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 24906,
-		"inputAbbreviatedPath": "\/support-icon-281h359w.png",
-		"outputAbbreviatedPath": "\/support-icon-281h359w.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/systems-icon-359w.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 39863,
-		"inputAbbreviatedPath": "\/systems-icon-359w.png",
-		"outputAbbreviatedPath": "\/systems-icon-359w.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/team.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -621,50 +467,6 @@
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
-		},
-	"\/team_icon.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26960,
-		"inputAbbreviatedPath": "\/team_icon.png",
-		"outputAbbreviatedPath": "\/team_icon.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/team_icon_200.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 22665,
-		"inputAbbreviatedPath": "\/team_icon_200.png",
-		"outputAbbreviatedPath": "\/team_icon_200.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/web-icon-281h.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 26595,
-		"inputAbbreviatedPath": "\/web-icon-281h.png",
-		"outputAbbreviatedPath": "\/web-icon-281h.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/web_design_200.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 4165,
-		"inputAbbreviatedPath": "\/web_design_200.png",
-		"outputAbbreviatedPath": "\/web_design_200.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
 		},
 	"\/z2.jpg": {
 		"fileType": 16384,
