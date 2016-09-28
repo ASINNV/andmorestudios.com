@@ -406,22 +406,16 @@ $(document).ready(function() {
 } else if ($body.hasClass('team-body')) {
 
 	$id_one_five.click(function() {
-		if ($window.scrollTop() >= $id_7.offset().top - 5) {
+		if ($window.scrollTop() >= $id_5.offset().top - 5) {
 			$html_body.animate({ scrollTop: $document.height() }, 1200);
-
-		} else if (($window.scrollTop() >= ($id_6.offset().top - 5)) && ($window.scrollTop() < $id_7.offset().top)) {
-			$html_body.animate({ scrollTop: $id_7.offset().top }, 600);
-
-		} else if (($window.scrollTop() >= ($id_5.offset().top - 5)) && ($window.scrollTop() < $id_6.offset().top)) {
-			$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
 
 		} else if (($window.scrollTop() >= ($id_4.offset().top - 5)) && ($window.scrollTop() < $id_5.offset().top)) {
 			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= $id_3.offset().top - 5) && ($window.scrollTop() < $id_4.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_3.offset().top - 5)) && ($window.scrollTop() < $id_4.offset().top)) {
 			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= $id_2.offset().top - 5) && ($window.scrollTop() < $id_3.offset().top)) {
+		} else if (($window.scrollTop() >= ($id_2.offset().top - 5)) && ($window.scrollTop() < $id_3.offset().top)) {
 			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
 
 		} else if (($window.scrollTop() >= $id_1.offset().top - 5) && ($window.scrollTop() < $id_2.offset().top)) {
