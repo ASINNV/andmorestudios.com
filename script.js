@@ -1,3 +1,13 @@
+if (document.getElementById('resources-page')) {
+	var passForm = document.getElementById('pass-form');
+	var password = document.getElementById('password');
+	var errorMsg = document.createElement('h3');
+	errorMsg.className = 'error';
+	errorMsg.innerHTML = 'Incorrect Password';
+}
+
+
+var resourcesContainer = document.getElementById('resources-container');
 var $enter_button = $('.enter-button');
 var $white_overlay = $('.white-overlay');
 var $landing_intro = $('.landing-intro');
@@ -212,6 +222,21 @@ function leadIn() {
 	}, 400);
 }
 
+function checkPass(e) {
+	e.preventDefault();
+
+	if (password.value === 'ArenaCove1234') {
+		this.form.parentNode.style.display = 'none';
+		resourcesContainer.style.display = 'block';
+	} else {
+		this.form.parentNode.appendChild(errorMsg);
+	}
+}
+if (document.getElementById('resources-page')) {
+	passForm.elements['pass-button'].addEventListener('click', checkPass);
+
+}
+
 
 
 $(document).ready(function() {
@@ -225,6 +250,9 @@ $(document).ready(function() {
 	// if (window.matchMedia("(orientation: landscape)").matches) {
 	// 	$window.trigger('resize');
 	// }
+
+
+
 	$('.interstate').click(function(e) {
 		e.stopPropagation();
 	});
@@ -406,8 +434,11 @@ $(document).ready(function() {
 } else if ($body.hasClass('team-body')) {
 
 	$id_one_five.click(function() {
-		if ($window.scrollTop() >= $id_5.offset().top - 5) {
+		if ($window.scrollTop() >= $id_6.offset().top - 5) {
 			$html_body.animate({ scrollTop: $document.height() }, 1200);
+
+		} else if (($window.scrollTop() >= ($id_5.offset().top - 5)) && ($window.scrollTop() < $id_6.offset().top)) {
+			$html_body.animate({ scrollTop: $id_6.offset().top }, 600);
 
 		} else if (($window.scrollTop() >= ($id_4.offset().top - 5)) && ($window.scrollTop() < $id_5.offset().top)) {
 			$html_body.animate({ scrollTop: $id_5.offset().top }, 600);
@@ -415,7 +446,7 @@ $(document).ready(function() {
 		} else if (($window.scrollTop() >= ($id_3.offset().top - 5)) && ($window.scrollTop() < $id_4.offset().top)) {
 			$html_body.animate({ scrollTop: $id_4.offset().top }, 600);
 
-		} else if (($window.scrollTop() >= ($id_2.offset().top - 5)) && ($window.scrollTop() < $id_3.offset().top)) {
+		} else if (($window.scrollTop() >= $id_2.offset().top - 5) && ($window.scrollTop() < $id_3.offset().top)) {
 			$html_body.animate({ scrollTop: $id_3.offset().top }, 600);
 
 		} else if (($window.scrollTop() >= $id_1.offset().top - 5) && ($window.scrollTop() < $id_2.offset().top)) {
@@ -645,7 +676,7 @@ $(document).ready(function() {
 	});
 
 	// PARTNERS JS (CLICK AWAY TO NEGATE EFFECT)
-  $member.mouseenter(function() {
+  	$member.mouseenter(function() {
 		$(this).children('.nameplate').css("transition", "opacity .2s ease-in-out").css("opacity", "0");
 	});
 	$member.mouseleave(function() {
@@ -657,3 +688,4 @@ $(document).ready(function() {
 
 
 });
+
